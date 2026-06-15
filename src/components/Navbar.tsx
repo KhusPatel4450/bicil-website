@@ -48,10 +48,13 @@ export default function Navbar() {
               className="w-8 h-8 object-contain flex-shrink-0"
               style={{ mixBlendMode: "screen" }}
             />
-            <span className="text-white font-semibold text-sm hidden sm:block">
-              BICIL{" "}
-              <span className="text-white/40 font-normal">· Brock University</span>
-            </span>
+            <span className="text-white font-semibold text-sm hidden sm:block">BICIL</span>
+            <span className="text-white/20 hidden sm:block mx-1">|</span>
+            <img
+              src="/brock-logo.png"
+              alt="Brock University"
+              className="h-6 object-contain hidden sm:block"
+            />
           </a>
 
           <div className="hidden md:flex items-center gap-8">
