@@ -226,13 +226,16 @@ export default function PeopleContent() {
                   />
                 </div>
                 <p className="text-white/75 font-semibold text-sm mb-1">{s.name}</p>
-                <p className="text-[#4BBFCF]/65 text-xs font-mono mb-3">
+                <p className="text-[#4BBFCF]/65 text-xs font-mono mb-2">
                   {s.role === "Doctoral Researcher"
                     ? "PhD"
                     : s.role === "Graduate Researcher"
                     ? "MSc"
                     : "Undergrad"}
                 </p>
+                {s.focus && (
+                  <p className="text-white/55 text-xs leading-relaxed mb-3">{s.focus}</p>
+                )}
                 {s.links && s.links.length > 0 && (
                   <div className="flex flex-wrap gap-2">
                     {s.links.map((link: { label: string; url: string }) => (
