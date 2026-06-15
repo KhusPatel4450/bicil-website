@@ -83,12 +83,6 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
-            <a
-              href={resolve("#contact")}
-              className="ml-2 px-4 py-2 bg-[#2A7FC1] hover:bg-[#1B6BA8] text-white text-sm font-semibold transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#4BBFCF]"
-            >
-              Join Us
-            </a>
           </div>
 
           <button
@@ -139,13 +133,6 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a
-            href={resolve("#contact")}
-            onClick={() => setMenuOpen(false)}
-            className="block mt-2 px-4 py-2.5 bg-[#2A7FC1] text-white font-semibold text-center"
-          >
-            Join Us
-          </a>
         </div>
       )}
     </nav>

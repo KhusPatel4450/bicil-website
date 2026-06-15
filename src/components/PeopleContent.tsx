@@ -99,8 +99,8 @@ export default function PeopleContent() {
               </span>
             </h1>
             <p className="text-white/70 text-lg max-w-2xl leading-relaxed mb-10">
-              Researchers united by a passion for evolutionary computation,
-              swarm intelligence, and bio-inspired optimization.
+              A dedicated group of researchers advancing the frontiers of
+              computational intelligence at Brock University.
             </p>
 
             <div className="flex flex-wrap gap-6">
@@ -166,17 +166,7 @@ export default function PeopleContent() {
                 <p className="text-[#4BBFCF] text-sm font-medium mb-1">{PI.role}</p>
                 <p className="text-white/55 text-xs font-mono mb-6">{PI.title}</p>
                 <p className="text-white/80 leading-relaxed mb-6 max-w-2xl">{PI.bio}</p>
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {PI.interests.map((interest) => (
-                    <span
-                      key={interest}
-                      className="px-3 py-1 border border-white/10 text-white/65 text-xs font-mono"
-                    >
-                      {interest}
-                    </span>
-                  ))}
-                </div>
-                <a
+                <
                   href={`mailto:${PI.email}`}
                   className="inline-flex items-center gap-2 text-white/50 hover:text-white transition-colors text-sm focus:outline-none focus-visible:underline"
                 >
@@ -215,7 +205,7 @@ export default function PeopleContent() {
             <p className="text-[10px] font-mono tracking-[0.25em] text-white/50 uppercase mb-2">
               Current Researchers
             </p>
-            <h2 className="text-3xl font-bold text-white">Active Lab Members</h2>
+            <h2 className="text-3xl font-bold text-white">Active Members</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -235,10 +225,14 @@ export default function PeopleContent() {
                     size="sm"
                   />
                 </div>
-                <p className="text-white/75 font-semibold text-sm mb-0.5">{s.name}</p>
-                <p className="text-[#4BBFCF]/65 text-xs font-mono mb-0.5">{s.role}</p>
-                <p className="text-white/50 text-[11px] font-mono mb-3">{s.year}</p>
-                <p className="text-white/65 text-xs leading-relaxed">{s.focus}</p>
+                <p className="text-white/75 font-semibold text-sm mb-1">{s.name}</p>
+                <p className="text-[#4BBFCF]/65 text-xs font-mono">
+                  {s.role === "Doctoral Researcher"
+                    ? "PhD"
+                    : s.role === "Graduate Researcher"
+                    ? "MSc"
+                    : "Undergrad"}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -259,7 +253,7 @@ export default function PeopleContent() {
               <p className="text-[10px] font-mono tracking-[0.25em] text-white/50 uppercase mb-2">
                 Alumni
               </p>
-              <h2 className="text-3xl font-bold text-white">BICIL Graduates</h2>
+              <h2 className="text-3xl font-bold text-white">Past Members</h2>
               <p className="text-white/60 text-sm mt-2">
                 Former members now making an impact in academia and industry.
               </p>
@@ -314,45 +308,37 @@ export default function PeopleContent() {
         </section>
       )}
 
-      {/* Join CTA */}
-      <section className="py-20 bg-[#091628]/82 border-t border-white/5">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      {/* Open Positions */}
+      <section className="py-16 bg-[#091628]/82 border-t border-white/5">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-[11px] font-mono tracking-[0.2em] text-white/50 uppercase mb-4">
-              Join Us
+            <p className="text-[10px] font-mono tracking-[0.25em] text-white/50 uppercase mb-2">
+              Opportunities
             </p>
-            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-              Work with BICIL
+            <h2 className="text-3xl font-bold text-white mb-4">
+              Open Positions
             </h2>
-            <p className="text-white/65 max-w-md mx-auto mb-8 leading-relaxed text-sm">
-              We welcome motivated graduate students and postdoctoral researchers
-              with backgrounds in computer science, engineering, or mathematics.
-            </p>
-            <Link
-              href="/#contact"
-              className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#2A7FC1] hover:bg-[#1B6BA8] text-white font-semibold text-sm transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#4BBFCF]"
-            >
-              Apply to the Lab
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
+            <p className="text-white/70 text-sm leading-relaxed max-w-xl">
+              We currently have{" "}
+              <span className="text-white font-semibold">2 MSc</span> and{" "}
+              <span className="text-white font-semibold">1 PhD</span> positions
+              available for{" "}
+              <span className="text-white font-semibold">Fall 2026</span>.
+              Interested applicants are encouraged to contact Prof.
+              Ombuki-Berman directly at{" "}
+              <a
+                href={`mailto:${PI.email}`}
+                className="text-[#4BBFCF] hover:text-white transition-colors focus:outline-none focus-visible:underline"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            </Link>
+                {PI.email}
+              </a>
+              .
+            </p>
           </motion.div>
         </div>
       </section>
