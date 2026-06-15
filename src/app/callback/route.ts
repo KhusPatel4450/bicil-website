@@ -31,17 +31,28 @@ export async function GET(request: NextRequest) {
     return new NextResponse(html, { headers: { "Content-Type": "text/html" } });
   }
 
-  const msg = JSON.stringify(
-    `authorization:github:success:${JSON.stringify({ token, provider: "github" })}`
-  );
+  const successMsg = `authorization:github:success:${JSON.stringify({ token, provider: "github" })}`;
 
+  // Decap CMS uses a two-step handshake:
+  // 1. Popup sends "authorizing:github" to opener
+  // 2. Main window's handshakeCallback relays it back to popup
+  // 3. Popup receives the relay, then sends the success message
+  // Skipping step 1 causes the handshake listener to ignore the success message.
   const html = `<!doctype html><html><body><script>
     (function() {
-      var msg = ${msg};
-      if (window.opener) {
-        window.opener.postMessage(msg, "*");
+      var successMsg = ${JSON.stringify(successMsg)};
+      var provider = "github";
+      function receiveMessage(e) {
+        if (e.data === "authorizing:" + provider) {
+          window.removeEventListener("message", receiveMessage, false);
+          window.opener.postMessage(successMsg, e.origin);
+          setTimeout(window.close, 1000);
+        }
       }
-      setTimeout(function() { window.close(); }, 500);
+      if (window.opener) {
+        window.addEventListener("message", receiveMessage, false);
+        window.opener.postMessage("authorizing:" + provider, "*");
+      }
     })();
   </script></body></html>`;
 
