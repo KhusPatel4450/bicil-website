@@ -45,15 +45,15 @@ export default function Navbar() {
               src="/logo.png"
               alt=""
               aria-hidden="true"
-              className="w-8 h-8 object-contain flex-shrink-0"
+              className="w-10 h-10 object-contain flex-shrink-0"
               style={{ mixBlendMode: "screen" }}
             />
-            <span className="text-white font-semibold text-sm hidden sm:block">BICIL</span>
+            <span className="text-white font-semibold text-base hidden sm:block">BICIL</span>
             <span className="text-white/20 hidden sm:block mx-1">|</span>
             <img
               src="/brock-logo.png"
               alt="Brock University"
-              className="h-6 object-contain hidden sm:block"
+              className="h-8 object-contain hidden sm:block"
             />
           </a>
 
