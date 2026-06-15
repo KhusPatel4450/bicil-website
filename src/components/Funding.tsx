@@ -7,7 +7,7 @@ const FUNDERS = fundersData.items;
 
 export default function Funding() {
   return (
-    <section id="funding" className="py-16 lg:py-20 border-t border-white/8 bg-[#091628]/82">
+    <section id="funding" className="py-16 lg:py-20 border-t border-white/8 bg-[#091628]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.p
           initial={{ opacity: 0, y: 12 }}

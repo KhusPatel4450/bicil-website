@@ -19,7 +19,7 @@ export default function Publications() {
   });
 
   return (
-    <section id="publications" className="py-24 lg:py-32 bg-[#091628]/82">
+    <section id="publications" className="py-24 lg:py-32 bg-[#091628]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

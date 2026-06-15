@@ -61,7 +61,7 @@ export default function PeopleContent() {
   return (
     <>
       {/* Page header */}
-      <section className="pt-32 pb-16 bg-[#091628]/82">
+      <section className="pt-32 pb-16 bg-[#091628]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -142,7 +142,7 @@ export default function PeopleContent() {
       </section>
 
       {/* Principal Investigator */}
-      <section className="py-16 bg-[#091628]/82 border-t border-white/5">
+      <section className="py-16 bg-[#091628] border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <p className="text-[10px] font-mono tracking-[0.25em] text-white/50 uppercase mb-8">
             Principal Investigator
@@ -193,7 +193,7 @@ export default function PeopleContent() {
       </section>
 
       {/* Current Members */}
-      <section className="py-16 bg-[#091628]/82 border-t border-white/5">
+      <section className="py-16 bg-[#091628] border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -241,7 +241,7 @@ export default function PeopleContent() {
 
       {/* Alumni */}
       {ALUMNI.length > 0 && (
-        <section className="py-16 bg-[#091628]/82 border-t border-white/5">
+        <section className="py-16 bg-[#091628] border-t border-white/5">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -309,7 +309,7 @@ export default function PeopleContent() {
       )}
 
       {/* Open Positions */}
-      <section className="py-16 bg-[#091628]/82 border-t border-white/5">
+      <section className="py-16 bg-[#091628] border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

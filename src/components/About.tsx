@@ -11,7 +11,7 @@ const STATS = [
 
 export default function About() {
   return (
-    <section id="about" className="py-24 lg:py-32 bg-[#091628]/82">
+    <section id="about" className="py-24 lg:py-32 bg-[#091628]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -93,7 +93,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.62 }}
-              className="col-span-2 bg-[#091628]/70 p-6 border border-white/8"
+              className="col-span-2 bg-[#091628] p-6 border border-white/8"
             >
               <p className="text-white/55 text-[11px] font-mono mb-2">Location</p>
               <p className="text-white font-medium text-sm mb-1">
