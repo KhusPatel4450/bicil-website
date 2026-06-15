@@ -22,7 +22,7 @@ backend:
   name: github
   repo: KhusPatel4450/bicil-website
   branch: main
-  base_url: https://bicil-website.vercel.app/api
+  base_url: https://bicil-website.vercel.app
 
 media_folder: "public/uploads"
 public_folder: "/uploads"

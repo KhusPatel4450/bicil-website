@@ -25,7 +25,6 @@ export async function GET(request: NextRequest) {
   if (error || !token) {
     const msg = JSON.stringify(`authorization:github:error:${error ?? "unknown"}`);
     const html = `<!doctype html><html><body><script>
-      try { var bc = new BroadcastChannel('decap_cms_auth'); bc.postMessage({msg:${msg}}); bc.close(); } catch(e){}
       if (window.opener) window.opener.postMessage(${msg}, "*");
       window.close();
     </script></body></html>`;
@@ -39,13 +38,6 @@ export async function GET(request: NextRequest) {
   const html = `<!doctype html><html><body><script>
     (function() {
       var msg = ${msg};
-      // Primary: BroadcastChannel (works even if window.opener is blocked)
-      try {
-        var bc = new BroadcastChannel('decap_cms_auth');
-        bc.postMessage({ msg: msg });
-        bc.close();
-      } catch(e) {}
-      // Fallback: direct postMessage
       if (window.opener) {
         window.opener.postMessage(msg, "*");
       }
