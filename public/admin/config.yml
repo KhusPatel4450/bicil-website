@@ -243,3 +243,27 @@ collections:
               - name: "name"
                 label: "Full Name"
                 widget: "string"
+
+  # ── Lab Life Gallery ─────────────────────────────────────────────
+  - name: "gallery"
+    label: "📷 Lab Life Gallery"
+    files:
+      - name: "gallery"
+        label: "Gallery Photos"
+        file: "src/data/gallery.json"
+        fields:
+          - name: "items"
+            label: "Photos"
+            label_singular: "Photo"
+            widget: "list"
+            summary: "{{fields.caption}}"
+            fields:
+              - name: "photo"
+                label: "Photo"
+                widget: "image"
+                hint: "Upload a lab photo. Stored in /uploads."
+              - name: "caption"
+                label: "Caption (optional)"
+                widget: "string"
+                required: false
+                default: ""
