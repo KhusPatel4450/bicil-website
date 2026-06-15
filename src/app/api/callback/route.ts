@@ -35,19 +35,12 @@ export async function GET(request: NextRequest) {
     `authorization:github:success:${JSON.stringify({ token, provider: "github" })}`
   );
 
-  // Send token directly — Decap CMS 3.x does not send the handshake message back
   const html = `<!doctype html><html><body><script>
     (function() {
-      var msg = ${msg};
       if (window.opener) {
-        window.opener.postMessage(msg, "*");
-        // Also support the older handshake protocol
-        window.addEventListener("message", function(e) {
-          window.opener.postMessage(msg, e.origin);
-        }, false);
-        window.opener.postMessage("authorizing:github", "*");
+        window.opener.postMessage(${msg}, "*");
       }
-      setTimeout(function() { window.close(); }, 2000);
+      window.close();
     })();
   </script></body></html>`;
 
