@@ -8,15 +8,25 @@
   </head>
   <body>
     <script>
-      // Receive auth token from OAuth popup via BroadcastChannel,
-      // then re-dispatch as a window message so Decap CMS picks it up.
+      // Step 1: receive from BroadcastChannel and re-dispatch as window message
       var _bc = new BroadcastChannel('decap_cms_auth');
       _bc.onmessage = function(e) {
+        console.log('[BC] received:', JSON.stringify(e.data).slice(0, 80));
         if (e.data && e.data.msg) {
+          console.log('[BC] re-dispatching to window...');
           window.postMessage(e.data.msg, window.location.origin);
+          console.log('[BC] dispatched.');
         }
         _bc.close();
       };
+
+      // Step 2: capture-phase listener to see if the window message arrives
+      // (runs before Decap CMS's listener, cannot be stopped)
+      window.addEventListener('message', function(e) {
+        if (typeof e.data === 'string' && e.data.startsWith('authorization')) {
+          console.log('[WIN-CAPTURE] auth message intercepted:', e.data.slice(0, 80));
+        }
+      }, true);
     </script>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </body>
