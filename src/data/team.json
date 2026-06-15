@@ -23,7 +23,12 @@
       "initials": "RK",
       "year": "Ph.D. Candidate",
       "photo": "/uploads/rasa.jpeg",
-      "links": []
+      "links": [
+        {
+          "label": "Personal Website",
+          "url": "https://rkhosrowshahi.github.io/"
+        }
+      ]
     },
     {
       "name": "Ph.D. Candidate",
