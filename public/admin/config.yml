@@ -18,13 +18,12 @@
 #   5. Click "Publish" — the site will rebuild automatically (~60 seconds)
 # ─────────────────────────────────────────────────────────────────
 
-local_backend: true   # remove this line before deploying to production
-
 backend:
   name: github
-  repo: OWNER/REPO            # ← replace with e.g. jsmith/bicil-website
+  repo: KhusPatel4450/bicil-website
   branch: main
-  base_url: https://api.netlify.com   # free OAuth proxy, no Netlify account needed
+  base_url: https://api.netlify.com
+  app_id: Ov23li6XyNMJxpIqXZUd
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
