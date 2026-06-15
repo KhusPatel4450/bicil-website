@@ -7,6 +7,11 @@
     <title>BICIL — Content Manager</title>
   </head>
   <body>
+    <script>
+      window.addEventListener('message', function(e) {
+        console.log('[ADMIN] message received:', e.data, 'origin:', e.origin);
+      });
+    </script>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </body>
 </html>
