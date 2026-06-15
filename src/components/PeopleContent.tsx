@@ -166,7 +166,7 @@ export default function PeopleContent() {
                 <p className="text-[#4BBFCF] text-sm font-medium mb-1">{PI.role}</p>
                 <p className="text-white/55 text-xs font-mono mb-6">{PI.title}</p>
                 <p className="text-white/80 leading-relaxed mb-6 max-w-2xl">{PI.bio}</p>
-                <
+                <a
                   href={`mailto:${PI.email}`}
                   className="inline-flex items-center gap-2 text-white/50 hover:text-white transition-colors text-sm focus:outline-none focus-visible:underline"
                 >
