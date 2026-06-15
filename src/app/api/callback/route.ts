@@ -24,10 +24,10 @@ export async function GET(request: NextRequest) {
 
   if (error || !token) {
     const msg = JSON.stringify(`authorization:github:error:${error ?? "unknown"}`);
-    const html = `<!doctype html><html><body><script>
-      if (window.opener) window.opener.postMessage(${msg}, "*");
-      window.close();
-    </script></body></html>`;
+    const html = `<!doctype html><html><body>
+      <p>Auth error: ${error ?? "unknown"}</p>
+      <script>if (window.opener) window.opener.postMessage(${msg}, "*");</script>
+    </body></html>`;
     return new NextResponse(html, { headers: { "Content-Type": "text/html" } });
   }
 
@@ -35,14 +35,24 @@ export async function GET(request: NextRequest) {
     `authorization:github:success:${JSON.stringify({ token, provider: "github" })}`
   );
 
-  const html = `<!doctype html><html><body><script>
-    (function() {
-      if (window.opener) {
+  // Debug version — stays open so you can see what happened
+  const html = `<!doctype html><html><body style="font-family:monospace;padding:20px">
+    <p id="s">Checking window.opener...</p>
+    <script>
+      (function() {
+        var s = document.getElementById('s');
+        if (!window.opener) {
+          s.textContent = 'ERROR: window.opener is null — Chrome severed the reference during GitHub redirect.';
+          s.style.color = 'red';
+          return;
+        }
+        s.textContent = 'window.opener exists — sending token...';
         window.opener.postMessage(${msg}, "*");
-      }
-      window.close();
-    })();
-  </script></body></html>`;
+        s.textContent = 'Token sent! You can close this window.';
+        s.style.color = 'green';
+      })();
+    </script>
+  </body></html>`;
 
   return new NextResponse(html, { headers: { "Content-Type": "text/html" } });
 }
