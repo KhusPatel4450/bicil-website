@@ -22,8 +22,7 @@ backend:
   name: github
   repo: KhusPatel4450/bicil-website
   branch: main
-  base_url: https://api.netlify.com
-  app_id: Ov23li6XyNMJxpIqXZUd
+  base_url: https://bicil-website.vercel.app/api
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
