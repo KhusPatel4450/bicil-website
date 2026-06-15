@@ -25,26 +25,29 @@ export async function GET(request: NextRequest) {
   if (error || !token) {
     const msg = JSON.stringify(`authorization:github:error:${error ?? "unknown"}`);
     const html = `<!doctype html><html><body><script>
-      window.opener && window.opener.postMessage(${msg}, "*");
+      if (window.opener) window.opener.postMessage(${msg}, "*");
+      window.close();
     </script></body></html>`;
     return new NextResponse(html, { headers: { "Content-Type": "text/html" } });
   }
 
-  // JSON.stringify the entire message so special characters are safely escaped
   const msg = JSON.stringify(
     `authorization:github:success:${JSON.stringify({ token, provider: "github" })}`
   );
 
+  // Send token directly — Decap CMS 3.x does not send the handshake message back
   const html = `<!doctype html><html><body><script>
     (function() {
       var msg = ${msg};
-      function send(origin) {
-        window.opener && window.opener.postMessage(msg, origin || "*");
+      if (window.opener) {
+        window.opener.postMessage(msg, "*");
+        // Also support the older handshake protocol
+        window.addEventListener("message", function(e) {
+          window.opener.postMessage(msg, e.origin);
+        }, false);
+        window.opener.postMessage("authorizing:github", "*");
       }
-      window.addEventListener("message", function(e) {
-        send(e.origin);
-      }, false);
-      window.opener.postMessage("authorizing:github", "*");
+      setTimeout(function() { window.close(); }, 2000);
     })();
   </script></body></html>`;
 
