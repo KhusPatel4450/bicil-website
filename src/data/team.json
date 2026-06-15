@@ -17,12 +17,12 @@
   },
   "students": [
     {
-      "name": "Ph.D. Candidate",
+      "name": "Rasa Khosrowshahli",
       "role": "Doctoral Researcher",
       "focus": "Multi-Objective PSO for Dynamic Environments",
-      "initials": "P1",
-      "year": "Year 3",
-      "photo": null
+      "initials": "RK",
+      "year": "Ph.D. Candidate",
+      "photo": "/uploads/rasa.jpeg"
     },
     {
       "name": "Ph.D. Candidate",
