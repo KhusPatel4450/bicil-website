@@ -7,6 +7,14 @@
     <title>BICIL — Content Manager</title>
   </head>
   <body>
+    <script>
+      // Intercept window.open so we can see what URL the CMS opens for auth
+      var _open = window.open;
+      window.open = function() {
+        console.log('[OPEN] popup URL:', arguments[0]);
+        return _open.apply(this, arguments);
+      };
+    </script>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </body>
 </html>
