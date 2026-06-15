@@ -22,7 +22,8 @@
       "focus": "Multi-Objective PSO for Dynamic Environments",
       "initials": "RK",
       "year": "Ph.D. Candidate",
-      "photo": "/uploads/rasa.jpeg"
+      "photo": "/uploads/rasa.jpeg",
+      "links": []
     },
     {
       "name": "Ph.D. Candidate",
@@ -30,7 +31,8 @@
       "focus": "Swarm Robotics & Task Allocation",
       "initials": "P2",
       "year": "Year 2",
-      "photo": null
+      "photo": null,
+      "links": []
     },
     {
       "name": "Ph.D. Candidate",
@@ -38,7 +40,8 @@
       "focus": "RL-Enhanced Metaheuristics",
       "initials": "P3",
       "year": "Year 1",
-      "photo": null
+      "photo": null,
+      "links": []
     },
     {
       "name": "M.Sc. Candidate",
@@ -46,7 +49,8 @@
       "focus": "GA-Based Feature Selection for Medical Data",
       "initials": "M1",
       "year": "Year 2",
-      "photo": null
+      "photo": null,
+      "links": []
     },
     {
       "name": "M.Sc. Candidate",
@@ -54,7 +58,8 @@
       "focus": "Decomposition-Based MOEAs",
       "initials": "M2",
       "year": "Year 1",
-      "photo": null
+      "photo": null,
+      "links": []
     },
     {
       "name": "M.Sc. Candidate",
@@ -62,7 +67,8 @@
       "focus": "Evolutionary Neural Architecture Search",
       "initials": "M3",
       "year": "Year 1",
-      "photo": null
+      "photo": null,
+      "links": []
     },
     {
       "name": "Research Assistant",
@@ -70,7 +76,8 @@
       "focus": "Algorithm Benchmarking & Visualization",
       "initials": "RA",
       "year": "4th Year",
-      "photo": null
+      "photo": null,
+      "links": []
     }
   ],
   "alumni": [

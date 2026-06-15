@@ -182,6 +182,17 @@ collections:
                 required: false
                 default: ""
                 hint: "Upload a square headshot. Leave blank to show the gradient avatar."
+              - name: "links"
+                label: "Links (LinkedIn, website, GitHub, etc.)"
+                widget: "list"
+                required: false
+                fields:
+                  - name: "label"
+                    label: "Label (e.g. LinkedIn, Website, GitHub)"
+                    widget: "string"
+                  - name: "url"
+                    label: "URL"
+                    widget: "string"
           - name: "alumni"
             label: "Alumni"
             label_singular: "Alumnus / Alumna"

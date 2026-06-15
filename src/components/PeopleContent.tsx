@@ -226,13 +226,28 @@ export default function PeopleContent() {
                   />
                 </div>
                 <p className="text-white/75 font-semibold text-sm mb-1">{s.name}</p>
-                <p className="text-[#4BBFCF]/65 text-xs font-mono">
+                <p className="text-[#4BBFCF]/65 text-xs font-mono mb-3">
                   {s.role === "Doctoral Researcher"
                     ? "PhD"
                     : s.role === "Graduate Researcher"
                     ? "MSc"
                     : "Undergrad"}
                 </p>
+                {s.links && s.links.length > 0 && (
+                  <div className="flex flex-wrap gap-2">
+                    {s.links.map((link: { label: string; url: string }) => (
+                      <a
+                        key={link.url}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[10px] font-mono text-white/45 hover:text-[#4BBFCF] border border-white/10 hover:border-[#4BBFCF]/30 px-2 py-0.5 transition-colors"
+                      >
+                        {link.label}
+                      </a>
+                    ))}
+                  </div>
+                )}
               </motion.div>
             ))}
           </div>
