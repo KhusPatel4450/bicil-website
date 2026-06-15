@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "date": "May 2024",
+      "category": "Award",
+      "title": "Prof. Ombuki-Berman Receives NSERC Discovery Grant Renewal",
+      "excerpt": "BICIL has been awarded a renewed NSERC Discovery Grant supporting continued research in bio-inspired optimization and its applications to complex real-world problems."
+    },
+    {
+      "date": "April 2024",
+      "category": "Publication",
+      "title": "New Paper Accepted at IEEE Transactions on Evolutionary Computation",
+      "excerpt": "Our paper on multi-swarm approaches for dynamic multi-objective optimization has been accepted at IEEE TEVC — one of the top venues in evolutionary computation."
+    },
+    {
+      "date": "March 2024",
+      "category": "Conference",
+      "title": "Lab Members to Present at GECCO 2024 in Melbourne",
+      "excerpt": "Two PhD students will present their research on GA-based feature selection and swarm robotics at GECCO 2024 in Melbourne, Australia."
+    },
+    {
+      "date": "January 2024",
+      "category": "New Members",
+      "title": "Welcome to Three New Graduate Researchers",
+      "excerpt": "BICIL welcomes three new graduate students to our MSc and PhD programs, bringing fresh perspectives to our optimization research agenda."
+    },
+    {
+      "date": "October 2023",
+      "category": "Collaboration",
+      "title": "New Industry Partnership for Supply Chain Optimization",
+      "excerpt": "We are excited to announce a research collaboration with a regional logistics partner to apply evolutionary algorithms to real supply chain optimization challenges."
+    },
+    {
+      "date": "September 2023",
+      "category": "Event",
+      "title": "BICIL Hosts Two-Day Metaheuristics Workshop",
+      "excerpt": "The lab hosted an Ontario-wide workshop on metaheuristic algorithms, bringing together researchers from six universities to share advances in bio-inspired computing."
+    }
+  ]
+}

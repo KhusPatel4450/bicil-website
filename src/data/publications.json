@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "year": 2024,
+      "title": "A Multi-Swarm Approach to Dynamic Multi-Objective Optimization Using Particle Swarm Optimization",
+      "authors": "Ombuki-Berman, B., A. Researcher, C. Collaborator",
+      "venue": "IEEE Transactions on Evolutionary Computation",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 2024,
+      "title": "Feature Selection for High-Dimensional Medical Datasets Using Binary Genetic Algorithms with Adaptive Operators",
+      "authors": "B. Researcher, Ombuki-Berman, B.",
+      "venue": "GECCO 2024 – Genetic and Evolutionary Computation Conference",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2023,
+      "title": "Hybridizing Reinforcement Learning with Evolutionary Algorithms for the Capacitated Vehicle Routing Problem",
+      "authors": "C. Researcher, Ombuki-Berman, B., D. Collaborator",
+      "venue": "Applied Soft Computing",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 2023,
+      "title": "Decomposition-Based Multi-Objective PSO with Adaptive Weight Vector Generation",
+      "authors": "Ombuki-Berman, B., E. Researcher",
+      "venue": "Swarm and Evolutionary Computation",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 2022,
+      "title": "A Comparative Analysis of Bio-Inspired Algorithms for the Multi-Depot Vehicle Routing Problem",
+      "authors": "F. Researcher, Ombuki-Berman, B., G. Researcher",
+      "venue": "CEC 2022 – IEEE Congress on Evolutionary Computation",
+      "type": "conference",
+      "doi": ""
+    }
+  ]
+}

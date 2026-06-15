@@ -1,0 +1,113 @@
+{
+  "pi": {
+    "name": "Prof. Beatrice Ombuki-Berman",
+    "role": "Research Lab Director",
+    "title": "Professor, Department of Computer Science · Brock University",
+    "bio": "Professor Ombuki-Berman is a full professor in the Department of Computer Science at Brock University. Her research spans bio-inspired algorithms, combinatorial optimization, swarm intelligence, and multi-objective evolutionary computation. She has published extensively in leading journals and conferences including IEEE TEVC, Swarm and Evolutionary Computation, and GECCO.",
+    "email": "bombuki@brocku.ca",
+    "initials": "BOB",
+    "photo": null,
+    "interests": [
+      "Evolutionary Computation",
+      "Swarm Intelligence",
+      "Metaheuristics",
+      "Multi-Objective Optimization",
+      "Feature Selection"
+    ]
+  },
+  "students": [
+    {
+      "name": "Ph.D. Candidate",
+      "role": "Doctoral Researcher",
+      "focus": "Multi-Objective PSO for Dynamic Environments",
+      "initials": "P1",
+      "year": "Year 3",
+      "photo": null
+    },
+    {
+      "name": "Ph.D. Candidate",
+      "role": "Doctoral Researcher",
+      "focus": "Swarm Robotics & Task Allocation",
+      "initials": "P2",
+      "year": "Year 2",
+      "photo": null
+    },
+    {
+      "name": "Ph.D. Candidate",
+      "role": "Doctoral Researcher",
+      "focus": "RL-Enhanced Metaheuristics",
+      "initials": "P3",
+      "year": "Year 1",
+      "photo": null
+    },
+    {
+      "name": "M.Sc. Candidate",
+      "role": "Graduate Researcher",
+      "focus": "GA-Based Feature Selection for Medical Data",
+      "initials": "M1",
+      "year": "Year 2",
+      "photo": null
+    },
+    {
+      "name": "M.Sc. Candidate",
+      "role": "Graduate Researcher",
+      "focus": "Decomposition-Based MOEAs",
+      "initials": "M2",
+      "year": "Year 1",
+      "photo": null
+    },
+    {
+      "name": "M.Sc. Candidate",
+      "role": "Graduate Researcher",
+      "focus": "Evolutionary Neural Architecture Search",
+      "initials": "M3",
+      "year": "Year 1",
+      "photo": null
+    },
+    {
+      "name": "Research Assistant",
+      "role": "Undergraduate",
+      "focus": "Algorithm Benchmarking & Visualization",
+      "initials": "RA",
+      "year": "4th Year",
+      "photo": null
+    }
+  ],
+  "alumni": [
+    {
+      "name": "Alumni Placeholder",
+      "degree": "Ph.D.",
+      "yearGraduated": 2023,
+      "thesis": "Adaptive PSO Variants for Real-World Combinatorial Optimization",
+      "nowAt": "Postdoctoral Researcher, University of Waterloo"
+    },
+    {
+      "name": "Alumni Placeholder",
+      "degree": "Ph.D.",
+      "yearGraduated": 2022,
+      "thesis": "Multi-Objective Evolutionary Algorithms for Network Design",
+      "nowAt": "Assistant Professor, Ryerson University"
+    },
+    {
+      "name": "Alumni Placeholder",
+      "degree": "M.Sc.",
+      "yearGraduated": 2023,
+      "thesis": "Feature Selection via Bio-Inspired Metaheuristics in Medical Imaging",
+      "nowAt": "ML Engineer, Toronto"
+    },
+    {
+      "name": "Alumni Placeholder",
+      "degree": "M.Sc.",
+      "yearGraduated": 2022,
+      "thesis": "Swarm Intelligence Approaches to Vehicle Routing",
+      "nowAt": "Software Engineer, Ottawa"
+    },
+    {
+      "name": "Alumni Placeholder",
+      "degree": "M.Sc.",
+      "yearGraduated": 2021,
+      "thesis": "Genetic Programming for Symbolic Regression",
+      "nowAt": "Data Scientist, Montreal"
+    }
+  ]
+}

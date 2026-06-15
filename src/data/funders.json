@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "abbr": "NSERC",
+      "name": "Natural Sciences & Engineering Research Council of Canada"
+    },
+    {
+      "abbr": "Brock University",
+      "name": "Faculty of Mathematics & Science"
+    },
+    {
+      "abbr": "Mitacs",
+      "name": "Mitacs Accelerate Program"
+    },
+    {
+      "abbr": "ORF",
+      "name": "Ontario Research Fund"
+    },
+    {
+      "abbr": "CRC",
+      "name": "Canada Research Chairs Program"
+    }
+  ]
+}

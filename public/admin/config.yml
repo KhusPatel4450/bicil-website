@@ -1,0 +1,236 @@
+# ─────────────────────────────────────────────────────────────────
+# BICIL Website — Decap CMS Configuration
+#
+# SETUP (one-time, done by your developer):
+#   1. Push this project to GitHub
+#   2. Deploy to Vercel (connect the GitHub repo)
+#   3. Replace OWNER/REPO below with your actual GitHub username/repo
+#   4. Create a GitHub OAuth App:
+#        Homepage URL:    https://your-site.vercel.app
+#        Callback URL:    https://api.netlify.com/auth/done
+#   5. Add the Client ID to the app_id field below
+#
+# HOW TO EDIT CONTENT (for Prof. Ombuki-Berman):
+#   1. Go to https://your-site.vercel.app/admin
+#   2. Click "Login with GitHub"
+#   3. Select a collection on the left (Publications, News, etc.)
+#   4. Add, edit, or delete entries using the form
+#   5. Click "Publish" — the site will rebuild automatically (~60 seconds)
+# ─────────────────────────────────────────────────────────────────
+
+local_backend: true   # remove this line before deploying to production
+
+backend:
+  name: github
+  repo: OWNER/REPO            # ← replace with e.g. jsmith/bicil-website
+  branch: main
+  base_url: https://api.netlify.com   # free OAuth proxy, no Netlify account needed
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+# ─── Collections ──────────────────────────────────────────────────
+
+collections:
+
+  # ── Publications ─────────────────────────────────────────────────
+  - name: "publications"
+    label: "📄 Publications"
+    files:
+      - name: "publications"
+        label: "All Publications"
+        file: "src/data/publications.json"
+        fields:
+          - name: "items"
+            label: "Publications"
+            label_singular: "Publication"
+            widget: "list"
+            summary: "{{fields.year}} — {{fields.title}}"
+            fields:
+              - name: "year"
+                label: "Year"
+                widget: "number"
+                value_type: "int"
+                min: 1990
+                max: 2099
+              - name: "title"
+                label: "Paper Title"
+                widget: "string"
+              - name: "authors"
+                label: "Authors (e.g. Ombuki-Berman, B., Smith, J.)"
+                widget: "string"
+              - name: "venue"
+                label: "Journal or Conference Name"
+                widget: "string"
+              - name: "type"
+                label: "Publication Type"
+                widget: "select"
+                options:
+                  - { label: "Journal Article", value: "journal" }
+                  - { label: "Conference Paper", value: "conference" }
+              - name: "doi"
+                label: "DOI Link (optional, e.g. https://doi.org/10.1234/...)"
+                widget: "string"
+                required: false
+                default: ""
+
+  # ── News & Updates ───────────────────────────────────────────────
+  - name: "news"
+    label: "📰 News & Updates"
+    files:
+      - name: "news"
+        label: "All News"
+        file: "src/data/news.json"
+        fields:
+          - name: "items"
+            label: "News Items"
+            label_singular: "News Item"
+            widget: "list"
+            summary: "{{fields.date}} — {{fields.title}}"
+            fields:
+              - name: "date"
+                label: "Date (e.g. May 2024)"
+                widget: "string"
+              - name: "category"
+                label: "Category"
+                widget: "select"
+                options:
+                  - Award
+                  - Publication
+                  - Conference
+                  - New Members
+                  - Collaboration
+                  - Event
+              - name: "title"
+                label: "Headline"
+                widget: "string"
+              - name: "excerpt"
+                label: "Short Description (2–3 sentences)"
+                widget: "text"
+
+  # ── Team ─────────────────────────────────────────────────────────
+  - name: "team"
+    label: "👥 Team"
+    files:
+      - name: "team"
+        label: "Team Members"
+        file: "src/data/team.json"
+        fields:
+          - name: "pi"
+            label: "Principal Investigator"
+            widget: "object"
+            collapsed: false
+            fields:
+              - name: "name"
+                label: "Full Name"
+                widget: "string"
+              - name: "role"
+                label: "Role"
+                widget: "string"
+                default: "Principal Investigator"
+              - name: "title"
+                label: "Title & Department"
+                widget: "string"
+              - name: "bio"
+                label: "Biography"
+                widget: "text"
+              - name: "email"
+                label: "Email Address"
+                widget: "string"
+              - name: "initials"
+                label: "Initials (shown in avatar, max 3 letters)"
+                widget: "string"
+              - name: "photo"
+                label: "Photo (optional — leave blank to show initials)"
+                widget: "image"
+                required: false
+                default: ""
+                hint: "Upload a square headshot. Stored in /uploads. Leave blank to show the gradient avatar."
+              - name: "interests"
+                label: "Research Interests"
+                widget: "list"
+                field:
+                  name: "interest"
+                  label: "Interest"
+                  widget: "string"
+          - name: "students"
+            label: "Students & Research Assistants"
+            label_singular: "Member"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.role}}"
+            fields:
+              - name: "name"
+                label: "Full Name"
+                widget: "string"
+              - name: "role"
+                label: "Role"
+                widget: "select"
+                options:
+                  - { label: "Doctoral Researcher (PhD)", value: "Doctoral Researcher" }
+                  - { label: "Graduate Researcher (MSc)", value: "Graduate Researcher" }
+                  - { label: "Undergraduate / Research Assistant", value: "Undergraduate" }
+              - name: "focus"
+                label: "Research Focus"
+                widget: "string"
+              - name: "initials"
+                label: "Initials (shown in avatar, max 2–3 letters)"
+                widget: "string"
+              - name: "year"
+                label: "Year or Level (e.g. Year 2, 4th Year)"
+                widget: "string"
+              - name: "photo"
+                label: "Photo (optional — leave blank to show initials)"
+                widget: "image"
+                required: false
+                default: ""
+                hint: "Upload a square headshot. Leave blank to show the gradient avatar."
+          - name: "alumni"
+            label: "Alumni"
+            label_singular: "Alumnus / Alumna"
+            widget: "list"
+            summary: "{{fields.yearGraduated}} — {{fields.name}} ({{fields.degree}})"
+            fields:
+              - name: "name"
+                label: "Full Name"
+                widget: "string"
+              - name: "degree"
+                label: "Degree Earned"
+                widget: "select"
+                options:
+                  - { label: "PhD", value: "Ph.D." }
+                  - { label: "MSc", value: "M.Sc." }
+                  - { label: "BSc", value: "B.Sc." }
+              - name: "yearGraduated"
+                label: "Year Graduated"
+                widget: "number"
+                value_type: "int"
+                min: 1990
+                max: 2099
+              - name: "thesis"
+                label: "Thesis Title"
+                widget: "string"
+              - name: "nowAt"
+                label: "Current Position"
+                widget: "string"
+                hint: "e.g. Postdoctoral Researcher, University of Waterloo"
+
+  # ── Funding & Partners ───────────────────────────────────────────
+  - name: "funders"
+    label: "🏛️ Funding & Partners"
+    files:
+      - name: "funders"
+        label: "Funding Partners"
+        file: "src/data/funders.json"
+        fields:
+          - name: "items"
+            label: "Partners"
+            label_singular: "Partner"
+            widget: "list"
+            summary: "{{fields.abbr}} — {{fields.name}}"
+            fields:
+              - name: "abbr"
+                label: "Short Name / Abbreviation (e.g. NSERC)"
+                widget: "string"
+              - name: "name"
+                label: "Full Name"
+                widget: "string"
