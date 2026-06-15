@@ -8,9 +8,15 @@
   </head>
   <body>
     <script>
-      window.addEventListener('message', function(e) {
-        console.log('[ADMIN] message received:', e.data, 'origin:', e.origin);
-      });
+      // Receive auth token from OAuth popup via BroadcastChannel,
+      // then re-dispatch as a window message so Decap CMS picks it up.
+      var _bc = new BroadcastChannel('decap_cms_auth');
+      _bc.onmessage = function(e) {
+        if (e.data && e.data.msg) {
+          window.postMessage(e.data.msg, window.location.origin);
+        }
+        _bc.close();
+      };
     </script>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </body>
