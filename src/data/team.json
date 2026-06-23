@@ -17,38 +17,44 @@
   },
   "students": [
     {
+      "interests": [
+        "Neuroevolution",
+        "Multi-objective Learning",
+        "Gradient-free Training",
+        "Dimensionality Reduction",
+        "Subspace Optimization"
+      ],
       "name": "Rasa Khosrowshahli",
       "slug": "rasa-khosrowshahli",
-      "email": "",
-      "role": "Doctoral Researcher",
-      "focus": "Multi-Objective PSO for Dynamic Environments",
       "initials": "RK",
-      "year": "Ph.D. Candidate",
+      "hobbies": [
+        "Volleyball",
+        "Football (Soccer)",
+        "Running",
+        "Board Games"
+      ],
       "photo": "/uploads/rasa.jpeg",
-      "interests": [],
-      "hobbies": [],
+      "role": "Doctoral Researcher",
+      "focus": "I am a CS PhD student at Brock University. I became interested in evolutionary algorithms and their applications in ML. My work focuses on neuroevolution with parameter efficiency through dimensionality reduction and subspace optimization.\\n Previously, I attended Ontario Tech University, where I earned Master's degree in Computer Engineering in one-year.\\n In my leisure time, I enjoy playing volleyball, football (soccer), running early in the morning, and playing board games with friends.",
       "links": [
         {
           "label": "Personal Website",
           "url": "https://rkhosrowshahi.github.io/"
         }
-      ]
+      ],
+      "email": "",
+      "year": "Ph.D. Candidate"
     },
     {
-      "name": "Michael Eshun",
-      "slug": "michael-eshun",
-      "email": "",
-      "role": "Graduate Researcher",
-      "focus": "My research interests lie at the intersection of artificial intelligence, optimization, healthcare logistics, and software engineering. I am particularly interested in combinatorial optimization problems such as vehicle routing, scheduling, and resource allocation, with a focus on healthcare applications like the Home Health Care Routing and Scheduling Problem. My work explores the use of metaheuristic algorithms, including genetic algorithms, multi-objective optimization, and hybrid search methods, to solve complex real-world decision-making problems. I am also interested in applied AI, data-driven systems, software development, and building scalable digital platforms that improve operational efficiency and user experience.",
-      "initials": "ME",
-      "year": "Year 2",
-      "photo": "/uploads/img_1677.jpeg",
       "interests": [
         "AI",
         "Optimization",
         "Healthcare Logistics",
         "Software Engineering"
       ],
+      "name": "Michael Eshun",
+      "slug": "michael-eshun",
+      "initials": "ME",
       "hobbies": [
         "building software projects",
         "learning new technologies",
@@ -57,63 +63,59 @@
         "engaging in church activities",
         "spiritual growth"
       ],
-      "links": []
+      "photo": "/uploads/img_1677.jpeg",
+      "role": "Graduate Researcher",
+      "focus": "My research interests lie at the intersection of artificial intelligence, optimization, healthcare logistics, and software engineering. I am particularly interested in combinatorial optimization problems such as vehicle routing, scheduling, and resource allocation, with a focus on healthcare applications like the Home Health Care Routing and Scheduling Problem. My work explores the use of metaheuristic algorithms, including genetic algorithms, multi-objective optimization, and hybrid search methods, to solve complex real-world decision-making problems. I am also interested in applied AI, data-driven systems, software development, and building scalable digital platforms that improve operational efficiency and user experience.",
+      "links": [],
+      "email": "",
+      "year": "Year 2"
     },
     {
-      "name": "Kaija Sproxton",
-      "slug": "kaija-sproxton",
-      "email": "",
-      "role": "Graduate Researcher",
-      "focus": "She is interested in Evolutionary Algorithms for feature selection and dimensionality reduction, with a specific interest in integrating similarity-aware approaches. She aims to explore how human-in-the-loop methodologies can further optimize and refine these evolutionary processes.",
-      "initials": "KS",
-      "year": "Year 2",
-      "photo": "/uploads/kaijasproxton_headshot.png",
       "interests": [
         "Evolutionary Algorithms",
         "Feature Selection",
         "Dimensionality Reduction",
         "Similarity-aware Approaches"
       ],
+      "name": "Kaija Sproxton",
+      "slug": "kaija-sproxton",
+      "initials": "KS",
       "hobbies": [
         "Kung Fu",
         "Sailing",
         "Retro Computing",
         "Gardening"
       ],
-      "links": []
+      "photo": "/uploads/kaijasproxton_headshot.png",
+      "role": "Graduate Researcher",
+      "focus": "She is interested in Evolutionary Algorithms for feature selection and dimensionality reduction, with a specific interest in integrating similarity-aware approaches. She aims to explore how human-in-the-loop methodologies can further optimize and refine these evolutionary processes.",
+      "links": [],
+      "email": "",
+      "year": "Year 2"
     },
     {
-      "name": "Dimitar Indovski",
-      "slug": "dimitar-indovski",
-      "email": "",
-      "role": "Graduate Researcher",
-      "focus": "He is interested in Agentic AI, Robotics, and Optimizing Training and Inference for Constrained Hardware. He is currently working on a project to optimize training and inference for constrained hardware.",
-      "initials": "DI",
-      "year": "Year 1",
-      "photo": "/uploads/di_portrait.jpg",
       "interests": [
         "Agentic AI",
         "Robotics",
         "Optimizing Training and Inference for Constrained Hardware"
       ],
+      "name": "Dimitar Indovski",
+      "slug": "dimitar-indovski",
+      "initials": "DI",
       "hobbies": [
         "Kung Fu",
         "Sailing",
         "Retro Computing",
         "Gardening"
       ],
-      "links": []
+      "photo": "/uploads/di_portrait.jpg",
+      "role": "Graduate Researcher",
+      "focus": "He is interested in Agentic AI, Robotics, and Optimizing Training and Inference for Constrained Hardware. He is currently working on a project to optimize training and inference for constrained hardware.",
+      "links": [],
+      "email": "",
+      "year": "Year 1"
     },
     {
-      "name": "Alec Petrovic",
-      "slug": "alec-petrovic",
-      "email": "",
-      "photoPosition": "object-center",
-      "role": "Undergraduate",
-      "focus": "His research interests focus on making meta-heuristic optimization more efficient and practical, by understanding how parameter configurations affect algorithm performance and using surrogate models to accelerate tuning. Meta-heuristic optimization algorithms (Differential Evolution and Particle Swarm Optimization) and their search dynamics. Parameter tuning and configuration using the Parameter Configuration Landscape (PCL). Surrogate modeling with Artificial Neural Networks to approximate the PCL and reduce computational cost.",
-      "initials": "AP",
-      "year": "4th Year",
-      "photo": "/uploads/alec_photo.jpeg",
       "interests": [
         "Meta-heuristic optimization",
         "Parameter tuning",
@@ -121,13 +123,22 @@
         "Artificial Neural Networks",
         "Parameter Configuration Landscape"
       ],
+      "name": "Alec Petrovic",
+      "slug": "alec-petrovic",
+      "initials": "AP",
       "hobbies": [
         "Golfing",
         "Hiking",
         "Swimming",
         "Playing Pool"
       ],
-      "links": []
+      "photo": "/uploads/alec_photo.jpeg",
+      "role": "Undergraduate",
+      "focus": "His research interests focus on making meta-heuristic optimization more efficient and practical, by understanding how parameter configurations affect algorithm performance and using surrogate models to accelerate tuning. Meta-heuristic optimization algorithms (Differential Evolution and Particle Swarm Optimization) and their search dynamics. Parameter tuning and configuration using the Parameter Configuration Landscape (PCL). Surrogate modeling with Artificial Neural Networks to approximate the PCL and reduce computational cost.",
+      "links": [],
+      "photoPosition": "object-center",
+      "email": "",
+      "year": "4th Year"
     }
   ],
   "alumni": [
