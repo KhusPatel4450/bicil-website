@@ -33,28 +33,6 @@
       "year": "Ph.D. Candidate"
     },
     {
-      "interests": [],
-      "name": "Ph.D. Candidate",
-      "initials": "P2",
-      "hobbies": [],
-      "photo": null,
-      "role": "Doctoral Researcher",
-      "focus": "Swarm Robotics & Task Allocation",
-      "links": [],
-      "year": "Year 2"
-    },
-    {
-      "interests": [],
-      "name": "Ph.D. Candidate",
-      "initials": "P3",
-      "hobbies": [],
-      "photo": null,
-      "role": "Doctoral Researcher",
-      "focus": "RL-Enhanced Metaheuristics",
-      "links": [],
-      "year": "Year 1"
-    },
-    {
       "interests": [
         "AI",
         "Optimization",
