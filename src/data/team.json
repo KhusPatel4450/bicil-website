@@ -55,13 +55,25 @@
       "year": "Year 1"
     },
     {
-      "interests": [],
-      "name": "M.Sc. Candidate",
-      "initials": "M1",
-      "hobbies": [],
-      "photo": null,
+      "interests": [
+        "AI",
+        "Optimization",
+        "Healthcare Logistics",
+        "Software Engineering"
+      ],
+      "name": "Michael Eshun",
+      "initials": "ME",
+      "hobbies": [
+        "building software projects",
+        "learning new technologies",
+        "watching and debating football",
+        "studying the Bible",
+        " engaging in church activities",
+        "spiritual growth"
+      ],
+      "photo": "/uploads/img_1677.jpeg",
       "role": "Graduate Researcher",
-      "focus": "GA-Based Feature Selection for Medical Data",
+      "focus": "My research interests lie at the intersection of artificial intelligence, optimization, healthcare logistics, and software engineering. I am particularly interested in combinatorial optimization problems such as vehicle routing, scheduling, and resource allocation, with a focus on healthcare applications like the Home Health Care Routing and Scheduling Problem. My work explores the use of metaheuristic algorithms, including genetic algorithms, multi-objective optimization, and hybrid search methods, to solve complex real-world decision-making problems. I am also interested in applied AI, data-driven systems, software development, and building scalable digital platforms that improve operational efficiency and user experience. ",
       "links": [],
       "year": "Year 2"
     },
