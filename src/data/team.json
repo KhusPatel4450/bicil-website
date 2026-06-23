@@ -78,15 +78,25 @@
       "year": "Year 2"
     },
     {
-      "interests": [],
-      "name": "M.Sc. Candidate",
-      "initials": "M2",
-      "hobbies": [],
-      "photo": null,
+      "interests": [
+        "Evolutionary Algorithms",
+        "Feature Selection",
+        "Dimensionality Reduction",
+        "Similarity-aware Approaches"
+      ],
+      "name": "Kaija Sproxton",
+      "initials": "KS",
+      "hobbies": [
+        "Kung Fu",
+        "Sailing",
+        "Retro Computing",
+        "Gardening"
+      ],
+      "photo": "/uploads/kaijasproxton_headshot.png",
       "role": "Graduate Researcher",
-      "focus": "Decomposition-Based MOEAs",
+      "focus": "She is interested in Evolutionary Algorithms for feature selection and dimensionality reduction, with a specific interest in integrating similarity-aware approaches. She aims to explore how human-in-the-loop methodologies can further optimize and refine these evolutionary processes.",
       "links": [],
-      "year": "Year 1"
+      "year": "Year 2"
     },
     {
       "interests": [
