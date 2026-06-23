@@ -166,26 +166,9 @@ export default function PeopleContent() {
                 <p className="text-[#4BBFCF] text-sm font-medium mb-1">{PI.role}</p>
                 <p className="text-white/55 text-xs font-mono mb-6">{PI.title}</p>
                 <p className="text-white/80 leading-relaxed mb-6 max-w-2xl">{PI.bio}</p>
-                <a
-                  href={`mailto:${PI.email}`}
-                  className="inline-flex items-center gap-2 text-white/50 hover:text-white transition-colors text-sm focus:outline-none focus-visible:underline"
-                >
-                  <svg
-                    className="w-4 h-4"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1.5}
-                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                    />
-                  </svg>
-                  {PI.email}
-                </a>
+                <p className="text-white/50 text-sm font-mono">
+                  ✉&nbsp; {PI.email.replace("@", " [at] ").replace(/\./g, " [dot] ")}
+                </p>
               </div>
             </div>
           </motion.div>

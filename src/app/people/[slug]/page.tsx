@@ -116,7 +116,7 @@ export default async function MemberPage({
                     rel="noopener noreferrer"
                     className="text-[#4BBFCF] hover:text-white text-sm transition-colors focus:outline-none focus-visible:underline"
                   >
-                    {link.label}
+                    {link.url.replace(/^https?:\/\//, "")}
                   </a>
                 ))}
               </div>
