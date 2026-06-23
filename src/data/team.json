@@ -17,86 +17,97 @@
   },
   "students": [
     {
+      "interests": [],
       "name": "Rasa Khosrowshahli",
+      "initials": "RK",
+      "hobbies": [],
+      "photo": "/uploads/rasa.jpeg",
       "role": "Doctoral Researcher",
       "focus": "Multi-Objective PSO for Dynamic Environments",
-      "initials": "RK",
-      "year": "Ph.D. Candidate",
-      "photo": "/uploads/rasa.jpeg",
-      "interests": [],
-      "hobbies": [],
       "links": [
         {
           "label": "Personal Website",
           "url": "https://rkhosrowshahi.github.io/"
         }
-      ]
+      ],
+      "year": "Ph.D. Candidate"
     },
     {
+      "interests": [],
       "name": "Ph.D. Candidate",
+      "initials": "P2",
+      "hobbies": [],
+      "photo": null,
       "role": "Doctoral Researcher",
       "focus": "Swarm Robotics & Task Allocation",
-      "initials": "P2",
-      "year": "Year 2",
-      "photo": null,
-      "interests": [],
-      "hobbies": [],
-      "links": []
+      "links": [],
+      "year": "Year 2"
     },
     {
+      "interests": [],
       "name": "Ph.D. Candidate",
+      "initials": "P3",
+      "hobbies": [],
+      "photo": null,
       "role": "Doctoral Researcher",
       "focus": "RL-Enhanced Metaheuristics",
-      "initials": "P3",
-      "year": "Year 1",
-      "photo": null,
-      "interests": [],
-      "hobbies": [],
-      "links": []
+      "links": [],
+      "year": "Year 1"
     },
     {
+      "interests": [],
       "name": "M.Sc. Candidate",
+      "initials": "M1",
+      "hobbies": [],
+      "photo": null,
       "role": "Graduate Researcher",
       "focus": "GA-Based Feature Selection for Medical Data",
-      "initials": "M1",
-      "year": "Year 2",
-      "photo": null,
-      "interests": [],
-      "hobbies": [],
-      "links": []
+      "links": [],
+      "year": "Year 2"
     },
     {
+      "interests": [],
       "name": "M.Sc. Candidate",
+      "initials": "M2",
+      "hobbies": [],
+      "photo": null,
       "role": "Graduate Researcher",
       "focus": "Decomposition-Based MOEAs",
-      "initials": "M2",
-      "year": "Year 1",
-      "photo": null,
-      "interests": [],
-      "hobbies": [],
-      "links": []
+      "links": [],
+      "year": "Year 1"
     },
     {
+      "interests": [],
       "name": "M.Sc. Candidate",
+      "initials": "M3",
+      "hobbies": [],
+      "photo": null,
       "role": "Graduate Researcher",
       "focus": "Evolutionary Neural Architecture Search",
-      "initials": "M3",
-      "year": "Year 1",
-      "photo": null,
-      "interests": [],
-      "hobbies": [],
-      "links": []
+      "links": [],
+      "year": "Year 1"
     },
     {
-      "name": "Research Assistant",
+      "interests": [
+        "Meta-heuristic optimization",
+        "Parameter tuning",
+        "Surrogate modeling",
+        "Artificial Neural Networks",
+        "Parameter Configuration Landscape"
+      ],
+      "name": "Alec Petrovic",
+      "initials": "AP",
+      "hobbies": [
+        "Golfing",
+        "Hiking",
+        "Swimming",
+        "Playing Pool"
+      ],
+      "photo": "/uploads/alec_photo.jpeg",
       "role": "Undergraduate",
-      "focus": "Algorithm Benchmarking & Visualization",
-      "initials": "RA",
-      "year": "4th Year",
-      "photo": null,
-      "interests": [],
-      "hobbies": [],
-      "links": []
+      "focus": "His research interests focus on making meta-heuristic optimization more efficient and practical, by understanding how parameter configurations affect algorithm performance and using surrogate models to accelerate tuning. Meta-heuristic optimization algorithms (Differential Evolution and Particle Swarm Optimization) and their search dynamics Parameter tuning and configuration using the Parameter Configuration Landscape (PCL) Surrogate modeling with Artificial Neural Networks to approximate the PCL and reduce computational cost",
+      "links": [],
+      "year": "4th Year"
     }
   ],
   "alumni": [
