@@ -23,6 +23,8 @@
       "initials": "RK",
       "year": "Ph.D. Candidate",
       "photo": "/uploads/rasa.jpeg",
+      "interests": [],
+      "hobbies": [],
       "links": [
         {
           "label": "Personal Website",
@@ -37,6 +39,8 @@
       "initials": "P2",
       "year": "Year 2",
       "photo": null,
+      "interests": [],
+      "hobbies": [],
       "links": []
     },
     {
@@ -46,6 +50,8 @@
       "initials": "P3",
       "year": "Year 1",
       "photo": null,
+      "interests": [],
+      "hobbies": [],
       "links": []
     },
     {
@@ -55,6 +61,8 @@
       "initials": "M1",
       "year": "Year 2",
       "photo": null,
+      "interests": [],
+      "hobbies": [],
       "links": []
     },
     {
@@ -64,6 +72,8 @@
       "initials": "M2",
       "year": "Year 1",
       "photo": null,
+      "interests": [],
+      "hobbies": [],
       "links": []
     },
     {
@@ -73,6 +83,8 @@
       "initials": "M3",
       "year": "Year 1",
       "photo": null,
+      "interests": [],
+      "hobbies": [],
       "links": []
     },
     {
@@ -82,6 +94,8 @@
       "initials": "RA",
       "year": "4th Year",
       "photo": null,
+      "interests": [],
+      "hobbies": [],
       "links": []
     }
   ],

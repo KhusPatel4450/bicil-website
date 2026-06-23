@@ -182,6 +182,22 @@ collections:
                 required: false
                 default: ""
                 hint: "Upload a square headshot. Leave blank to show the gradient avatar."
+              - name: "interests"
+                label: "Research Interests"
+                widget: "list"
+                required: false
+                field:
+                  name: "interest"
+                  label: "Interest"
+                  widget: "string"
+              - name: "hobbies"
+                label: "Hobbies"
+                widget: "list"
+                required: false
+                field:
+                  name: "hobby"
+                  label: "Hobby"
+                  widget: "string"
               - name: "links"
                 label: "Links (LinkedIn, website, GitHub, etc.)"
                 widget: "list"

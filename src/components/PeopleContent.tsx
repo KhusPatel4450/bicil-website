@@ -208,7 +208,7 @@ export default function PeopleContent() {
             <h2 className="text-3xl font-bold text-white">Active Members</h2>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {STUDENTS.map((s, i) => (
               <motion.div
                 key={`${s.initials}-${i}`}
@@ -218,6 +218,7 @@ export default function PeopleContent() {
                 transition={{ duration: 0.4, delay: i * 0.06 }}
                 className="group border border-white/8 p-6 hover:border-white/18 hover:bg-white/[0.03] transition-all duration-200"
               >
+                {/* Photo */}
                 <div className="mb-4">
                   <InitialsAvatar
                     initials={s.initials}
@@ -225,20 +226,58 @@ export default function PeopleContent() {
                     size="sm"
                   />
                 </div>
-                <p className="text-white/75 font-semibold text-sm mb-1">{s.name}</p>
-                <p className="text-[#4BBFCF]/65 text-xs font-mono mb-2">
+
+                <p className="text-white/75 font-semibold text-sm mb-0.5">{s.name}</p>
+                <p className="text-[#4BBFCF]/65 text-xs font-mono mb-3">
                   {s.role === "Doctoral Researcher"
                     ? "PhD"
                     : s.role === "Graduate Researcher"
                     ? "MSc"
                     : "Undergrad"}
                 </p>
-                {s.focus && (
-                  <p className="text-white/55 text-xs leading-relaxed mb-3">{s.focus}</p>
+
+                {/* Research Interests */}
+                {s.interests && s.interests.length > 0 && (
+                  <div className="mb-3">
+                    <p className="text-[9px] font-mono uppercase tracking-widest text-white/35 mb-1.5">
+                      Research Interests
+                    </p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {(s.interests as string[]).map((item) => (
+                        <span
+                          key={item}
+                          className="text-[10px] text-white/60 border border-white/10 px-2 py-0.5"
+                        >
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 )}
+
+                {/* Hobbies */}
+                {s.hobbies && s.hobbies.length > 0 && (
+                  <div className="mb-3">
+                    <p className="text-[9px] font-mono uppercase tracking-widest text-white/35 mb-1.5">
+                      Hobbies
+                    </p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {(s.hobbies as string[]).map((item) => (
+                        <span
+                          key={item}
+                          className="text-[10px] text-white/60 border border-white/10 px-2 py-0.5"
+                        >
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Links */}
                 {s.links && s.links.length > 0 && (
-                  <div className="flex flex-wrap gap-2">
-                    {s.links.map((link: { label: string; url: string }) => (
+                  <div className="flex flex-wrap gap-2 mt-1">
+                    {(s.links as { label: string; url: string }[]).map((link) => (
                       <a
                         key={link.url}
                         href={link.url}
