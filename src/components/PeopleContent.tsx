@@ -255,7 +255,7 @@ export default function PeopleContent() {
                           src={s.photo}
                           alt=""
                           aria-hidden="true"
-                          className="absolute inset-0 w-full h-full object-cover object-top"
+                          className="absolute inset-0 w-full h-full object-contain"
                           loading="lazy"
                         />
                       ) : (
