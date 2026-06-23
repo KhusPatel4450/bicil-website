@@ -77,13 +77,20 @@
       "year": "Year 1"
     },
     {
-      "interests": [],
-      "name": "M.Sc. Candidate",
-      "initials": "M3",
-      "hobbies": [],
-      "photo": null,
+      "interests": [
+        "Agentic AI, Robotics, Optimizing Training and Inference for Constrained Hardware"
+      ],
+      "name": "Dimitar Indovski",
+      "initials": "DI",
+      "hobbies": [
+        "Kung Fu",
+        "Sailing",
+        "Retro Computing",
+        "Gardening"
+      ],
+      "photo": "/uploads/di_portrait.jpg",
       "role": "Graduate Researcher",
-      "focus": "Evolutionary Neural Architecture Search",
+      "focus": "He is interested in Agentic AI, Robotics, and Optimizing Training and Inference for Constrained Hardware. He is currently working on a project to optimize training and inference for constrained hardware.",
       "links": [],
       "year": "Year 1"
     },
