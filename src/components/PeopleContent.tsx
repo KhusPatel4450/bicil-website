@@ -241,7 +241,7 @@ export default function PeopleContent() {
                         src={s.photo}
                         alt=""
                         aria-hidden="true"
-                        className="w-full h-full object-cover object-top"
+                        className={`w-full h-full object-cover ${(s as typeof s & { photoPosition?: string }).photoPosition ?? "object-top"}`}
                         loading="lazy"
                       />
                     ) : (

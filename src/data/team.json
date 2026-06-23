@@ -108,6 +108,7 @@
       "name": "Alec Petrovic",
       "slug": "alec-petrovic",
       "email": "",
+      "photoPosition": "object-center",
       "role": "Undergraduate",
       "focus": "His research interests focus on making meta-heuristic optimization more efficient and practical, by understanding how parameter configurations affect algorithm performance and using surrogate models to accelerate tuning. Meta-heuristic optimization algorithms (Differential Evolution and Particle Swarm Optimization) and their search dynamics. Parameter tuning and configuration using the Parameter Configuration Landscape (PCL). Surrogate modeling with Artificial Neural Networks to approximate the PCL and reduce computational cost.",
       "initials": "AP",
