@@ -208,90 +208,114 @@ export default function PeopleContent() {
             <h2 className="text-3xl font-bold text-white">Active Members</h2>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {STUDENTS.map((s, i) => (
-              <motion.div
-                key={`${s.initials}-${i}`}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-40px" }}
-                transition={{ duration: 0.4, delay: i * 0.06 }}
-                className="group border border-white/8 p-6 hover:border-white/18 hover:bg-white/[0.03] transition-all duration-200"
-              >
-                {/* Photo */}
-                <div className="mb-4">
-                  <InitialsAvatar
-                    initials={s.initials}
-                    photo={s.photo}
-                    size="sm"
-                  />
-                </div>
+          <div className="grid sm:grid-cols-2 gap-5">
+            {STUDENTS.map((s, i) => {
+              const degreeLabel =
+                s.role === "Doctoral Researcher"
+                  ? "PhD Researcher"
+                  : s.role === "Graduate Researcher"
+                  ? "MSc Researcher"
+                  : "Undergraduate Researcher";
 
-                <p className="text-white/75 font-semibold text-sm mb-0.5">{s.name}</p>
-                <p className="text-[#4BBFCF]/65 text-xs font-mono mb-3">
-                  {s.role === "Doctoral Researcher"
-                    ? "PhD"
-                    : s.role === "Graduate Researcher"
-                    ? "MSc"
-                    : "Undergrad"}
-                </p>
-
-                {/* Research Interests */}
-                {s.interests && s.interests.length > 0 && (
-                  <div className="mb-3">
-                    <p className="text-[9px] font-mono uppercase tracking-widest text-white/35 mb-1.5">
-                      Research Interests
-                    </p>
-                    <div className="flex flex-wrap gap-1.5">
-                      {(s.interests as string[]).map((item) => (
-                        <span
-                          key={item}
-                          className="text-[10px] text-white/60 border border-white/10 px-2 py-0.5"
-                        >
-                          {item}
+              return (
+                <motion.div
+                  key={`${s.initials}-${i}`}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-40px" }}
+                  transition={{ duration: 0.4, delay: i * 0.06 }}
+                  className="group border border-white/8 hover:border-white/18 hover:bg-white/[0.02] transition-all duration-200 flex overflow-hidden min-h-44"
+                >
+                  {/* Photo column */}
+                  <div className="w-32 flex-shrink-0 self-stretch relative bg-[#060f1c]">
+                    {s.photo ? (
+                      <img
+                        src={s.photo}
+                        alt=""
+                        aria-hidden="true"
+                        className="absolute inset-0 w-full h-full object-cover"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#1a3a5c] to-[#0d2035]">
+                        <span className="text-white/65 text-sm font-mono font-bold">
+                          {s.initials}
                         </span>
-                      ))}
-                    </div>
+                      </div>
+                    )}
                   </div>
-                )}
 
-                {/* Hobbies */}
-                {s.hobbies && s.hobbies.length > 0 && (
-                  <div className="mb-3">
-                    <p className="text-[9px] font-mono uppercase tracking-widest text-white/35 mb-1.5">
-                      Hobbies
+                  {/* Info column */}
+                  <div className="flex-1 p-5 min-w-0">
+                    <p className="text-white/90 font-semibold text-sm mb-0.5">{s.name}</p>
+                    <p className="text-[#4BBFCF]/70 text-[11px] font-mono mb-2">
+                      {degreeLabel}
                     </p>
-                    <div className="flex flex-wrap gap-1.5">
-                      {(s.hobbies as string[]).map((item) => (
-                        <span
-                          key={item}
-                          className="text-[10px] text-white/60 border border-white/10 px-2 py-0.5"
-                        >
-                          {item}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                )}
 
-                {/* Links */}
-                {s.links && s.links.length > 0 && (
-                  <div className="flex flex-wrap gap-2 mt-1">
-                    {(s.links as { label: string; url: string }[]).map((link) => (
-                      <a
-                        key={link.url}
-                        href={link.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-[10px] font-mono text-white/45 hover:text-[#4BBFCF] border border-white/10 hover:border-[#4BBFCF]/30 px-2 py-0.5 transition-colors"
-                      >
-                        {link.label}
-                      </a>
-                    ))}
+                    {s.focus && (
+                      <p className="text-white/50 text-[11px] leading-relaxed mb-3">
+                        {s.focus}
+                      </p>
+                    )}
+
+                    {/* Research Interests */}
+                    {s.interests && (s.interests as string[]).length > 0 && (
+                      <div className="mb-2.5">
+                        <p className="text-[9px] font-mono uppercase tracking-widest text-white/30 mb-1.5">
+                          Interests
+                        </p>
+                        <div className="flex flex-wrap gap-1">
+                          {(s.interests as string[]).map((item) => (
+                            <span
+                              key={item}
+                              className="text-[10px] text-white/55 border border-white/10 px-1.5 py-0.5"
+                            >
+                              {item}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Hobbies */}
+                    {s.hobbies && (s.hobbies as string[]).length > 0 && (
+                      <div className="mb-2.5">
+                        <p className="text-[9px] font-mono uppercase tracking-widest text-white/30 mb-1.5">
+                          Hobbies
+                        </p>
+                        <div className="flex flex-wrap gap-1">
+                          {(s.hobbies as string[]).map((item) => (
+                            <span
+                              key={item}
+                              className="text-[10px] text-white/55 border border-white/10 px-1.5 py-0.5"
+                            >
+                              {item}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Links */}
+                    {s.links && (s.links as { label: string; url: string }[]).length > 0 && (
+                      <div className="flex flex-wrap gap-1.5 mt-1">
+                        {(s.links as { label: string; url: string }[]).map((link) => (
+                          <a
+                            key={link.url}
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-[10px] font-mono text-white/45 hover:text-[#4BBFCF] border border-white/10 hover:border-[#4BBFCF]/30 px-2 py-0.5 transition-colors"
+                          >
+                            {link.label}
+                          </a>
+                        ))}
+                      </div>
+                    )}
                   </div>
-                )}
-              </motion.div>
-            ))}
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>
