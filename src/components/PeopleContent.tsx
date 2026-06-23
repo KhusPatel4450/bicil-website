@@ -1,7 +1,6 @@
 "use client";
 
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import teamData from "@/data/team.json";
 
@@ -54,23 +53,7 @@ function InitialsAvatar({
   );
 }
 
-const slideVariants = {
-  enter: (dir: number) => ({ x: dir > 0 ? 60 : -60, opacity: 0 }),
-  center: { x: 0, opacity: 1 },
-  exit: (dir: number) => ({ x: dir > 0 ? -60 : 60, opacity: 0 }),
-};
-
 export default function PeopleContent() {
-  const [activeMember, setActiveMember] = useState(0);
-  const [slideDir, setSlideDir] = useState(1);
-
-  const goTo = (index: number) => {
-    setSlideDir(index > activeMember ? 1 : -1);
-    setActiveMember(index);
-  };
-  const prev = () => goTo((activeMember - 1 + STUDENTS.length) % STUDENTS.length);
-  const next = () => goTo((activeMember + 1) % STUDENTS.length);
-
   const phdCount = STUDENTS.filter((s) => s.role === "Doctoral Researcher").length;
   const mscCount = STUDENTS.filter((s) => s.role === "Graduate Researcher").length;
   const raCount = STUDENTS.filter((s) => s.role === "Undergraduate").length;
@@ -209,7 +192,7 @@ export default function PeopleContent() {
         </div>
       </section>
 
-      {/* Current Members — Showcase Carousel */}
+      {/* Current Members — Clickable Grid */}
       <section className="py-16 bg-[#091628] border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
@@ -225,176 +208,70 @@ export default function PeopleContent() {
             <h2 className="text-3xl font-bold text-white">Active Members</h2>
           </motion.div>
 
-          {/* Carousel */}
-          <div className="border border-white/8 overflow-hidden">
-            <AnimatePresence mode="wait" custom={slideDir}>
-              {(() => {
-                const s = STUDENTS[activeMember];
-                const degreeLabel =
-                  s.role === "Doctoral Researcher"
-                    ? "PhD Researcher"
-                    : s.role === "Graduate Researcher"
-                    ? "MSc Researcher"
-                    : "Undergraduate Researcher";
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            {STUDENTS.map((s, i) => {
+              const slug = (s as typeof s & { slug: string }).slug;
+              const isPlaceholder =
+                s.name === "Ph.D. Candidate" ||
+                s.name === "M.Sc. Candidate" ||
+                s.name === "Research Assistant";
+              const degLabel =
+                s.role === "Doctoral Researcher"
+                  ? "PhD"
+                  : s.role === "Graduate Researcher"
+                  ? "MSc"
+                  : "Undergrad";
 
-                return (
-                  <motion.div
-                    key={activeMember}
-                    custom={slideDir}
-                    variants={slideVariants}
-                    initial="enter"
-                    animate="center"
-                    exit="exit"
-                    transition={{ duration: 0.32, ease: [0.25, 0.1, 0.25, 1] }}
-                    className="flex flex-col md:flex-row"
-                  >
-                    {/* Photo */}
-                    <div className="h-64 md:h-auto md:w-72 lg:w-80 flex-shrink-0 md:self-stretch relative bg-[#060f1c]">
-                      {s.photo ? (
-                        <img
-                          src={s.photo}
-                          alt=""
-                          aria-hidden="true"
-                          className="absolute inset-0 w-full h-full object-contain"
-                          loading="lazy"
-                        />
-                      ) : (
-                        <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#1a3a5c] to-[#0d2035]">
-                          <span className="text-4xl font-mono font-bold text-white/25">
-                            {s.initials}
-                          </span>
-                        </div>
-                      )}
-                    </div>
-
-                    {/* Info */}
-                    <div className="flex-1 p-7 lg:p-10 flex flex-col justify-center min-h-72">
-                      <p className="text-[10px] font-mono tracking-[0.2em] text-white/30 uppercase mb-4">
-                        {activeMember + 1} / {STUDENTS.length}
-                      </p>
-                      <h3 className="text-2xl lg:text-3xl font-bold text-white mb-1">
-                        {s.name}
-                      </h3>
-                      <p className="text-[#4BBFCF] text-sm font-mono mb-5">{degreeLabel}</p>
-
-                      {s.focus && (
-                        <p className="text-white/60 text-sm leading-relaxed mb-6 max-w-lg">
-                          {s.focus}
-                        </p>
-                      )}
-
-                      {/* Research Interests */}
-                      {s.interests && (s.interests as string[]).length > 0 && (
-                        <div className="mb-4">
-                          <p className="text-[9px] font-mono uppercase tracking-widest text-white/35 mb-2">
-                            Research Interests
-                          </p>
-                          <div className="flex flex-wrap gap-2">
-                            {(s.interests as string[]).map((item) => (
-                              <span
-                                key={item}
-                                className="text-[11px] text-white/60 border border-white/12 px-2.5 py-1"
-                              >
-                                {item}
-                              </span>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-
-                      {/* Hobbies */}
-                      {s.hobbies && (s.hobbies as string[]).length > 0 && (
-                        <div className="mb-4">
-                          <p className="text-[9px] font-mono uppercase tracking-widest text-white/35 mb-2">
-                            Hobbies
-                          </p>
-                          <div className="flex flex-wrap gap-2">
-                            {(s.hobbies as string[]).map((item) => (
-                              <span
-                                key={item}
-                                className="text-[11px] text-white/60 border border-white/12 px-2.5 py-1"
-                              >
-                                {item}
-                              </span>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-
-                      {/* Links */}
-                      {s.links && (s.links as { label: string; url: string }[]).length > 0 && (
-                        <div className="flex flex-wrap gap-2 mt-1">
-                          {(s.links as { label: string; url: string }[]).map((link) => (
-                            <a
-                              key={link.url}
-                              href={link.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-[11px] font-mono text-white/45 hover:text-[#4BBFCF] border border-white/12 hover:border-[#4BBFCF]/30 px-3 py-1 transition-colors"
-                            >
-                              {link.label}
-                            </a>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  </motion.div>
-                );
-              })()}
-            </AnimatePresence>
-          </div>
-
-          {/* Navigation bar */}
-          <div className="flex items-center justify-between mt-4">
-            {/* Dot indicators */}
-            <div className="flex items-center gap-2">
-              {STUDENTS.map((_, i) => (
-                <button
-                  key={i}
-                  onClick={() => goTo(i)}
-                  aria-label={`Go to member ${i + 1}`}
-                  className={`transition-all duration-200 rounded-none focus:outline-none ${
-                    i === activeMember
-                      ? "w-5 h-1.5 bg-[#4BBFCF]"
-                      : "w-1.5 h-1.5 bg-white/20 hover:bg-white/40"
+              const cardContent = (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-40px" }}
+                  transition={{ duration: 0.4, delay: i * 0.06 }}
+                  className={`group border border-white/8 p-5 text-center transition-all duration-200 ${
+                    !isPlaceholder
+                      ? "hover:border-white/22 hover:bg-white/[0.03] cursor-pointer"
+                      : "opacity-50"
                   }`}
-                />
-              ))}
-            </div>
+                >
+                  {/* Circular photo */}
+                  <div className="w-20 h-20 mx-auto mb-4 overflow-hidden rounded-full bg-[#060f1c] border border-white/8">
+                    {s.photo ? (
+                      <img
+                        src={s.photo}
+                        alt=""
+                        aria-hidden="true"
+                        className="w-full h-full object-cover object-top"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-[#1a3a5c] to-[#0d2035]">
+                        <span className="text-sm font-mono font-bold text-white/40">
+                          {s.initials}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                  <p className="text-white/85 font-semibold text-sm mb-0.5 group-hover:text-white transition-colors leading-snug">
+                    {s.name}
+                  </p>
+                  <p className="text-[#4BBFCF]/60 text-[11px] font-mono">{degLabel}</p>
+                  {!isPlaceholder && (
+                    <p className="text-white/30 text-[10px] mt-2 font-mono group-hover:text-white/50 transition-colors">
+                      View profile →
+                    </p>
+                  )}
+                </motion.div>
+              );
 
-            {/* Arrow buttons */}
-            <div className="flex gap-2">
-              <button
-                onClick={prev}
-                aria-label="Previous member"
-                className="border border-white/12 hover:border-white/28 p-2.5 transition-colors group focus:outline-none focus-visible:ring-1 focus-visible:ring-white/30"
-              >
-                <svg
-                  className="w-4 h-4 text-white/50 group-hover:text-white transition-colors"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-              <button
-                onClick={next}
-                aria-label="Next member"
-                className="border border-white/12 hover:border-white/28 p-2.5 transition-colors group focus:outline-none focus-visible:ring-1 focus-visible:ring-white/30"
-              >
-                <svg
-                  className="w-4 h-4 text-white/50 group-hover:text-white transition-colors"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-            </div>
+              return isPlaceholder ? (
+                <div key={`${s.initials}-${i}`}>{cardContent}</div>
+              ) : (
+                <Link key={`${s.initials}-${i}`} href={`/people/${slug}`}>
+                  {cardContent}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
