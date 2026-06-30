@@ -158,6 +158,26 @@
       "focus": "I was born in Colombia and moved to Canada in 2008, I completed 3 years of Biology at the University of Waterloo before transferring to brock for Computing and Business, My research interests include Robotics, Optimization, including my biology knowledge in my work and lately i've done a project on cross-hospital fairness in chest X-rays that got accepted to IEEE CIBCB Conference. my thesis topic is still not fully decided. My interests outside school are Golf, Riding my Yamaha Motorcycle and watching movies.",
       "email": "josehilario27@hotmail.com",
       "year": "2"
+    },
+    {
+      "interests": [
+        "LLMs",
+        "Optimization",
+        "LoRA"
+      ],
+      "name": "QiQi Gao",
+      "slug": "qiqi-gao",
+      "initials": "QG",
+      "hobbies": [
+        "games",
+        "cinema",
+        "music"
+      ],
+      "photo": "/uploads/image-1-.png",
+      "role": "Graduate Researcher",
+      "focus": "MSc in CS focused on discovering more efficient methods in ML, especially in LLMs. Past works include early research in prompting and prompt-based methods in LLMs, specifically auto-regressive models like GPT-3. Outside of formal research, I'm generally interested in developments of tech and science. My personal hobbies includes, games, cinema, and music.",
+      "email": "qg17jh@brocku.ca",
+      "year": "3"
     }
   ],
   "alumni": [
