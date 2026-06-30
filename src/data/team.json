@@ -197,6 +197,23 @@
       "photoPosition": "object-center",
       "email": "ap21tj@brocku.ca",
       "year": "4th Year"
+    },
+    {
+      "interests": [
+        "PSO",
+        "GNNs"
+      ],
+      "name": "Elias Switzer",
+      "slug": "elias-switzer",
+      "initials": "ES",
+      "hobbies": [
+        "Travelling"
+      ],
+      "photo": "/uploads/image-3-.png",
+      "role": "Undergraduate",
+      "focus": "I'm going into my 5th year of my undergrad in computer science. My research interest is swarm intelligence but my actual summer research project is still TBA. Some of my past projects in AI include PSO for Neural Architecture Search and Applications of Graph Neural Networks. Some of my hobbies outside of research include video games, rock climbing, and piano. I also love to travel and the coolest place I've visited is Japan.",
+      "email": "es21dq@brocku.ca",
+      "year": "5"
     }
   ],
   "alumni": [
