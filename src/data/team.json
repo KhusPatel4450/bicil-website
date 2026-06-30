@@ -117,31 +117,6 @@
     },
     {
       "interests": [
-        "Meta-heuristic optimization",
-        "Parameter tuning",
-        "Surrogate modeling",
-        "Artificial Neural Networks",
-        "Parameter Configuration Landscape"
-      ],
-      "name": "Alec Petrovic",
-      "slug": "alec-petrovic",
-      "initials": "AP",
-      "hobbies": [
-        "Golfing",
-        "Hiking",
-        "Swimming",
-        "Playing Pool"
-      ],
-      "photo": "/uploads/alec_photo.jpeg",
-      "role": "Undergraduate",
-      "focus": "His research interests focus on making meta-heuristic optimization more efficient and practical, by understanding how parameter configurations affect algorithm performance and using surrogate models to accelerate tuning. Meta-heuristic optimization algorithms (Differential Evolution and Particle Swarm Optimization) and their search dynamics. Parameter tuning and configuration using the Parameter Configuration Landscape (PCL). Surrogate modeling with Artificial Neural Networks to approximate the PCL and reduce computational cost.",
-      "links": [],
-      "photoPosition": "object-center",
-      "email": "ap21tj@brocku.ca",
-      "year": "4th Year"
-    },
-    {
-      "interests": [
         "Robotics",
         "Optimization"
       ],
@@ -178,6 +153,31 @@
       "focus": "MSc in CS focused on discovering more efficient methods in ML, especially in LLMs. Past works include early research in prompting and prompt-based methods in LLMs, specifically auto-regressive models like GPT-3. Outside of formal research, I'm generally interested in developments of tech and science. My personal hobbies includes, games, cinema, and music.",
       "email": "qg17jh@brocku.ca",
       "year": "3"
+    },
+    {
+      "interests": [
+        "Meta-heuristic optimization",
+        "Parameter tuning",
+        "Surrogate modeling",
+        "Artificial Neural Networks",
+        "Parameter Configuration Landscape"
+      ],
+      "name": "Alec Petrovic",
+      "slug": "alec-petrovic",
+      "initials": "AP",
+      "hobbies": [
+        "Golfing",
+        "Hiking",
+        "Swimming",
+        "Playing Pool"
+      ],
+      "photo": "/uploads/alec_photo.jpeg",
+      "role": "Undergraduate",
+      "focus": "His research interests focus on making meta-heuristic optimization more efficient and practical, by understanding how parameter configurations affect algorithm performance and using surrogate models to accelerate tuning. Meta-heuristic optimization algorithms (Differential Evolution and Particle Swarm Optimization) and their search dynamics. Parameter tuning and configuration using the Parameter Configuration Landscape (PCL). Surrogate modeling with Artificial Neural Networks to approximate the PCL and reduce computational cost.",
+      "links": [],
+      "photoPosition": "object-center",
+      "email": "ap21tj@brocku.ca",
+      "year": "4th Year"
     }
   ],
   "alumni": [
