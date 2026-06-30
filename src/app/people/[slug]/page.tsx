@@ -51,9 +51,9 @@ export default async function MemberPage({
   if (!member) notFound();
 
   const label = degreeLabel(member.role);
-  const links = member.links as { label: string; url: string }[];
-  const interests = member.interests as string[];
-  const hobbies = member.hobbies as string[];
+  const links = ((member.links ?? []) as { label: string; url: string }[]);
+  const interests = ((member.interests ?? []) as string[]);
+  const hobbies = ((member.hobbies ?? []) as string[]);
 
   return (
     <>
