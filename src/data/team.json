@@ -139,6 +139,24 @@
       "photoPosition": "object-center",
       "email": "ap21tj@brocku.ca",
       "year": "4th Year"
+    },
+    {
+      "interests": [
+        "Robotics",
+        "Optimization"
+      ],
+      "name": "Jose Henriquez",
+      "initials": "JH",
+      "hobbies": [
+        "Golf",
+        "Riding Motorcycles",
+        "Watching Movies"
+      ],
+      "photo": "/uploads/img_4656.jpeg",
+      "role": "Graduate Researcher",
+      "focus": "I was born in Colombia and moved to Canada in 2008, I completed 3 years of Biology at the University of Waterloo before transferring to brock for Computing and Business, My research interests include Robotics, Optimization, including my biology knowledge in my work and lately i've done a project on cross-hospital fairness in chest X-rays that got accepted to IEEE CIBCB Conference. my thesis topic is still not fully decided. My interests outside school are Golf, Riding my Yamaha Motorcycle and watching movies.",
+      "email": "josehilario27@hotmail.com",
+      "year": "2"
     }
   ],
   "alumni": [
