@@ -156,6 +156,25 @@
     },
     {
       "interests": [
+        "Reinforcement Learning",
+        "Home Health Care Routing",
+        "Evolutionary Computation"
+      ],
+      "name": "Gideon Oludeyi",
+      "slug": "gideon-oludeyi",
+      "initials": "GO",
+      "hobbies": [
+        "Software Development",
+        "Music"
+      ],
+      "photo": "/uploads/image-2-.png",
+      "role": "Graduate Researcher",
+      "focus": "Gideon is a MSc student candidate at Brock University. His research interest lies in stochastic home healthcare routing and scheduling problem. Outside of research, he likes listening to music and doing software development.",
+      "email": "go21zq@brocku.ca",
+      "year": "2"
+    },
+    {
+      "interests": [
         "Meta-heuristic optimization",
         "Parameter tuning",
         "Surrogate modeling",
