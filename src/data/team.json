@@ -249,6 +249,35 @@
       "focus": "I'm going into my 5th year of my undergrad in computer science. My research interest is swarm intelligence but my actual summer research project is still TBA. Some of my past projects in AI include PSO for Neural Architecture Search and Applications of Graph Neural Networks. Some of my hobbies outside of research include video games, rock climbing, and piano. I also love to travel and the coolest place I've visited is Japan.",
       "email": "es21dq@brocku.ca",
       "year": "5"
+    },
+    {
+      "interests": [
+        "Machine Learning",
+        "Deep Neural Networks",
+        "Artificial Intelligence",
+        "Robotics"
+      ],
+      "name": "Cole Corbett",
+      "slug": "cole-corbett",
+      "initials": "CC",
+      "hobbies": [
+        "Politics",
+        "Baseball",
+        "Computer Networking",
+        "System Administration",
+        "Emerging Technologies"
+      ],
+      "photo": "/uploads/cole_corbett_headshot.jpg",
+      "role": "Graduate Researcher",
+      "focus": "Cole Corbett is a Computer Science graduate student with research interests in artificial intelligence and machine learning. Outside of research, he enjoys staying involved in local and provincial politics, umpiring baseball, and managing his own self-hosted dedicated server, where he explores networking, systems administration, and new technologies.",
+      "links": [
+        {
+          "url": "https://colecorbett.ca/",
+          "label": "Personal Website"
+        }
+      ],
+      "email": "cc21gg@brocku.ca",
+      "year": "2"
     }
   ],
   "alumni": [
