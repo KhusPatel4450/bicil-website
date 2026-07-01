@@ -91,6 +91,25 @@
     },
     {
       "interests": [
+        "Reinforcement Learning",
+        "Home Health Care Routing",
+        "Evolutionary Computation"
+      ],
+      "name": "Gideon Oludeyi",
+      "slug": "gideon-oludeyi",
+      "initials": "GO",
+      "hobbies": [
+        "Software Development",
+        "Music"
+      ],
+      "photo": "/uploads/image-2-.png",
+      "role": "Graduate Researcher",
+      "focus": "Gideon is a MSc student candidate at Brock University. His research interest lies in stochastic home healthcare routing and scheduling problem. Outside of research, he likes listening to music and doing software development.",
+      "email": "go21zq@brocku.ca",
+      "year": "2"
+    },
+    {
+      "interests": [
         "Evolutionary Algorithms",
         "Feature Selection",
         "Dimensionality Reduction",
@@ -114,25 +133,32 @@
     },
     {
       "interests": [
-        "Agentic AI",
-        "Robotics",
-        "Optimizing Training and Inference for Constrained Hardware"
+        "Machine Learning",
+        "Deep Neural Networks",
+        "Artificial Intelligence",
+        "Robotics"
       ],
-      "name": "Dimitar Indovski",
-      "slug": "dimitar-indovski",
-      "initials": "DI",
+      "name": "Cole Corbett",
+      "slug": "cole-corbett",
+      "initials": "CC",
       "hobbies": [
-        "Kung Fu",
-        "Sailing",
-        "Retro Computing",
-        "Gardening"
+        "Politics",
+        "Baseball",
+        "Computer Networking",
+        "System Administration",
+        "Emerging Technologies"
       ],
-      "photo": "/uploads/di_portrait.jpg",
+      "photo": "/uploads/cole_corbett_headshot.jpg",
       "role": "Graduate Researcher",
-      "focus": "He is interested in Agentic AI, Robotics, and Optimizing Training and Inference for Constrained Hardware. He is currently working on a project to optimize training and inference for constrained hardware.",
-      "links": [],
-      "email": "indovskid@gmail.com",
-      "year": "Year 1"
+      "focus": "Cole Corbett is a Computer Science graduate student with research interests in artificial intelligence and machine learning. Outside of research, he enjoys staying involved in local and provincial politics, umpiring baseball, and managing his own self-hosted dedicated server, where he explores networking, systems administration, and new technologies.",
+      "links": [
+        {
+          "url": "https://colecorbett.ca/",
+          "label": "Personal Website"
+        }
+      ],
+      "email": "cc21gg@brocku.ca",
+      "year": "2"
     },
     {
       "interests": [
@@ -174,25 +200,6 @@
       "year": "3"
     },
     {
-      "interests": [
-        "Reinforcement Learning",
-        "Home Health Care Routing",
-        "Evolutionary Computation"
-      ],
-      "name": "Gideon Oludeyi",
-      "slug": "gideon-oludeyi",
-      "initials": "GO",
-      "hobbies": [
-        "Software Development",
-        "Music"
-      ],
-      "photo": "/uploads/image-2-.png",
-      "role": "Graduate Researcher",
-      "focus": "Gideon is a MSc student candidate at Brock University. His research interest lies in stochastic home healthcare routing and scheduling problem. Outside of research, he likes listening to music and doing software development.",
-      "email": "go21zq@brocku.ca",
-      "year": "2"
-    },
-    {
       "name": "Sowmya Movva",
       "slug": "sowmya-movva",
       "initials": "SM",
@@ -207,6 +214,49 @@
       "focus": "TBD",
       "email": "sm17zq@brocku.ca",
       "year": "2"
+    },
+    {
+      "interests": [
+        "Agentic AI",
+        "Robotics",
+        "Optimizing Training and Inference for Constrained Hardware"
+      ],
+      "name": "Dimitar Indovski",
+      "slug": "dimitar-indovski",
+      "initials": "DI",
+      "hobbies": [
+        "Kung Fu",
+        "Sailing",
+        "Retro Computing",
+        "Gardening"
+      ],
+      "photo": "/uploads/di_portrait.jpg",
+      "role": "Graduate Researcher",
+      "focus": "He is interested in Agentic AI, Robotics, and Optimizing Training and Inference for Constrained Hardware. He is currently working on a project to optimize training and inference for constrained hardware.",
+      "links": [],
+      "email": "indovskid@gmail.com",
+      "year": "Year 1"
+    },
+    {
+      "interests": [
+        " cooperative swarm robotic systems",
+        "reinforcement learning",
+        " large-scale gradient-free optimization"
+      ],
+      "name": "Chris Ortiz",
+      "slug": "chris-ortiz",
+      "initials": "CO",
+      "hobbies": [
+        "Running",
+        "Weightlifting",
+        "Basketball",
+        "Cooking"
+      ],
+      "photo": "/uploads/img_8129.jpg",
+      "role": "Undergraduate",
+      "focus": "Chris Ortiz is a 4th year undergraduate student, studying Mathematics and Computer Science. He is interested in cooperative swarm robotic systems, reinforcement learning, and large-scale gradient-free optimization. Away from the desktop, he finds peace in running, weightlifting, playing or watching basketball and cooking international dishes inspired by his Caribbean and Italian roots!",
+      "email": "tl22ba@brocku.ca",
+      "year": "4"
     },
     {
       "interests": [
@@ -251,33 +301,14 @@
       "year": "5"
     },
     {
-      "interests": [
-        "Machine Learning",
-        "Deep Neural Networks",
-        "Artificial Intelligence",
-        "Robotics"
-      ],
-      "name": "Cole Corbett",
-      "slug": "cole-corbett",
-      "initials": "CC",
-      "hobbies": [
-        "Politics",
-        "Baseball",
-        "Computer Networking",
-        "System Administration",
-        "Emerging Technologies"
-      ],
-      "photo": "/uploads/cole_corbett_headshot.jpg",
-      "role": "Graduate Researcher",
-      "focus": "Cole Corbett is a Computer Science graduate student with research interests in artificial intelligence and machine learning. Outside of research, he enjoys staying involved in local and provincial politics, umpiring baseball, and managing his own self-hosted dedicated server, where he explores networking, systems administration, and new technologies.",
-      "links": [
-        {
-          "url": "https://colecorbett.ca/",
-          "label": "Personal Website"
-        }
-      ],
-      "email": "cc21gg@brocku.ca",
-      "year": "2"
+      "email": "lc11db@brocku.ca",
+      "photo": "/uploads/img_9215.jpeg",
+      "name": "Lauren Corbeil",
+      "slug": "lauren-corbeil",
+      "role": "Undergraduate",
+      "focus": "TBD",
+      "initials": "LC",
+      "year": "4"
     }
   ],
   "alumni": [
