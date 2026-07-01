@@ -47,6 +47,25 @@
     },
     {
       "interests": [
+        "Evolutionary Computation",
+        "Deep Neural Networks",
+        "Deep Reinforcement Learning",
+        "Machine Unlearning"
+      ],
+      "name": "Stephen Asobiela",
+      "slug": "stephen-asobiela",
+      "initials": "SA",
+      "hobbies": [
+        " Playing/watching soccer"
+      ],
+      "photo": "/uploads/profile-picture-stephen-asobiela.jpg",
+      "role": "Doctoral Researcher",
+      "focus": "Stephen Yamzuuga Asobiela is a PhD student with over 15 years of industry experience designing and delivering scalable, cloud-native enterprise systems across fintech, supply chain, and digital banking domains, having held senior and technical lead roles at organizations including ECI Software Solutions, Infios Inc., and Meridian Credit Union. He holds an MSc in Computer Science from Brock University, Canada, and a BSc (First Class Honours) from Kwame Nkrumah University of Science and Technology, Ghana. His doctoral research focuses on the intersection of evolutionary computation, reinforcement learning, and machine unlearning, with emphasis on developing efficient, privacy-aware learning systems. Stephen's extensive background in building high-performance, large-scale software systems uniquely informs his research on optimizing and governing modern deep learning frameworks. Outside of academia and work, he enjoys watching and playing soccer and spending quality time with his family.",
+      "email": "sa10xa@brocku.ca",
+      "year": "3"
+    },
+    {
+      "interests": [
         "AI",
         "Optimization",
         "Healthcare Logistics",
@@ -174,6 +193,22 @@
       "year": "2"
     },
     {
+      "name": "Sowmya Movva",
+      "slug": "sowmya-movva",
+      "initials": "SM",
+      "hobbies": [
+        "Coffee Enthusiast",
+        "Playing Guitar and Saxaphone",
+        "Tennis",
+        "Gaming"
+      ],
+      "photo": "/uploads/img_3707.jpeg",
+      "role": "Graduate Researcher",
+      "focus": "TBD",
+      "email": "sm17zq@brocku.ca",
+      "year": "2"
+    },
+    {
       "interests": [
         "Meta-heuristic optimization",
         "Parameter tuning",
@@ -214,22 +249,6 @@
       "focus": "I'm going into my 5th year of my undergrad in computer science. My research interest is swarm intelligence but my actual summer research project is still TBA. Some of my past projects in AI include PSO for Neural Architecture Search and Applications of Graph Neural Networks. Some of my hobbies outside of research include video games, rock climbing, and piano. I also love to travel and the coolest place I've visited is Japan.",
       "email": "es21dq@brocku.ca",
       "year": "5"
-    },
-    {
-      "name": "Sowmya Movva",
-      "slug": "sowmya-movva",
-      "initials": "SM",
-      "hobbies": [
-        "Coffee Enthusiast",
-        "Playing Guitar and Saxaphone",
-        "Tennis",
-        "Gaming"
-      ],
-      "photo": "/uploads/img_3707.jpeg",
-      "role": "Graduate Researcher",
-      "focus": "TBD",
-      "email": "sm17zq@brocku.ca",
-      "year": "2"
     }
   ],
   "alumni": [
