@@ -12,7 +12,7 @@ export default function Team() {
   const raCount = STUDENTS.filter((s) => s.role === "Undergraduate").length;
 
   return (
-    <section id="team" className="py-24 lg:py-32 bg-[#091628]">
+    <section id="team" className="py-24 lg:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -21,13 +21,13 @@ export default function Team() {
           transition={{ duration: 0.7 }}
           className="mb-16"
         >
-          <p className="text-[11px] font-mono tracking-[0.2em] text-white/50 uppercase mb-3">
+          <p className="text-[11px] font-mono tracking-[0.2em] text-slate-400 uppercase mb-3">
             Our People
           </p>
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
             Meet the Team
           </h2>
-          <p className="text-white/65 max-w-xl leading-relaxed">
+          <p className="text-slate-600 max-w-xl leading-relaxed">
             A dedicated group of researchers driven by curiosity, rigour, and
             a shared passion for algorithmic discovery.
           </p>
@@ -39,7 +39,7 @@ export default function Team() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7 }}
-          className="border border-white/8 p-8 lg:p-10 mb-10 hover:border-white/15 transition-colors duration-300"
+          className="border border-slate-200 p-8 lg:p-10 mb-10 hover:border-slate-300 transition-colors duration-300"
         >
           <div className="flex flex-col sm:flex-row gap-6 items-start">
             <div className="flex-shrink-0">
@@ -57,15 +57,15 @@ export default function Team() {
               )}
             </div>
             <div className="flex-1 min-w-0">
-              <h3 className="text-xl font-bold text-white mb-1">{PI.name}</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-1">{PI.name}</h3>
               <p className="text-[#4BBFCF] text-sm font-medium mb-0.5">{PI.role}</p>
-              <p className="text-white/55 text-xs mb-4 font-mono">{PI.title}</p>
-              <p className="text-white/75 text-sm leading-relaxed line-clamp-3 mb-4">
+              <p className="text-slate-500 text-xs mb-4 font-mono">{PI.title}</p>
+              <p className="text-slate-700 text-sm leading-relaxed line-clamp-3 mb-4">
                 {PI.bio}
               </p>
               <a
                 href={`mailto:${PI.email}`}
-                className="text-white/65 hover:text-white text-sm transition-colors focus:outline-none focus-visible:underline"
+                className="text-slate-600 hover:text-slate-900 text-sm transition-colors focus:outline-none focus-visible:underline"
               >
                 {PI.email}
               </a>
@@ -79,7 +79,7 @@ export default function Team() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="grid grid-cols-2 sm:grid-cols-3 gap-px bg-white/5 mb-10"
+          className="grid grid-cols-2 sm:grid-cols-3 gap-px bg-slate-200 mb-10"
         >
           {[
             { count: phdCount, label: "PhD Researchers", color: "#2A7FC1" },
@@ -88,7 +88,7 @@ export default function Team() {
           ].map(({ count, label, color }) => (
             <div
               key={label}
-              className="bg-white/[0.03] px-6 py-8 text-center"
+              className="bg-slate-50 px-6 py-8 text-center"
             >
               <p
                 className="text-3xl font-bold font-mono mb-1"
@@ -96,7 +96,7 @@ export default function Team() {
               >
                 {count}
               </p>
-              <p className="text-white/60 text-xs">{label}</p>
+              <p className="text-slate-500 text-xs">{label}</p>
             </div>
           ))}
         </motion.div>
@@ -129,7 +129,7 @@ export default function Team() {
               />
             </svg>
           </a>
-          <p className="text-white/50 text-sm">
+          <p className="text-slate-400 text-sm">
             View individual profiles, research focus, and alumni
           </p>
         </motion.div>

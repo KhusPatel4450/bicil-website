@@ -118,7 +118,7 @@ export default function SwarmCanvas() {
       }
 
       if (prefersReduced) {
-        ctx!.fillStyle = "#0A0F1E";
+        ctx!.fillStyle = "#f8fafc";
         ctx!.fillRect(0, 0, w, h);
         for (const p of particles) {
           ctx!.beginPath();
@@ -143,7 +143,7 @@ export default function SwarmCanvas() {
       const h = canvas!.height;
       frame++;
 
-      ctx!.fillStyle = "rgba(10, 15, 30, 0.13)";
+      ctx!.fillStyle = "rgba(255, 255, 255, 0.18)";
       ctx!.fillRect(0, 0, w, h);
 
       const inertia = 0.72;
@@ -276,7 +276,7 @@ export default function SwarmCanvas() {
     <canvas
       ref={canvasRef}
       className="absolute inset-0 w-full h-full cursor-crosshair"
-      style={{ background: "#0A0F1E" }}
+      style={{ background: "#ffffff" }}
       aria-hidden="true"
     />
   );

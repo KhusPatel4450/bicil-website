@@ -72,13 +72,15 @@ export default function DigitalPetalsShader() {
 
         petalColor += cyanLight * pow(pattern, 10.0) * (0.55 + bloom * 0.35 + iScrollProgress * 0.25);
 
-        // Dark navy base subtly shifts as scroll progresses
-        vec3 baseTop = vec3(0.035, 0.086, 0.157);
-        vec3 baseMid = vec3(0.050, 0.118, 0.188);
+        // Light base — near white, subtle blue tint
+        vec3 baseTop = vec3(0.97, 0.98, 0.99);
+        vec3 baseMid = vec3(0.94, 0.96, 0.98);
         vec3 base = mix(baseTop, baseMid, sin(iScrollProgress * 3.14159));
 
-        vec3 finalColor = base + petalColor * (0.58 + iScrollProgress * 0.14);
-        gl_FragColor = vec4(finalColor, 1.0);
+        // Mix base with petal colors — creates soft coloured swirls on white
+        float blendAmt = pattern * (0.20 + iScrollProgress * 0.06);
+        vec3 finalColor = mix(base, petalColor * 0.85, clamp(blendAmt, 0.0, 1.0));
+        gl_FragColor = vec4(clamp(finalColor, 0.0, 1.0), 1.0);
       }
     `;
 

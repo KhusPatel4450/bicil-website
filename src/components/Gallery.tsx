@@ -9,7 +9,7 @@ export default function Gallery() {
   if (ITEMS.length === 0) return null;
 
   return (
-    <section id="gallery" className="py-24 lg:py-32 bg-[#091628]">
+    <section id="gallery" className="py-24 lg:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -18,11 +18,11 @@ export default function Gallery() {
           transition={{ duration: 0.7 }}
           className="mb-14"
         >
-          <p className="text-[11px] font-mono tracking-[0.2em] text-white/50 uppercase mb-3">
+          <p className="text-[11px] font-mono tracking-[0.2em] text-slate-400 uppercase mb-3">
             Gallery
           </p>
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">Lab Life</h2>
-          <p className="text-white/65 max-w-xl leading-relaxed">
+          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">Lab Life</h2>
+          <p className="text-slate-600 max-w-xl leading-relaxed">
             Snapshots from our research, conferences, lab events, and collaborations.
           </p>
         </motion.div>
@@ -35,7 +35,7 @@ export default function Gallery() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.5, delay: i * 0.055 }}
-              className="break-inside-avoid mb-4 overflow-hidden border border-white/8 hover:border-white/20 transition-all duration-300 group relative"
+              className="break-inside-avoid mb-4 overflow-hidden border border-slate-200 hover:border-slate-300 transition-all duration-300 group relative"
             >
               <img
                 src={item.photo}

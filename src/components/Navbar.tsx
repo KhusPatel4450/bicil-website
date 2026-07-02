@@ -17,7 +17,6 @@ export default function Navbar() {
   const pathname = usePathname();
   const isHome = pathname === "/";
 
-  // On non-home pages, prefix hash links with "/" so they navigate to the homepage anchor
   const resolve = (hash: string) => (isHome ? hash : `/${hash}`);
 
   useEffect(() => {
@@ -30,7 +29,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#091628]/96 backdrop-blur-md shadow-lg shadow-black/20"
+          ? "bg-white/95 backdrop-blur-md shadow-sm shadow-slate-200/80"
           : "bg-transparent"
       }`}
       aria-label="Main navigation"
@@ -46,10 +45,10 @@ export default function Navbar() {
               alt=""
               aria-hidden="true"
               className="w-10 h-10 object-contain flex-shrink-0"
-              style={{ mixBlendMode: "screen" }}
+              style={{ mixBlendMode: "multiply" }}
             />
-            <span className="text-white font-semibold text-base hidden sm:block">BICIL</span>
-            <span className="text-white/20 hidden sm:block mx-1">|</span>
+            <span className="text-slate-900 font-semibold text-base hidden sm:block">BICIL</span>
+            <span className="text-slate-300 hidden sm:block mx-1">|</span>
             <img
               src="/brock-logo.png"
               alt="Brock University"
@@ -62,17 +61,17 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={resolve(link.href)}
-                className="text-white/55 hover:text-white text-sm font-medium transition-colors duration-200 focus:outline-none focus-visible:text-white"
+                className="text-slate-500 hover:text-slate-900 text-sm font-medium transition-colors duration-200 focus:outline-none focus-visible:text-slate-900"
               >
                 {link.label}
               </a>
             ))}
             <a
               href="/people"
-              className={`text-sm font-medium transition-colors duration-200 focus:outline-none focus-visible:text-white ${
+              className={`text-sm font-medium transition-colors duration-200 focus:outline-none focus-visible:text-slate-900 ${
                 pathname === "/people"
-                  ? "text-white"
-                  : "text-white/55 hover:text-white"
+                  ? "text-slate-900"
+                  : "text-slate-500 hover:text-slate-900"
               }`}
             >
               Team
@@ -81,7 +80,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={resolve(link.href)}
-                className="text-white/55 hover:text-white text-sm font-medium transition-colors duration-200 focus:outline-none focus-visible:text-white"
+                className="text-slate-500 hover:text-slate-900 text-sm font-medium transition-colors duration-200 focus:outline-none focus-visible:text-slate-900"
               >
                 {link.label}
               </a>
@@ -90,7 +89,7 @@ export default function Navbar() {
 
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden text-white p-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#4BBFCF]"
+            className="md:hidden text-slate-700 p-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#4BBFCF]"
             aria-label={menuOpen ? "Close menu" : "Open menu"}
             aria-expanded={menuOpen}
           >
@@ -106,13 +105,13 @@ export default function Navbar() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden bg-[#091628]/98 backdrop-blur-md border-t border-white/10 px-6 py-5 space-y-4">
+        <div className="md:hidden bg-white/98 backdrop-blur-md border-t border-slate-200 px-6 py-5 space-y-4">
           {HASH_LINKS.slice(0, 2).map((link) => (
             <a
               key={link.href}
               href={resolve(link.href)}
               onClick={() => setMenuOpen(false)}
-              className="block text-white/60 hover:text-white font-medium transition-colors py-1"
+              className="block text-slate-500 hover:text-slate-900 font-medium transition-colors py-1"
             >
               {link.label}
             </a>
@@ -121,7 +120,7 @@ export default function Navbar() {
             href="/people"
             onClick={() => setMenuOpen(false)}
             className={`block font-medium transition-colors py-1 ${
-              pathname === "/people" ? "text-white" : "text-white/60 hover:text-white"
+              pathname === "/people" ? "text-slate-900" : "text-slate-500 hover:text-slate-900"
             }`}
           >
             Team
@@ -131,7 +130,7 @@ export default function Navbar() {
               key={link.href}
               href={resolve(link.href)}
               onClick={() => setMenuOpen(false)}
-              className="block text-white/60 hover:text-white font-medium transition-colors py-1"
+              className="block text-slate-500 hover:text-slate-900 font-medium transition-colors py-1"
             >
               {link.label}
             </a>

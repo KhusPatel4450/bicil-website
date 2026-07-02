@@ -67,7 +67,7 @@ const AREAS = [
 
 export default function Research() {
   return (
-    <section id="research" className="py-24 lg:py-32 bg-[#091628]">
+    <section id="research" className="py-24 lg:py-32 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -79,17 +79,17 @@ export default function Research() {
           <p className="text-[11px] font-mono tracking-[0.2em] text-[#2A7FC1]/80 uppercase mb-3">
             Research Areas
           </p>
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4 max-w-xl">
+          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-4 max-w-xl">
             What We Study
           </h2>
-          <p className="text-white/70 max-w-xl text-lg leading-relaxed">
+          <p className="text-slate-600 max-w-xl text-lg leading-relaxed">
             Five interconnected streams unified by one theme —{" "}
-            <span className="text-white font-medium">optimization</span>.
+            <span className="text-slate-900 font-medium">optimization</span>.
             Finding the best solutions in complex, high-dimensional search landscapes.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-slate-200">
           {AREAS.map((area, i) => (
             <motion.div
               key={area.id}
@@ -97,7 +97,7 @@ export default function Research() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.07 }}
-              className={`group bg-white/[0.04] p-8 hover:bg-white/[0.07] transition-colors duration-200 ${
+              className={`group bg-white p-8 hover:bg-slate-50 transition-colors duration-200 ${
                 i === 4 ? "md:col-span-2 lg:col-span-1" : ""
               }`}
             >
@@ -105,17 +105,17 @@ export default function Research() {
                 <div className="text-[#2A7FC1]/70 group-hover:text-[#2A7FC1] transition-colors duration-200">
                   {area.icon}
                 </div>
-                <span className="text-[11px] font-mono text-white/35 select-none">
+                <span className="text-[11px] font-mono text-slate-300 select-none">
                   0{area.id}
                 </span>
               </div>
-              <h3 className="text-lg font-semibold text-white mb-3 leading-snug">
+              <h3 className="text-lg font-semibold text-slate-900 mb-3 leading-snug">
                 {area.title}
               </h3>
-              <p className="text-white/70 text-sm leading-relaxed mb-5">
+              <p className="text-slate-600 text-sm leading-relaxed mb-5">
                 {area.description}
               </p>
-              <p className="text-[11px] font-mono text-white/55">
+              <p className="text-[11px] font-mono text-slate-500">
                 {area.tags.join(" · ")}
               </p>
             </motion.div>

@@ -11,7 +11,7 @@ const STATS = [
 
 export default function About() {
   return (
-    <section id="about" className="py-24 lg:py-32 bg-[#091628]">
+    <section id="about" className="py-24 lg:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -23,7 +23,7 @@ export default function About() {
             <p className="text-[11px] font-mono tracking-[0.2em] text-[#2A7FC1]/85 uppercase mb-4">
               About the Lab
             </p>
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-tight">
               Nature-Inspired Solutions
               <br />
               for{" "}
@@ -31,20 +31,20 @@ export default function About() {
                 Complex Problems
               </span>
             </h2>
-            <p className="text-white/80 text-lg leading-relaxed mb-5">
+            <p className="text-slate-700 text-lg leading-relaxed mb-5">
               The Bio-Inspired Computational Intelligence Lab (BICIL) at Brock
               University investigates computational methods inspired by natural
               phenomena — from the collective behaviour of swarms to the
               adaptive power of evolution.
             </p>
-            <p className="text-white/70 leading-relaxed mb-5">
+            <p className="text-slate-600 leading-relaxed mb-5">
               Led by Professor Beatrice Ombuki-Berman, we develop and apply
               metaheuristic algorithms to solve NP-hard optimization problems
               in logistics, engineering, machine learning, robotics, and beyond.
               Optimization is not just a theme — it is our lens for understanding
               complex systems.
             </p>
-            <p className="text-white/55 text-sm leading-relaxed mb-8">
+            <p className="text-slate-500 text-sm leading-relaxed mb-8">
               BICIL is housed in the Department of Computer Science, Faculty of
               Mathematics and Science, with strong ties to the broader Brock
               research community and international collaborators.
@@ -58,7 +58,7 @@ export default function About() {
               </a>
               <a
                 href="#publications"
-                className="px-6 py-3 border border-white/15 hover:border-white/40 text-white/65 hover:text-white font-medium text-sm transition-colors duration-200"
+                className="px-6 py-3 border border-slate-300 hover:border-slate-400 text-slate-600 hover:text-slate-900 font-medium text-sm transition-colors duration-200"
               >
                 Publications
               </a>
@@ -79,12 +79,12 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.22 + i * 0.1 }}
-                className="p-8 border border-white/8 hover:border-[#2A7FC1]/40 transition-all duration-300 bg-white/[0.03]"
+                className="p-8 border border-slate-200 hover:border-[#2A7FC1]/40 transition-all duration-300 bg-slate-50"
               >
                 <p className="text-5xl font-bold text-[#2A7FC1] mb-2 tabular-nums">
                   {stat.value}
                 </p>
-                <p className="text-white/65 text-sm">{stat.label}</p>
+                <p className="text-slate-600 text-sm">{stat.label}</p>
               </motion.div>
             ))}
 
@@ -93,13 +93,13 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.62 }}
-              className="col-span-2 bg-[#091628] p-6 border border-white/8"
+              className="col-span-2 bg-slate-50 p-6 border border-slate-200"
             >
-              <p className="text-white/55 text-[11px] font-mono mb-2">Location</p>
-              <p className="text-white font-medium text-sm mb-1">
+              <p className="text-slate-500 text-[11px] font-mono mb-2">Location</p>
+              <p className="text-slate-900 font-medium text-sm mb-1">
                 Department of Computer Science
               </p>
-              <p className="text-white/70 text-sm">
+              <p className="text-slate-600 text-sm">
                 Brock University · St. Catharines, ON L2S 3A1 · Canada
               </p>
             </motion.div>

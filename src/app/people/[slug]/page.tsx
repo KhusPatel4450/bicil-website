@@ -58,13 +58,13 @@ export default async function MemberPage({
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-[#091628]">
+      <main className="min-h-screen bg-white">
         <div className="max-w-5xl mx-auto px-6 lg:px-8 pt-32 pb-24">
 
           {/* Back */}
           <Link
             href="/people"
-            className="inline-flex items-center gap-2 text-white/50 hover:text-white text-sm mb-12 transition-colors group focus:outline-none focus-visible:underline"
+            className="inline-flex items-center gap-2 text-slate-400 hover:text-slate-900 text-sm mb-12 transition-colors group focus:outline-none focus-visible:underline"
           >
             <svg className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform duration-150" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
@@ -81,11 +81,11 @@ export default async function MemberPage({
                 <img
                   src={member.photo}
                   alt={member.name}
-                  className="w-48 md:w-56 h-auto object-contain rounded-sm border border-white/8"
+                  className="w-48 md:w-56 h-auto object-contain rounded-sm border border-slate-200"
                 />
               ) : (
-                <div className="w-48 h-48 flex items-center justify-center bg-gradient-to-br from-[#1a3a5c] to-[#0d2035] border border-white/8">
-                  <span className="text-4xl font-mono font-bold text-white/25">
+                <div className="w-48 h-48 flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200 border border-slate-200">
+                  <span className="text-4xl font-mono font-bold text-slate-400">
                     {member.initials}
                   </span>
                 </div>
@@ -94,17 +94,17 @@ export default async function MemberPage({
 
             {/* Info */}
             <div className="flex-1 min-w-0">
-              <p className="text-[10px] font-[family-name:var(--font-inter)] tracking-[0.2em] text-white/40 uppercase mb-3">
+              <p className="text-[10px] font-[family-name:var(--font-inter)] tracking-[0.2em] text-slate-400 uppercase mb-3">
                 {label}
               </p>
-              <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
+              <h1 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-4 leading-tight">
                 {member.name}
               </h1>
 
               {/* Contact */}
               <div className="flex flex-col gap-1.5 mb-6">
                 {member.email && (
-                  <p className="text-white/50 text-sm font-mono">
+                  <p className="text-slate-400 text-sm font-mono">
                     ✉&nbsp; {obfuscate(member.email)}
                   </p>
                 )}
@@ -114,7 +114,7 @@ export default async function MemberPage({
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#4BBFCF] hover:text-white text-sm transition-colors focus:outline-none focus-visible:underline"
+                    className="text-[#4BBFCF] hover:text-slate-900 text-sm transition-colors focus:outline-none focus-visible:underline"
                   >
                     {link.url.replace(/^https?:\/\//, "")}
                   </a>
@@ -123,7 +123,7 @@ export default async function MemberPage({
 
               {/* Research focus / bio */}
               {member.focus && (
-                <p className="text-white/65 leading-relaxed text-[15px] max-w-2xl">
+                <p className="text-slate-600 leading-relaxed text-[15px] max-w-2xl">
                   {member.focus}
                 </p>
               )}
@@ -132,15 +132,15 @@ export default async function MemberPage({
 
           {/* Research Interests */}
           {interests.length > 0 && (
-            <div className="mt-14 border-t border-white/5 pt-10">
-              <p className="text-[10px] font-[family-name:var(--font-inter)] uppercase tracking-[0.2em] text-white/40 mb-5">
+            <div className="mt-14 border-t border-slate-100 pt-10">
+              <p className="text-[10px] font-[family-name:var(--font-inter)] uppercase tracking-[0.2em] text-slate-400 mb-5">
                 Research Interests
               </p>
               <div className="flex flex-wrap gap-2.5">
                 {interests.map((item) => (
                   <span
                     key={item}
-                    className="text-sm text-white/65 border border-white/12 px-3 py-1.5"
+                    className="text-sm text-slate-600 border border-slate-200 px-3 py-1.5"
                   >
                     {item}
                   </span>
@@ -151,15 +151,15 @@ export default async function MemberPage({
 
           {/* Hobbies */}
           {hobbies.length > 0 && (
-            <div className="mt-10 border-t border-white/5 pt-10">
-              <p className="text-[10px] font-[family-name:var(--font-inter)] uppercase tracking-[0.2em] text-white/40 mb-5">
+            <div className="mt-10 border-t border-slate-100 pt-10">
+              <p className="text-[10px] font-[family-name:var(--font-inter)] uppercase tracking-[0.2em] text-slate-400 mb-5">
                 Hobbies
               </p>
               <div className="flex flex-wrap gap-2.5">
                 {hobbies.map((item) => (
                   <span
                     key={item}
-                    className="text-sm text-white/65 border border-white/12 px-3 py-1.5"
+                    className="text-sm text-slate-600 border border-slate-200 px-3 py-1.5"
                   >
                     {item}
                   </span>

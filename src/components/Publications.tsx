@@ -19,7 +19,7 @@ export default function Publications() {
   });
 
   return (
-    <section id="publications" className="py-24 lg:py-32 bg-[#091628]">
+    <section id="publications" className="py-24 lg:py-32 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -31,10 +31,10 @@ export default function Publications() {
           <p className="text-[11px] font-mono tracking-[0.2em] text-[#2A7FC1]/80 uppercase mb-3">
             Publications
           </p>
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
             Recent Work
           </h2>
-          <p className="text-white/70 max-w-xl leading-relaxed">
+          <p className="text-slate-600 max-w-xl leading-relaxed">
             A selection of published research from top-tier journals and
             internationally peer-reviewed conferences.
           </p>
@@ -51,7 +51,7 @@ export default function Publications() {
           aria-label="Publication filters"
         >
           <div className="flex items-center gap-5 flex-wrap">
-            <span className="text-[10px] font-mono text-white/55 uppercase tracking-wider">Year</span>
+            <span className="text-[10px] font-mono text-slate-500 uppercase tracking-wider">Year</span>
             {YEARS.map((y) => (
               <button
                 key={y}
@@ -59,8 +59,8 @@ export default function Publications() {
                 aria-pressed={yearFilter === y}
                 className={`text-sm pb-1 transition-all duration-150 focus:outline-none ${
                   yearFilter === y
-                    ? "text-white border-b-2 border-[#2A7FC1] font-semibold"
-                    : "text-white/60 border-b-2 border-transparent hover:text-white/70"
+                    ? "text-slate-900 border-b-2 border-[#2A7FC1] font-semibold"
+                    : "text-slate-500 border-b-2 border-transparent hover:text-slate-700"
                 }`}
               >
                 {y}
@@ -68,7 +68,7 @@ export default function Publications() {
             ))}
           </div>
           <div className="flex items-center gap-5 flex-wrap">
-            <span className="text-[10px] font-mono text-white/55 uppercase tracking-wider">Type</span>
+            <span className="text-[10px] font-mono text-slate-500 uppercase tracking-wider">Type</span>
             {TYPES.map((t) => (
               <button
                 key={t}
@@ -76,8 +76,8 @@ export default function Publications() {
                 aria-pressed={typeFilter === t}
                 className={`text-sm pb-1 transition-all duration-150 focus:outline-none ${
                   typeFilter === t
-                    ? "text-white border-b-2 border-[#3DAF88] font-semibold"
-                    : "text-white/60 border-b-2 border-transparent hover:text-white/70"
+                    ? "text-slate-900 border-b-2 border-[#3DAF88] font-semibold"
+                    : "text-slate-500 border-b-2 border-transparent hover:text-slate-700"
                 }`}
               >
                 {t}
@@ -87,7 +87,7 @@ export default function Publications() {
         </motion.div>
 
         {/* List */}
-        <div className="divide-y divide-white/8" role="list" aria-label="Publication list">
+        <div className="divide-y divide-slate-200" role="list" aria-label="Publication list">
           <AnimatePresence mode="popLayout">
             {filtered.map((pub, i) => (
               <motion.article
@@ -98,28 +98,28 @@ export default function Publications() {
                 exit={{ opacity: 0, scale: 0.98 }}
                 transition={{ duration: 0.3, delay: i * 0.04 }}
                 role="listitem"
-                className="group py-6 hover:bg-white/[0.04] -mx-3 px-3 transition-colors duration-150"
+                className="group py-6 hover:bg-slate-50 -mx-3 px-3 transition-colors duration-150"
               >
                 <div className="flex flex-col sm:flex-row sm:items-start gap-4">
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-3 mb-2">
-                      <span className="text-[10px] font-mono uppercase tracking-wider text-white/60">
+                      <span className="text-[10px] font-mono uppercase tracking-wider text-slate-500">
                         {pub.type}
                       </span>
-                      <span className="text-[10px] font-mono text-white/40">·</span>
-                      <span className="text-[10px] font-mono text-white/60 tabular-nums">
+                      <span className="text-[10px] font-mono text-slate-300">·</span>
+                      <span className="text-[10px] font-mono text-slate-500 tabular-nums">
                         {pub.year}
                       </span>
                     </div>
-                    <h3 className="font-semibold text-white text-base leading-snug mb-2 group-hover:text-[#4BBFCF] transition-colors duration-150">
+                    <h3 className="font-semibold text-slate-900 text-base leading-snug mb-2 group-hover:text-[#2A7FC1] transition-colors duration-150">
                       {pub.title}
                     </h3>
-                    <p className="text-white/65 text-sm mb-1">{pub.authors}</p>
-                    <p className="text-white/70 text-sm">{pub.venue}</p>
+                    <p className="text-slate-600 text-sm mb-1">{pub.authors}</p>
+                    <p className="text-slate-600 text-sm">{pub.venue}</p>
                   </div>
                   <a
                     href="#"
-                    className="flex-shrink-0 self-start inline-flex items-center gap-1.5 px-3 py-1.5 border border-white/15 hover:border-[#4BBFCF] hover:text-[#4BBFCF] text-white/55 text-xs transition-all duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#4BBFCF]"
+                    className="flex-shrink-0 self-start inline-flex items-center gap-1.5 px-3 py-1.5 border border-slate-200 hover:border-[#4BBFCF] hover:text-[#4BBFCF] text-slate-400 text-xs transition-all duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#4BBFCF]"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`View paper: ${pub.title}`}
@@ -136,7 +136,7 @@ export default function Publications() {
         </div>
 
         {filtered.length === 0 && (
-          <p className="text-center text-white/55 py-16 text-sm font-mono">
+          <p className="text-center text-slate-400 py-16 text-sm font-mono">
             No publications match the selected filters.
           </p>
         )}
@@ -145,7 +145,7 @@ export default function Publications() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mt-10 pt-8 border-t border-white/8"
+          className="mt-10 pt-8 border-t border-slate-200"
         >
           <a
             href="https://scholar.google.com"
