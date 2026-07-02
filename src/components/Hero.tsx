@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       <div className="absolute bottom-0 left-0 right-0 h-56 bg-gradient-to-t from-white to-transparent pointer-events-none z-10" />
       <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-white/40 to-transparent pointer-events-none z-10" />
