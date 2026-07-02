@@ -56,30 +56,33 @@ export default function DigitalPetalsShader() {
         float flowMix = 0.5 - iScrollProgress * 0.15;
         float pattern = mix(petalShape, flow, flowMix) + bloom * 0.5;
 
-        // BICIL palette: blue-dominant at top, shifts toward teal/cyan at bottom
-        vec3 deepBlue  = vec3(0.10, 0.38, 0.78);
-        vec3 tealGreen = vec3(0.18, 0.68, 0.52);
-        vec3 cyanLight = vec3(0.25, 0.78, 0.85);
+        // Clamp pattern to positive — prevents undefined pow() with negative base
+        float posPattern = max(pattern, 0.0);
+        float smoothPat  = smoothstep(0.0, 0.9, posPattern);
 
-        vec3 color1 = mix(deepBlue,  tealGreen, iScrollProgress * 0.65);
-        vec3 color2 = mix(tealGreen, cyanLight,  iScrollProgress * 0.45);
+        // Pastel BICIL palette for light theme
+        vec3 skyBlue  = vec3(0.52, 0.73, 0.92);
+        vec3 softTeal = vec3(0.46, 0.80, 0.76);
+        vec3 softCyan = vec3(0.58, 0.87, 0.92);
 
-        vec3 petalColor = mix(
-          color1,
-          color2,
-          smoothstep(0.5, 0.8, r + random(vec2(t, t)) * 0.1)
-        ) * pattern;
+        vec3 color1 = mix(skyBlue,  softTeal, iScrollProgress * 0.55);
+        vec3 color2 = mix(softTeal, softCyan, iScrollProgress * 0.40);
 
-        petalColor += cyanLight * pow(pattern, 10.0) * (0.55 + bloom * 0.35 + iScrollProgress * 0.25);
+        // Petal tint — all values are pastel, never dark
+        vec3 petalTint = mix(color1, color2,
+          smoothstep(0.3, 0.7, r + random(vec2(t, t)) * 0.08)
+        );
 
-        // Light base — near white, subtle blue tint
-        vec3 baseTop = vec3(0.97, 0.98, 0.99);
-        vec3 baseMid = vec3(0.94, 0.96, 0.98);
-        vec3 base = mix(baseTop, baseMid, sin(iScrollProgress * 3.14159));
+        // Near-white base
+        vec3 base = vec3(0.97, 0.98, 0.99);
 
-        // Mix base with petal colors — creates soft coloured swirls on white
-        float blendAmt = pattern * (0.20 + iScrollProgress * 0.06);
-        vec3 finalColor = mix(base, petalColor * 0.85, clamp(blendAmt, 0.0, 1.0));
+        // Soft tinting of petals on the white background
+        float tintAmt = smoothPat * (0.30 + iScrollProgress * 0.10) + bloom * 0.14;
+        vec3 finalColor = mix(base, petalTint, clamp(tintAmt, 0.0, 1.0));
+
+        // Subtle cyan shimmer at petal peaks — pow is safe because posPattern >= 0
+        finalColor = mix(finalColor, softCyan, pow(posPattern, 8.0) * (0.18 + bloom * 0.12));
+
         gl_FragColor = vec4(clamp(finalColor, 0.0, 1.0), 1.0);
       }
     `;
