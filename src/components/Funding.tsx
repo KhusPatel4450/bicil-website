@@ -14,7 +14,7 @@ export default function Funding() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-[11px] font-mono tracking-[0.25em] text-slate-500 uppercase text-center mb-12"
+          className="text-[11px] font-mono tracking-wide text-slate-500 text-center mb-12"
         >
           Funding &amp; Partners
         </motion.p>

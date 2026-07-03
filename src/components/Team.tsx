@@ -21,7 +21,7 @@ export default function Team() {
           transition={{ duration: 0.7 }}
           className="mb-16"
         >
-          <p className="text-[11px] font-mono tracking-[0.2em] text-slate-400 uppercase mb-3">
+          <p className="text-[11px] font-mono tracking-wide text-slate-400 mb-3">
             Our People
           </p>
           <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">

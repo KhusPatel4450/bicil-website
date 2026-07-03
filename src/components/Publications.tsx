@@ -28,7 +28,7 @@ export default function Publications() {
           transition={{ duration: 0.7 }}
           className="mb-12"
         >
-          <p className="text-[11px] font-mono tracking-[0.2em] text-[#2A7FC1]/80 uppercase mb-3">
+          <p className="text-[11px] font-mono tracking-wide text-[#2A7FC1]/80 mb-3">
             Publications
           </p>
           <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
@@ -51,7 +51,7 @@ export default function Publications() {
           aria-label="Publication filters"
         >
           <div className="flex items-center gap-5 flex-wrap">
-            <span className="text-[10px] font-mono text-slate-500 uppercase tracking-wider">Year</span>
+            <span className="text-[10px] font-mono text-slate-500 tracking-wide">Year</span>
             {YEARS.map((y) => (
               <button
                 key={y}
@@ -68,7 +68,7 @@ export default function Publications() {
             ))}
           </div>
           <div className="flex items-center gap-5 flex-wrap">
-            <span className="text-[10px] font-mono text-slate-500 uppercase tracking-wider">Type</span>
+            <span className="text-[10px] font-mono text-slate-500 tracking-wide">Type</span>
             {TYPES.map((t) => (
               <button
                 key={t}
@@ -103,7 +103,7 @@ export default function Publications() {
                 <div className="flex flex-col sm:flex-row sm:items-start gap-4">
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-3 mb-2">
-                      <span className="text-[10px] font-mono uppercase tracking-wider text-slate-500">
+                      <span className="text-[10px] font-mono tracking-wide text-slate-500">
                         {pub.type}
                       </span>
                       <span className="text-[10px] font-mono text-slate-300">·</span>

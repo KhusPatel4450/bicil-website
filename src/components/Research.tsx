@@ -76,7 +76,7 @@ export default function Research() {
           transition={{ duration: 0.7 }}
           className="mb-16"
         >
-          <p className="text-[11px] font-mono tracking-[0.2em] text-[#2A7FC1]/80 uppercase mb-3">
+          <p className="text-[11px] font-mono tracking-wide text-[#2A7FC1]/80 mb-3">
             Research Areas
           </p>
           <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-4 max-w-xl">

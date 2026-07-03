@@ -20,7 +20,7 @@ export default function About() {
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
-            <p className="text-[11px] font-mono tracking-[0.2em] text-[#2A7FC1]/85 uppercase mb-4">
+            <p className="text-[11px] font-mono tracking-wide text-[#2A7FC1]/85 mb-4">
               About the Lab
             </p>
             <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-tight">

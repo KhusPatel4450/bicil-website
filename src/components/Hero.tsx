@@ -31,7 +31,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: -12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-          className="text-xs tracking-[0.25em] text-slate-500 uppercase mb-8 font-sans"
+          className="text-xs tracking-wide text-slate-500 mb-8 font-sans"
         >
           Department of Computer Science · Brock University
         </motion.p>

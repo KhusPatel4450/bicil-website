@@ -13,7 +13,7 @@ export default function Contact() {
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
-            <p className="text-[11px] font-mono tracking-[0.2em] text-slate-400 uppercase mb-4">
+            <p className="text-[11px] font-mono tracking-wide text-slate-400 mb-4">
               Join Us
             </p>
             <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-tight">
@@ -30,7 +30,7 @@ export default function Contact() {
 
             <div className="space-y-6 mb-10">
               <div className="pl-4 border-l border-[#2A7FC1]/25">
-                <p className="text-[10px] font-mono tracking-[0.2em] uppercase text-slate-400 mb-1">
+                <p className="text-[10px] font-mono tracking-wide text-slate-400 mb-1">
                   Email
                 </p>
                 <a
@@ -42,7 +42,7 @@ export default function Contact() {
               </div>
 
               <div className="pl-4 border-l border-[#2A7FC1]/25">
-                <p className="text-[10px] font-mono tracking-[0.2em] uppercase text-slate-400 mb-1">
+                <p className="text-[10px] font-mono tracking-wide text-slate-400 mb-1">
                   Location
                 </p>
                 <p className="text-slate-900 text-sm leading-relaxed">
@@ -57,7 +57,7 @@ export default function Contact() {
               </div>
 
               <div className="pl-4 border-l border-[#2A7FC1]/25">
-                <p className="text-[10px] font-mono tracking-[0.2em] uppercase text-slate-400 mb-1">
+                <p className="text-[10px] font-mono tracking-wide text-slate-400 mb-1">
                   Admissions
                 </p>
                 <p className="text-slate-600 text-sm leading-relaxed">

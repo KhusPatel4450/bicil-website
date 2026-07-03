@@ -25,7 +25,7 @@ export default function News() {
           transition={{ duration: 0.7 }}
           className="mb-14"
         >
-          <p className="text-[11px] font-mono tracking-[0.2em] text-[#2A7FC1]/80 uppercase mb-3">
+          <p className="text-[11px] font-mono tracking-wide text-[#2A7FC1]/80 mb-3">
             Lab News
           </p>
           <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
@@ -49,7 +49,7 @@ export default function News() {
             >
               <div className="flex items-center justify-between mb-5">
                 <span
-                  className="text-[11px] font-mono font-semibold uppercase tracking-wider"
+                  className="text-[11px] font-mono font-semibold tracking-wide"
                   style={{ color: CATEGORY_COLORS[item.category] ?? "#2A7FC1" }}
                 >
                   {item.category}

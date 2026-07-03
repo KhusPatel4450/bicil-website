@@ -89,7 +89,7 @@ export default function PeopleContent() {
               Back to BICIL
             </Link>
 
-            <p className="text-[11px] font-mono tracking-[0.2em] text-slate-400 uppercase mb-4">
+            <p className="text-[11px] font-mono tracking-wide text-slate-400 mb-4">
               Our People
             </p>
             <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
@@ -144,7 +144,7 @@ export default function PeopleContent() {
       {/* Principal Investigator */}
       <section className="py-16 bg-white border-t border-slate-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <p className="text-[10px] font-mono tracking-[0.25em] text-slate-400 uppercase mb-8">
+          <p className="text-[10px] font-mono tracking-wide text-slate-400 mb-8">
             Principal Investigator
           </p>
           <motion.div
@@ -185,7 +185,7 @@ export default function PeopleContent() {
             transition={{ duration: 0.6 }}
             className="mb-10"
           >
-            <p className="text-[10px] font-mono tracking-[0.25em] text-slate-400 uppercase mb-2">
+            <p className="text-[10px] font-mono tracking-wide text-slate-400 mb-2">
               Current Researchers
             </p>
             <h2 className="text-3xl font-bold text-slate-900">Active Members</h2>
@@ -270,7 +270,7 @@ export default function PeopleContent() {
               transition={{ duration: 0.6 }}
               className="mb-10"
             >
-              <p className="text-[10px] font-mono tracking-[0.25em] text-slate-400 uppercase mb-2">
+              <p className="text-[10px] font-mono tracking-wide text-slate-400 mb-2">
                 Alumni
               </p>
               <h2 className="text-3xl font-bold text-slate-900">Past Members</h2>
@@ -281,19 +281,19 @@ export default function PeopleContent() {
 
             {/* Column headers — desktop only */}
             <div className="hidden md:grid md:grid-cols-12 gap-4 px-4 py-2 mb-1">
-              <p className="col-span-3 text-[10px] font-mono uppercase tracking-widest text-slate-400">
+              <p className="col-span-3 text-[10px] font-mono tracking-wide text-slate-400">
                 Name
               </p>
-              <p className="col-span-2 text-[10px] font-mono uppercase tracking-widest text-slate-400">
+              <p className="col-span-2 text-[10px] font-mono tracking-wide text-slate-400">
                 Degree
               </p>
-              <p className="col-span-1 text-[10px] font-mono uppercase tracking-widest text-slate-400">
+              <p className="col-span-1 text-[10px] font-mono tracking-wide text-slate-400">
                 Year
               </p>
-              <p className="col-span-3 text-[10px] font-mono uppercase tracking-widest text-slate-400">
+              <p className="col-span-3 text-[10px] font-mono tracking-wide text-slate-400">
                 Thesis
               </p>
-              <p className="col-span-3 text-[10px] font-mono uppercase tracking-widest text-slate-400">
+              <p className="col-span-3 text-[10px] font-mono tracking-wide text-slate-400">
                 Now At
               </p>
             </div>
@@ -337,7 +337,7 @@ export default function PeopleContent() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-[10px] font-mono tracking-[0.25em] text-slate-400 uppercase mb-2">
+            <p className="text-[10px] font-mono tracking-wide text-slate-400 mb-2">
               Opportunities
             </p>
             <h2 className="text-3xl font-bold text-slate-900 mb-4">

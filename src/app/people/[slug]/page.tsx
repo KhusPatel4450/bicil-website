@@ -94,7 +94,7 @@ export default async function MemberPage({
 
             {/* Info */}
             <div className="flex-1 min-w-0">
-              <p className="text-[10px] font-[family-name:var(--font-inter)] tracking-[0.2em] text-slate-400 uppercase mb-3">
+              <p className="text-[10px] font-[family-name:var(--font-inter)] tracking-wide text-slate-400 mb-3">
                 {label}
               </p>
               <h1 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-4 leading-tight">
@@ -133,7 +133,7 @@ export default async function MemberPage({
           {/* Research Interests */}
           {interests.length > 0 && (
             <div className="mt-14 border-t border-slate-100 pt-10">
-              <p className="text-[10px] font-[family-name:var(--font-inter)] uppercase tracking-[0.2em] text-slate-400 mb-5">
+              <p className="text-[10px] font-[family-name:var(--font-inter)] tracking-wide text-slate-400 mb-5">
                 Research Interests
               </p>
               <div className="flex flex-wrap gap-2.5">
@@ -152,7 +152,7 @@ export default async function MemberPage({
           {/* Hobbies */}
           {hobbies.length > 0 && (
             <div className="mt-10 border-t border-slate-100 pt-10">
-              <p className="text-[10px] font-[family-name:var(--font-inter)] uppercase tracking-[0.2em] text-slate-400 mb-5">
+              <p className="text-[10px] font-[family-name:var(--font-inter)] tracking-wide text-slate-400 mb-5">
                 Hobbies
               </p>
               <div className="flex flex-wrap gap-2.5">
