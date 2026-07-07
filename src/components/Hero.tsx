@@ -52,15 +52,6 @@ export default function Hero() {
         </motion.h1>
 
         <motion.p
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="text-slate-700 text-base mb-2 tracking-wide font-sans"
-        >
-          Prof. Beatrice Ombuki-Berman
-        </motion.p>
-
-        <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.7 }}
