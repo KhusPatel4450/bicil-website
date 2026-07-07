@@ -21,7 +21,7 @@ export default function Home() {
         <About />
         <Research />
         <Team />
-        <Publications />
+        <Publications compact />
         <News />
         <Gallery />
         <Funding />

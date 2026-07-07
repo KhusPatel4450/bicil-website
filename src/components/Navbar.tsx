@@ -5,10 +5,13 @@ import { usePathname } from "next/navigation";
 
 const HASH_LINKS = [
   { href: "#about", label: "About" },
-  { href: "#research", label: "Research" },
-  { href: "#publications", label: "Publications" },
   { href: "#news", label: "News" },
   { href: "#contact", label: "Contact" },
+];
+
+const ROUTE_LINKS = [
+  { href: "/research", label: "Research" },
+  { href: "/people", label: "Team" },
 ];
 
 export default function Navbar() {
@@ -17,7 +20,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const isHome = pathname === "/";
 
-  const resolve = (hash: string) => (isHome ? hash : `/${hash}`);
+  const resolveHash = (hash: string) => (isHome ? hash : `/${hash}`);
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 60);
@@ -56,35 +59,39 @@ export default function Navbar() {
             />
           </a>
 
+          {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-8">
-            {HASH_LINKS.slice(0, 2).map((link) => (
+            <a
+              href={resolveHash("#about")}
+              className="text-slate-500 hover:text-slate-900 text-sm font-medium transition-colors duration-200 focus:outline-none focus-visible:text-slate-900"
+            >
+              About
+            </a>
+            {ROUTE_LINKS.map((link) => (
               <a
                 key={link.href}
-                href={resolve(link.href)}
-                className="text-slate-500 hover:text-slate-900 text-sm font-medium transition-colors duration-200 focus:outline-none focus-visible:text-slate-900"
+                href={link.href}
+                className={`text-sm font-medium transition-colors duration-200 focus:outline-none focus-visible:text-slate-900 ${
+                  pathname.startsWith(link.href)
+                    ? "text-slate-900"
+                    : "text-slate-500 hover:text-slate-900"
+                }`}
               >
                 {link.label}
               </a>
             ))}
             <a
-              href="/people"
-              className={`text-sm font-medium transition-colors duration-200 focus:outline-none focus-visible:text-slate-900 ${
-                pathname === "/people"
-                  ? "text-slate-900"
-                  : "text-slate-500 hover:text-slate-900"
-              }`}
+              href={resolveHash("#news")}
+              className="text-slate-500 hover:text-slate-900 text-sm font-medium transition-colors duration-200 focus:outline-none focus-visible:text-slate-900"
             >
-              Team
+              News
             </a>
-            {HASH_LINKS.slice(2).map((link) => (
-              <a
-                key={link.href}
-                href={resolve(link.href)}
-                className="text-slate-500 hover:text-slate-900 text-sm font-medium transition-colors duration-200 focus:outline-none focus-visible:text-slate-900"
-              >
-                {link.label}
-              </a>
-            ))}
+            <a
+              href={resolveHash("#contact")}
+              className="text-slate-500 hover:text-slate-900 text-sm font-medium transition-colors duration-200 focus:outline-none focus-visible:text-slate-900"
+            >
+              Contact
+            </a>
           </div>
 
           <button
@@ -104,37 +111,42 @@ export default function Navbar() {
         </div>
       </div>
 
+      {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden bg-white/98 backdrop-blur-md border-t border-slate-200 px-6 py-5 space-y-4">
-          {HASH_LINKS.slice(0, 2).map((link) => (
+          <a
+            href={resolveHash("#about")}
+            onClick={() => setMenuOpen(false)}
+            className="block text-slate-500 hover:text-slate-900 font-medium transition-colors py-1"
+          >
+            About
+          </a>
+          {ROUTE_LINKS.map((link) => (
             <a
               key={link.href}
-              href={resolve(link.href)}
+              href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="block text-slate-500 hover:text-slate-900 font-medium transition-colors py-1"
+              className={`block font-medium transition-colors py-1 ${
+                pathname.startsWith(link.href) ? "text-slate-900" : "text-slate-500 hover:text-slate-900"
+              }`}
             >
               {link.label}
             </a>
           ))}
           <a
-            href="/people"
+            href={resolveHash("#news")}
             onClick={() => setMenuOpen(false)}
-            className={`block font-medium transition-colors py-1 ${
-              pathname === "/people" ? "text-slate-900" : "text-slate-500 hover:text-slate-900"
-            }`}
+            className="block text-slate-500 hover:text-slate-900 font-medium transition-colors py-1"
           >
-            Team
+            News
           </a>
-          {HASH_LINKS.slice(2).map((link) => (
-            <a
-              key={link.href}
-              href={resolve(link.href)}
-              onClick={() => setMenuOpen(false)}
-              className="block text-slate-500 hover:text-slate-900 font-medium transition-colors py-1"
-            >
-              {link.label}
-            </a>
-          ))}
+          <a
+            href={resolveHash("#contact")}
+            onClick={() => setMenuOpen(false)}
+            className="block text-slate-500 hover:text-slate-900 font-medium transition-colors py-1"
+          >
+            Contact
+          </a>
         </div>
       )}
     </nav>
