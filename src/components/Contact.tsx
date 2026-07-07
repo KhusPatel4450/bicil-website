@@ -33,12 +33,9 @@ export default function Contact() {
                 <p className="text-[10px] font-mono tracking-wide text-slate-400 mb-1">
                   Email
                 </p>
-                <a
-                  href="mailto:bombuki@brocku.ca"
-                  className="text-slate-900 hover:text-[#4BBFCF] transition-colors text-sm focus:outline-none focus-visible:underline"
-                >
-                  bombuki@brocku.ca
-                </a>
+                <p className="text-slate-900 text-sm font-mono">
+                  bombuki [at] brocku [dot] ca
+                </p>
               </div>
 
               <div className="pl-4 border-l border-[#2A7FC1]/25">
@@ -78,26 +75,6 @@ export default function Contact() {
               </p>
             </div>
 
-            <a
-              href="mailto:bombuki@brocku.ca"
-              className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#2A7FC1] hover:bg-[#1B6BA8] text-white font-semibold text-sm transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#4BBFCF]"
-            >
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={1.5}
-                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                />
-              </svg>
-              Email the Research Director
-            </a>
           </motion.div>
         </div>
       </div>
