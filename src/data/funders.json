@@ -1,24 +1,12 @@
 {
   "items": [
     {
-      "abbr": "NSERC",
-      "name": "Natural Sciences & Engineering Research Council of Canada"
+      "abbr": "VPMI",
+      "name": "Brock-Niagara Validation, Prototyping and Manufacturing Institute"
     },
     {
-      "abbr": "Brock University",
-      "name": "Faculty of Mathematics & Science"
-    },
-    {
-      "abbr": "Mitacs",
-      "name": "Mitacs Accelerate Program"
-    },
-    {
-      "abbr": "ORF",
-      "name": "Ontario Research Fund"
-    },
-    {
-      "abbr": "CRC",
-      "name": "Canada Research Chairs Program"
+      "abbr": "FedDev Ontario",
+      "name": "Government of Canada through FedDev Ontario"
     }
   ]
 }
