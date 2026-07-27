@@ -1,42 +1,794 @@
 {
   "items": [
     {
-      "year": 2024,
-      "title": "A Multi-Swarm Approach to Dynamic Multi-Objective Optimization Using Particle Swarm Optimization",
-      "authors": "Ombuki-Berman, B., A. Researcher, C. Collaborator",
-      "venue": "IEEE Transactions on Evolutionary Computation",
-      "type": "journal",
-      "doi": ""
-    },
-    {
-      "year": 2024,
-      "title": "Feature Selection for High-Dimensional Medical Datasets Using Binary Genetic Algorithms with Adaptive Operators",
-      "authors": "B. Researcher, Ombuki-Berman, B.",
-      "venue": "GECCO 2024 – Genetic and Evolutionary Computation Conference",
+      "year": 2025,
+      "title": "Creating Optimal Edit Metric Codes using a Genetic Algorithm",
+      "authors": "G. Grossi, S. Houghten, and B. Ombuki-Berman",
+      "venue": "2025 12th International Conference on Soft Computing & Machine Intelligence (ISCMI 2025), Rio de Janeiro, Brazil",
       "type": "conference",
       "doi": ""
     },
     {
-      "year": 2023,
-      "title": "Hybridizing Reinforcement Learning with Evolutionary Algorithms for the Capacitated Vehicle Routing Problem",
-      "authors": "C. Researcher, Ombuki-Berman, B., D. Collaborator",
-      "venue": "Applied Soft Computing",
-      "type": "journal",
+      "year": 2025,
+      "title": "Comparative Study of Decomposition and Merging Evolutionary Algorithms for Large-Scale Optimization Problems",
+      "authors": "Z. McGovarin, A. McNulty and B. Ombuki-Berman",
+      "venue": "2025 IEEE Symposium on Computational Intelligence in Security, Defence and Biometrics Companion (CISDB Companion), Trondheim, Norway",
+      "type": "conference",
       "doi": ""
     },
     {
-      "year": 2023,
-      "title": "Decomposition-Based Multi-Objective PSO with Adaptive Weight Vector Generation",
-      "authors": "Ombuki-Berman, B., E. Researcher",
+      "year": 2025,
+      "title": "Hyperparameter Tuning of Convolution Neural Network for Intrusion Detection Systems using Particle Swarm Optimization",
+      "authors": "G. Grossi, B. Ombuki-Berman and G. H. S. de Carvalho",
+      "venue": "2025 IEEE Symposium on Computational Intelligence in Security, Defence and Biometrics Companion (CISDB Companion), Trondheim, Norway",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2024,
+      "title": "A Comparative Study of Evolutionary Algorithms and Particle Swarm Optimization Approaches for Constrained Multi-Objective Optimization Problems",
+      "authors": "Alanna McNulty, Beatrice M. Ombuki-Berman and Andries P. Engelbrecht",
       "venue": "Swarm and Evolutionary Computation",
       "type": "journal",
       "doi": ""
     },
     {
+      "year": 2024,
+      "title": "Hybrid fragment-SMILES tokenization for ADMET prediction in drug discovery",
+      "authors": "Nicholas Aksamit, Alain Tchagang, Yifeng Li and Beatrice Ombuki-Berman",
+      "venue": "BMC Bioinformatics (Springer Nature), 25, n.255",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 2024,
+      "title": "Integrating Transformers and Many-Objective Optimization for Cancer Drug Design",
+      "authors": "Nicholas Aksamit, Jinqiang Hou, Yifeng Li and Beatrice Ombuki-Berman",
+      "venue": "BMC Bioinformatics (Springer Nature), 25, n.208",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 2024,
+      "title": "Massive Dimensions Reduction and Hybridization with Metaheuristics in Deep Learning",
+      "authors": "Rasa Khosrowshahli, Shahryar Rahnamayan and Beatrice Ombuki-Berman",
+      "venue": "IEEE Canadian Conference on Electrical and Computer Engineering (CCECE 2024)",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2024,
+      "title": "A Memetic Algorithm for Large-Scale Real-World Vehicle Routing Problems with Simultaneous Pickup and Delivery with Time Windows",
+      "authors": "Ethan Gibbons and Beatrice M. Ombuki-Berman",
+      "venue": "15th Metaheuristics International Conference (MIC 2024), Lorient, France",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2024,
+      "title": "Stochastic Grouping and Subspace-Based Initialization in Decomposition and Merging Cooperative Particle Swarm Optimization for Large-Scale Optimization Problems",
+      "authors": "Zachary McGovarin, Andries Engelbrecht and Beatrice M. Ombuki-Berman",
+      "venue": "37th Canadian AI Conference, Guelph",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2024,
+      "title": "Genetic Algorithm and Loading Strategy for the Dynamic Vehicle Routing Problem with Simultaneous Pickup and Delivery",
+      "authors": "Ethan Gibbons, Alex Bailey and Beatrice M. Ombuki-Berman",
+      "venue": "37th Canadian AI Conference, Guelph",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2024,
+      "title": "Leonardo Vanneschi and Sara Silva: Lectures on Intelligent Systems (Invited Book Review)",
+      "authors": "Ombuki-Berman B.",
+      "venue": "Genetic Programming and Evolvable Machines",
+      "type": "book",
+      "doi": "10.1007/s10710-024-09495-1"
+    },
+    {
+      "year": 2023,
+      "title": "Decomposition and Merging Co-operative Particle Swarm Optimization with Random Grouping for Large-Scale Optimization",
+      "authors": "Alanna McNulty, B. M. Ombuki-Berman and A. P. Engelbrecht",
+      "venue": "Swarm Intelligence, Springer",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 2023,
+      "title": "Cooperative Coevolutionary Multi-guide Particle Swarm Optimization Algorithm for Large-Scale Multi-Objective Optimization",
+      "authors": "Amirali Madani, Andries P. Engelbrecht and Beatrice M. Ombuki-Berman",
+      "venue": "Swarm and Evolutionary Computation, v.78",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 2023,
+      "title": "A Framework for Meta-heuristic Parameter Performance Prediction Using Fitness Landscape Analysis and Machine Learning",
+      "authors": "L. McDevitt, K. R. Harrison and B. M. Ombuki-Berman",
+      "venue": "2023 IEEE CEC Congress of Evolutionary Computation (CEC 2023), Chicago, USA",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2023,
+      "title": "A Comparative Study of Multi-Guide Particle Swarm Optimization Topologies in Dynamic Multi-Objective Environments",
+      "authors": "A. McNulty and B. M. Ombuki-Berman",
+      "venue": "2023 IEEE CEC Congress of Evolutionary Computation (CEC 2023), Chicago, USA",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2023,
+      "title": "Identification and Classification of JMH Microbenchmark States Using Time Series Analysis",
+      "authors": "T. Wallace, B. M. Ombuki-Berman and N. Ezzati-Jivan",
+      "venue": "14th ACM/SPEC International Conference on Performance Engineering (ICPE'23), pp. 101–105, Coimbra, Portugal",
+      "type": "conference",
+      "doi": ""
+    },
+    {
       "year": 2022,
-      "title": "A Comparative Analysis of Bio-Inspired Algorithms for the Multi-Depot Vehicle Routing Problem",
-      "authors": "F. Researcher, Ombuki-Berman, B., G. Researcher",
-      "venue": "CEC 2022 – IEEE Congress on Evolutionary Computation",
+      "title": "Multi-guide Particle Swarm Optimization Archive Management Strategies for Dynamic Optimization Problems",
+      "authors": "Jocko Pawel, Beatrice M. Ombuki-Berman and Andries P. Engelbrecht",
+      "venue": "Swarm Intelligence (Springer), 16:143–168",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 2022,
+      "title": "A Particle Swarm Optimization Decomposition Strategy for Large Scale Global Optimization",
+      "authors": "Liam McDevitt, Beatrice M. Ombuki-Berman and Andries P. Engelbrecht",
+      "venue": "IEEE Symposium Series on Computational Intelligence (IEEE SSCI 2022), Singapore, pp. 1574–1581",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2022,
+      "title": "Cooperative Particle Swarm Optimization Decomposition Methods for Large-scale Optimization",
+      "authors": "Mitchell D. Clark, Beatrice M. Ombuki-Berman, Nicholas Aksamit and Andries P. Engelbrecht",
+      "venue": "IEEE Symposium Series on Computational Intelligence (IEEE SSCI 2022), Singapore, pp. 1582–1591",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2022,
+      "title": "Decomposition and Merging Co-operative Particle Swarm Optimization with Random Grouping",
+      "authors": "Alanna McNulty, B. M. Ombuki-Berman and A. P. Engelbrecht",
+      "venue": "13th International Conference on Swarm Intelligence (ANTS 2022), Malaga, Spain, pp. 117–129",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2022,
+      "title": "Cooperative Multi-objective Particle Swarm Optimization and Differential Evolution for Drug Design",
+      "authors": "Nicholas Aksamit, B. M. Ombuki-Berman and Yifeng Li",
+      "venue": "19th IEEE Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB 2022), Ottawa, Canada",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2022,
+      "title": "Dynamic Multi-objective Optimisation Using Multi-guide Particle Swarm Optimisation",
+      "authors": "Jocko Pawel, B. M. Ombuki-Berman and A. P. Engelbrecht",
+      "venue": "2022 IEEE CEC Congress of Evolutionary Computation (CEC 2022), Padova, Italy",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2021,
+      "title": "An analysis of the impact of subsampling on the neural network error surface",
+      "authors": "Cody Dennis, Andries Engelbrecht and Beatrice M. Ombuki-Berman",
+      "venue": "Neurocomputing (Elsevier), 466:252–264",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 2021,
+      "title": "Visualizing and characterizing the parameter configuration landscape of Particle Swarm Optimization using physical landform classification",
+      "authors": "K. R. Harrison, B. M. Ombuki-Berman and A. P. Engelbrecht",
+      "venue": "2021 IEEE CEC Congress of Evolutionary Computation (CEC 2021), pp. 2299–2306, Krakow, Poland",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2021,
+      "title": "Decision Space Scalability Analysis of Multi-objective Particle Swarm Optimization Algorithms",
+      "authors": "A. Madani, B. M. Ombuki-Berman and A. P. Engelbrecht",
+      "venue": "2021 IEEE CEC Congress of Evolutionary Computation (CEC 2021), pp. 2179–2186, Krakow, Poland",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2021,
+      "title": "Predicting particle swarm control parameters from fitness landscape characteristics",
+      "authors": "C. Dennis, B. M. Ombuki-Berman and A. P. Engelbrecht",
+      "venue": "2021 IEEE CEC Congress of Evolutionary Computation (CEC 2021), pp. 2289–2298, Krakow, Poland",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2020,
+      "title": "An Analysis of Activation Function Saturation in Particle Swarm Optimization Trained Neural Networks",
+      "authors": "C. Dennis, A. P. Engelbrecht and B. M. Ombuki-Berman",
+      "venue": "Neural Processing Letters, 52:1123–1153",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 2020,
+      "title": "Random Regrouping and Factorization in Cooperative Particle Swarm Optimization Based Large-Scale Neural Network Training",
+      "authors": "Cody Dennis, Beatrice M. Ombuki-Berman and Andries P. Engelbrecht",
+      "venue": "Neural Processing Letters, 51(1):759–796",
+      "type": "journal",
+      "doi": "10.1007/s11063-019-10112-x"
+    },
+    {
+      "year": 2020,
+      "title": "Visualizing and characterizing the parameter configuration landscape of differential evolution using physical landform classification",
+      "authors": "K. R. Harrison, B. M. Ombuki-Berman and A. P. Engelbrecht",
+      "venue": "2020 IEEE Symposium Series on Computational Intelligence (IEEE SSCI 2020), pp. 2437–2444, Canberra, Australia",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2020,
+      "title": "NichePSO and the Merging Subswarm Problem",
+      "authors": "T. Crane, B. Ombuki-Berman and A. Engelbrecht",
+      "venue": "2020 7th International Conference on Soft Computing & Machine Intelligence (ISCMI), pp. 17–22, Stockholm, Sweden",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2020,
+      "title": "A Hybrid Approach to Network Robustness Optimization using Edge Rewiring and Edge Addition",
+      "authors": "J. Paterson and B. M. Ombuki-Berman",
+      "venue": "2020 IEEE International Conference on Systems, Man and Cybernetics (SMC 2020), pp. 4051–4057, Toronto",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2020,
+      "title": "Swarm Based Algorithms for Neural Network Training",
+      "authors": "R. McLean, B. M. Ombuki-Berman and A. P. Engelbrecht",
+      "venue": "2020 IEEE International Conference on Systems, Man and Cybernetics (SMC 2020), pp. 2585–2592, Toronto",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2020,
+      "title": "Juan C. Burguillo: Self-organizing Coalitions for Managing Complexity (Invited Book Review)",
+      "authors": "Ombuki-Berman B.",
+      "venue": "Genetic Programming and Evolvable Machines",
+      "type": "book",
+      "doi": "10.1007/s10710-019-09372-2"
+    },
+    {
+      "year": 2019,
+      "title": "A Parameter-Free Particle Swarm Optimization Algorithm using Performance Classifiers",
+      "authors": "K. R. Harrison, B. M. Ombuki-Berman and A. P. Engelbrecht",
+      "venue": "Information Sciences, vol. 503, pp. 381–400",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 2019,
+      "title": "The Parameter Configuration Landscape: A Case Study on Particle Swarm Optimization",
+      "authors": "K. R. Harrison, B. M. Ombuki-Berman and A. P. Engelbrecht",
+      "venue": "IEEE Congress on Evolutionary Computation (CEC 2019), pp. 808–814",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2019,
+      "title": "An Analysis of Control Parameter Importance in the Particle Swarm Optimization Algorithm",
+      "authors": "K. R. Harrison, B. M. Ombuki-Berman and A. P. Engelbrecht",
+      "venue": "In Advances in Swarm Intelligence, Springer International Publishing, pp. 93–105",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2018,
+      "title": "Self-Adaptive Particle Swarm Optimization: A Review and Analysis of Convergence",
+      "authors": "K. R. Harrison, A. P. Engelbrecht and B. M. Ombuki-Berman",
+      "venue": "Swarm Intelligence, 12(3):187–226, Springer",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 2018,
+      "title": "A Scalability Study of Many-Objective Optimization Algorithms",
+      "authors": "Justin Maltese, Beatrice M. Ombuki-Berman and Andries P. Engelbrecht",
+      "venue": "IEEE Transactions on Evolutionary Computation, pp. 79–96",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 2018,
+      "title": "A Bi-Objective Critical Node Detection Problem",
+      "authors": "M. Ventresca, K. Harrison and B. M. Ombuki-Berman",
+      "venue": "European Journal of Operational Research, 254(3):895–908",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 2018,
+      "title": "Optimal Parameter Regions and the Time Dependence of Control Parameter Values for the Particle Swarm Optimization Algorithm",
+      "authors": "K. R. Harrison, A. P. Engelbrecht and B. M. Ombuki-Berman",
+      "venue": "Swarm and Evolutionary Computation, 41:20–35, Elsevier",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 2018,
+      "title": "Merging and Decomposition Variants of Cooperative Particle Swarm Optimization: New Algorithms for Large Scale Optimization Problems",
+      "authors": "Jay Douglas, Andries Engelbrecht and Beatrice Ombuki-Berman",
+      "venue": "2nd International Conference on Intelligent Systems, Metaheuristics & Swarm Intelligence (ISMSI 2018), Phuket, Thailand",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2018,
+      "title": "Gaussian-Valued Particle Swarm Optimization",
+      "authors": "K. R. Harrison, B. M. Ombuki-Berman and A. P. Engelbrecht",
+      "venue": "Swarm Intelligence (ANTS 2018), Springer International Publishing, pp. 368–377",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2018,
+      "title": "Optimizing Scale-Free Network Robustness with the Great Deluge Algorithm",
+      "authors": "J. Paterson and B. M. Ombuki-Berman",
+      "venue": "31st International Conference on Industrial, Engineering & Other Applications of Applied Intelligent Systems (IEA-AIE 2018), Montreal",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2017,
+      "title": "Optimal Parameter Regions for Particle Swarm Optimization Algorithms",
+      "authors": "Kyle R. Harrison, Beatrice M. Ombuki-Berman and Andries P. Engelbrecht",
+      "venue": "IEEE Congress on Evolutionary Computation (CEC 2017), pp. 349–356, Spain",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2017,
+      "title": "An Age Layered Population Structure Genetic Algorithm for Multi-Depot Vehicle Routing",
+      "authors": "Audrey Opoku-Amankwaar and B. M. Ombuki-Berman",
+      "venue": "2017 IEEE Symposium Series on Computational Intelligence, pp. 3403–3410, Hawaii",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2016,
+      "title": "Inertia Weight Control Strategies for Particle Swarm Optimization",
+      "authors": "Kyle R. Harrison, Andries P. Engelbrecht and Beatrice M. Ombuki-Berman",
+      "venue": "Swarm Intelligence, 10(4):267–305",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 2016,
+      "title": "A Meta-Analysis of Centrality Measures for Comparing and Generating Complex Network Models",
+      "authors": "Kyle R. Harrison, Mario Ventresca and Beatrice M. Ombuki-Berman",
+      "venue": "Journal of Computational Science, Elsevier, 17(1):205–215",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 2016,
+      "title": "Automatic Inference of Graph Models for Directed Complex Networks using Genetic Programming",
+      "authors": "Michael Medland, Kyle R. Harrison and Beatrice M. Ombuki-Berman",
+      "venue": "IEEE Congress on Evolutionary Computation (CEC 2016), pp. 2337–2344, Vancouver",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2016,
+      "title": "Pareto-Based Many-Objective Optimization using Knee Points",
+      "authors": "Justin Maltese, Beatrice M. Ombuki-Berman and Andries P. Engelbrecht",
+      "venue": "IEEE Congress on Evolutionary Computation (CEC 2016), pp. 3678–3686, Vancouver",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2016,
+      "title": "The Sad State of Self-Adaptive Particle Swarm Optimizers",
+      "authors": "Kyle R. Harrison, Andries P. Engelbrecht and Beatrice M. Ombuki-Berman",
+      "venue": "IEEE Congress on Evolutionary Computation (CEC 2016), pp. 431–439, Vancouver",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2016,
+      "title": "A Radius-Free Quantum Particle Swarm Optimization Technique for Dynamic Optimization Problems",
+      "authors": "K. R. Harrison, B. M. Ombuki-Berman and A. P. Engelbrecht",
+      "venue": "IEEE Congress on Evolutionary Computation (CEC 2016), pp. 578–585, Vancouver",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2015,
+      "title": "High-Dimensional Multi-objective Optimization Using Co-operative Vector-Evaluated Particle Swarm Optimization With Random Variable Grouping",
+      "authors": "Justin Maltese, Andries P. Engelbrecht and Beatrice M. Ombuki-Berman",
+      "venue": "2015 IEEE Symposium on Swarm Intelligence, pp. 1302–1309, Cape Town, South Africa",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2015,
+      "title": "The Effect of Probability Distributions on the Performance of Quantum Particle Swarm Optimization for Solving Dynamic Optimization Problems",
+      "authors": "Kyle Harrison, Beatrice Ombuki-Berman and Andries P. Engelbrecht",
+      "venue": "2015 IEEE Symposium on Swarm Intelligence, pp. 242–250, Cape Town, South Africa",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2015,
+      "title": "Cooperative Vector Evaluated Particle Swarm Optimization for Multi-objective Optimization",
+      "authors": "Justin Maltese, Beatrice Ombuki-Berman and Andries P. Engelbrecht",
+      "venue": "2015 IEEE Symposium on Swarm Intelligence, pp. 1294–1301, Cape Town, South Africa",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2015,
+      "title": "Evaluating Landscape Characteristics of Dynamic Benchmark Functions",
+      "authors": "Ron Bond, Andries Engelbrecht and Beatrice Ombuki-Berman",
+      "venue": "2015 IEEE Congress on Evolutionary Computation (CEC 2015), pp. 187–195, Sendai, Japan",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2015,
+      "title": "Vector-Evaluated Particle Swarm Optimization with Local Search",
+      "authors": "Derek Dibblee, Justin Maltese, Beatrice Ombuki-Berman and Andries Engelbrecht",
+      "venue": "2015 IEEE Congress on Evolutionary Computation (CEC 2015), pp. 1343–1350, Sendai, Japan",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2015,
+      "title": "Investigating Fitness Measures for the Automatic Construction of Graph Models",
+      "authors": "Kyle Harrison, Mario Ventresca and Beatrice Ombuki-Berman",
+      "venue": "18th European Conference on Applications of Evolutionary Computation (EvoComplex), Lecture Notes in Computer Science 9028, pp. 189–200, Copenhagen, Denmark",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2015,
+      "title": "An Experimental Evaluation of Multi-Objective Evolutionary Algorithms for Detecting Critical Nodes in Complex Networks",
+      "authors": "Mario Ventresca, Kyle Harrison and Beatrice Ombuki-Berman",
+      "venue": "18th European Conference on Applications of Evolutionary Computation (EvoComplex), Lecture Notes in Computer Science 9028, pp. 164–176, Copenhagen, Denmark",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2015,
+      "title": "A GA Approach for Finding Decision Rules Based on Bireducts",
+      "authors": "Oleg Rybik, Ivo Duntsch and Beatrice Ombuki-Berman",
+      "venue": "RST 2015, Warsaw, Poland",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2014,
+      "title": "Genetic Programming for the Automatic Inference of Graph Models for Complex Networks",
+      "authors": "A. Bailey, M. Ventresca and B. Ombuki-Berman",
+      "venue": "IEEE Transactions on Evolutionary Computation, 18(3):405–419",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 2014,
+      "title": "Dynamic Multi-Objective Optimization using Charged Vector Evaluated Particle Swarm Optimization",
+      "authors": "Kyle Harrison, Beatrice Ombuki-Berman and Andries Engelbrecht",
+      "venue": "IEEE Congress on Evolutionary Computation (CEC 2014), pp. 1929–1936, Beijing, China",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2014,
+      "title": "Incorporating Expert Knowledge in Object-Oriented Genetic Programming",
+      "authors": "Michael Medland, Kyle Harrison and Beatrice Ombuki-Berman",
+      "venue": "Genetic and Evolutionary Computation Conference (GECCO 2014), pp. 145–146, Vancouver",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2014,
+      "title": "Demonstrating the Power of Object-Oriented Genetic Programming via the Inference of Graph Models for Complex Networks",
+      "authors": "Michael Medland, Kyle Harrison and Beatrice Ombuki-Berman",
+      "venue": "6th World Congress on Nature and Biologically Inspired Computing (NABIC 2014), pp. 305–311, Portugal",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2013,
+      "title": "Automatic Inference of Hierarchical Graph Models using Genetic Programming with an Application to Cortical Networks",
+      "authors": "A. Bailey, B. Ombuki-Berman and M. Ventresca",
+      "venue": "Genetic and Evolutionary Computation Conference (GECCO 2013), pp. 893–900, Amsterdam",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2013,
+      "title": "A Scalability Study of Multi-Objective Particle Swarm Optimizers",
+      "authors": "K. Harrison, A. P. Engelbrecht and B. Ombuki-Berman",
+      "venue": "2013 IEEE Congress on Evolutionary Computation (CEC 2013), pp. 189–197, Mexico",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2013,
+      "title": "Cooperative Particle Swarm Optimization for Dynamic Environments",
+      "authors": "N. Unger, B. Ombuki-Berman and A. P. Engelbrecht",
+      "venue": "2013 IEEE Symposium on Swarm Intelligence, pp. 172–179, Singapore",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2013,
+      "title": "Discrete Particle Swarm Optimization for the Single Allocation Hub Location Problem",
+      "authors": "A. Bailey, B. Ombuki-Berman and S. Aseibola",
+      "venue": "2013 IEEE Symposium Series on Computational Intelligence, pp. 92–98, Singapore",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2013,
+      "title": "Predicting GAs Performance on the Vehicle Routing Problem Using Information Theoretic Landscape Measures",
+      "authors": "M. Ventresca, B. Ombuki-Berman and A. Runka",
+      "venue": "13th European Conference on Evolutionary Computation in Combinatorial Optimisation (EvoCOP), pp. 214–225, Vienna, Austria",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2013,
+      "title": "Knowledge Transfer Strategies for Vector Evaluated Particle Swarm Optimization",
+      "authors": "K. Harrison, B. Ombuki-Berman and A. Engelbrecht",
+      "venue": "Evolutionary Multi-Criterion Optimization, Lecture Notes in Computer Science 7811, pp. 171–184",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2012,
+      "title": "Automatic Generation of Graph Models for Complex Networks using Genetic Programming",
+      "authors": "A. Bailey, M. Ventresca and B. Ombuki-Berman",
+      "venue": "Genetic and Evolutionary Computation Conference (GECCO 2012), pp. 711–718, Philadelphia, USA",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2012,
+      "title": "Using Summed Ranks and Pareto Ranking to Design Outpatient Schedules",
+      "authors": "B. Ombuki-Berman, K. Klassen and A. Harrington",
+      "venue": "Canadian Operational Research Society Conference (CORS 2012), Niagara Falls, Ontario",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2012,
+      "title": "Developing Appointment Schedules with Genetic Algorithms",
+      "authors": "K. Klassen, B. Ombuki-Berman and A. Harrington",
+      "venue": "Production and Operations Management Society Conference (POMS 2012), Chicago, Illinois",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2010,
+      "title": "An Efficient Genetic Algorithm for the Uncapacitated Single Allocation Hub Location Problem",
+      "authors": "M. Naeem and B. Ombuki-Berman",
+      "venue": "2010 IEEE Congress on Evolutionary Computation (CEC 2010), pp. 941–948, Barcelona, Spain",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2009,
+      "title": "A Search Space Analysis for the Waste Collection Vehicle Routing Problem with Time Windows",
+      "authors": "A. Runka, B. Ombuki-Berman and M. Ventresca",
+      "venue": "Genetic and Evolutionary Computation Conference (GECCO 2009), Montreal",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2009,
+      "title": "Using Genetic Algorithms for Multi-Depot Vehicle Routing",
+      "authors": "B. Ombuki-Berman and F. Hanshar",
+      "venue": "Bio-Inspired Algorithms for the Vehicle Routing Problem, Springer Studies in Computational Intelligence, v.161, pp. 77–99",
+      "type": "book",
+      "doi": ""
+    },
+    {
+      "year": 2009,
+      "title": "Genetic Algorithm Cryptanalysis of Substitution Permutation Network",
+      "authors": "J. Brown, S. Houghten and B. Ombuki-Berman",
+      "venue": "IEEE Symposium on Computational Intelligence in Cyber Security, pp. 115–121, Nashville, Tennessee",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2008,
+      "title": "Particle Swarm Optimization for the Design of Two Connected Networks with Bounded Rings",
+      "authors": "E. B. Foxwell and B. Ombuki-Berman",
+      "venue": "Journal of High Performance System Architecture, 1(4):220–230",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 2007,
+      "title": "Dynamic Vehicle Routing using Genetic Algorithm",
+      "authors": "F. T. Hanshar and B. Ombuki-Berman",
+      "venue": "Applied Intelligence, 27(1):89–99",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 2007,
+      "title": "Waste Collection Vehicle Routing Problem with Time Windows using Multi-objective Genetic Algorithms",
+      "authors": "B. Ombuki-Berman, A. Runka and F. Hanshar",
+      "venue": "Computational Intelligence (CI 2007), Banff, Canada",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2007,
+      "title": "Search Difficulty of Two-Connected Ring-based Topological Network Designs",
+      "authors": "B. Ombuki-Berman and M. Ventresca",
+      "venue": "IEEE Symposium on Foundations of Computational Intelligence (FOCI), pp. 267–274, Honolulu, USA",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2007,
+      "title": "Epistasis in Multi-Objective Evolutionary Recurrent Neuro-Controllers",
+      "authors": "M. Ventresca and B. Ombuki-Berman",
+      "venue": "IEEE Symposium on Artificial Life (CI-ALIFE), pp. 77–84, Honolulu, USA",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2006,
+      "title": "Multi-Objective Genetic Algorithms for Vehicle Routing Problems with Time Windows",
+      "authors": "B. Ombuki, Brian J. Ross and F. Hanshar",
+      "venue": "Applied Intelligence, 24(1):17–30",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 2006,
+      "title": "Search Space Analysis of Recurrent Spiking and Continuous-time Neural Networks",
+      "authors": "M. Ventresca and B. M. Ombuki",
+      "venue": "IEEE International Joint Conference on Neural Networks (IJCNN), pp. 8947–8954, Vancouver, Canada",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2005,
+      "title": "A Genetic Algorithm for the Design of Two Connected Networks with Bounded Rings",
+      "authors": "M. Ventresca and B. Ombuki",
+      "venue": "Computational Intelligence and Applications, Special Issue on Nature-Inspired Approaches to Networks and Telecommunications, 5(2):267–281",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 2004,
+      "title": "Local Search Genetic Algorithm for the Job Shop Scheduling Problem",
+      "authors": "B. Ombuki and M. Ventresca",
+      "venue": "Applied Intelligence, 21(1):99–109",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 2004,
+      "title": "Ant Colony Optimization for Job Shop Scheduling Problem",
+      "authors": "M. Ventresca and B. M. Ombuki",
+      "venue": "8th IASTED International Conference on Artificial Intelligence and Soft Computing (ASC 2004), pp. 451–452, Marbella, Spain",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2004,
+      "title": "A Genetic Algorithm for the Design of Two Connected Networks with Bounded Rings",
+      "authors": "M. Ventresca and B. Ombuki",
+      "venue": "Workshop on Nature Inspired Approaches to Networks and Telecommunications at PPSN VIII, Birmingham, UK",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2003,
+      "title": "Meta-heuristics for the Job Shop Scheduling Problem",
+      "authors": "M. Ventresca and B. M. Ombuki",
+      "venue": "Late Breaking Papers, Genetic and Evolutionary Computation Conference (GECCO 2003), pp. 303–306, Chicago",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2002,
+      "title": "A Hybrid Search Based on Genetic Algorithms and Tabu Search for Vehicle Routing",
+      "authors": "B. Ombuki, M. Nakamura and M. Osamu",
+      "venue": "6th International Conference on Artificial Intelligence and Soft Computing, pp. 176–181, Banff, Canada",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2001,
+      "title": "An Evolutionary Algorithm Approach to the Design of Minimum Cost Survivable Networks with Bounded Rings",
+      "authors": "B. Ombuki, M. Nakamura and M. Osamu",
+      "venue": "IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences, Vol. E84-A, No. 6, pp. 1545–1548",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 2000,
+      "title": "Cyclic Job-Shop-Scheduling Based on Evolutionary Petri Nets",
+      "authors": "M. Nakamura, H. Tome, K. Hachiman, B. M. Ombuki and K. Onaga",
+      "venue": "26th Annual Conference of the IEEE Industrial Electronics Society (IECON 2000), vol. 4, pp. 2855–2860, Nagoya, Japan",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2000,
+      "title": "A Genetic Algorithm Approach for the Design of Minimum Cost Survivable Networks with Bounded Rings",
+      "authors": "B. Ombuki, M. Nakamura, Z. Nakao and K. Onaga",
+      "venue": "International Technical Conference on Circuits/Systems, Computers and Communications (ITC-CSSS'00), vol. 1, pp. 493–496, Pusan, Korea",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 2000,
+      "title": "A Flexible Routing Based on Object-Oriented GAs in Vehicle Routing Problem with Time Constraints",
+      "authors": "S. Khan, M. Nakamura, B. M. Ombuki and K. Onaga",
+      "venue": "IEICE General Conference (Institute of Electronics, Information and Communication Engineers), VOL.2000, p. 252",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 1999,
+      "title": "Evolutionary Computation for Topological Optimization of 3-Connected Computer Networks",
+      "authors": "B. Ombuki, M. Nakamura, Z. Nakao and K. Onaga",
+      "venue": "IEEE International Conference on Systems, Man, and Cybernetics, Tokyo",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 1999,
+      "title": "A Genetic Algorithm Approach to Vehicle Routing Problem with Time Deadlines in Geographical Information Systems",
+      "authors": "O. Maeda, M. Nakamura, B. Ombuki and K. Onaga",
+      "venue": "IEEE International Conference on Systems, Man, and Cybernetics, vol. II, pp. 595–600, Tokyo",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 1998,
+      "title": "An Evolutionary Scheduling Scheme Based on gkGA Approach to the Job Shop Problem",
+      "authors": "B. Ombuki, M. Nakamura and K. Onaga",
+      "venue": "IEICE Transactions on Fundamentals of Electronics, Communication and Computer Sciences, pp. 1063–1071",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 1998,
+      "title": "A New Hybrid GA Solution to Combinatorial Optimization Problems: An Application to the Multiprocessor Scheduling Problems",
+      "authors": "M. Nakamura, B. Ombuki, K. Shimabukuro and K. Onaga",
+      "venue": "Journal for Artificial Life and Robotics, Springer Verlag, vol. 2, pp. 74–79",
+      "type": "journal",
+      "doi": ""
+    },
+    {
+      "year": 1998,
+      "title": "Experimental Evaluation of an Evolutionary Scheduling Scheme Based on gkGA Approach to the Job Shop Problem",
+      "authors": "B. Ombuki, M. Nakamura and K. Onaga",
+      "venue": "2nd International Conference on Knowledge-Based Intelligent Electronic Systems, vol. 3, pp. 197–201, Adelaide, Australia",
+      "type": "conference",
+      "doi": ""
+    },
+    {
+      "year": 1997,
+      "title": "A Hybridized GA Approach to the Job Shop Problem",
+      "authors": "B. Ombuki, M. Nakamura and K. Onaga",
+      "venue": "International Technical Conference on Circuits/Systems, Computers and Communications (ITC-CSSS'97), vol. 1, pp. 483–486, Okinawa, Japan",
       "type": "conference",
       "doi": ""
     }

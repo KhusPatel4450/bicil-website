@@ -6,8 +6,15 @@ import Link from "next/link";
 import pubData from "@/data/publications.json";
 
 const PUBS = pubData.items;
-const YEARS = ["All", "2024", "2023", "2022", "2021"];
-const TYPES = ["All", "Journal", "Conference"];
+
+const DECADES = [
+  { label: "All", test: (_y: number) => true },
+  { label: "2020s", test: (y: number) => y >= 2020 },
+  { label: "2010s", test: (y: number) => y >= 2010 && y < 2020 },
+  { label: "2000s", test: (y: number) => y >= 2000 && y < 2010 },
+  { label: "Pre-2000", test: (y: number) => y < 2000 },
+];
+const TYPES = ["All", "Journal", "Conference", "Book"];
 
 function PubCard({ pub, i }: { pub: (typeof PUBS)[number]; i: number }) {
   return (
@@ -38,29 +45,32 @@ function PubCard({ pub, i }: { pub: (typeof PUBS)[number]; i: number }) {
           <p className="text-slate-600 text-sm mb-1">{pub.authors}</p>
           <p className="text-slate-600 text-sm">{pub.venue}</p>
         </div>
-        <a
-          href="#"
-          className="flex-shrink-0 self-start inline-flex items-center gap-1.5 px-3 py-1.5 border border-slate-200 hover:border-[#4BBFCF] hover:text-[#4BBFCF] text-slate-400 text-xs transition-all duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#4BBFCF]"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={`View paper: ${pub.title}`}
-        >
-          <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-          </svg>
-          PDF
-        </a>
+        {pub.doi && (
+          <a
+            href={`https://doi.org/${pub.doi}`}
+            className="flex-shrink-0 self-start inline-flex items-center gap-1.5 px-3 py-1.5 border border-slate-200 hover:border-[#4BBFCF] hover:text-[#4BBFCF] text-slate-400 text-xs transition-all duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#4BBFCF]"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`View paper: ${pub.title}`}
+          >
+            <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+            DOI
+          </a>
+        )}
       </div>
     </motion.article>
   );
 }
 
 export default function Publications({ compact = false }: { compact?: boolean }) {
-  const [yearFilter, setYearFilter] = useState("All");
+  const [decadeFilter, setDecadeFilter] = useState("All");
   const [typeFilter, setTypeFilter] = useState("All");
 
   const filtered = PUBS.filter((p) => {
-    const yearOk = yearFilter === "All" || p.year === parseInt(yearFilter);
+    const decade = DECADES.find((d) => d.label === decadeFilter);
+    const yearOk = !decade || decade.test(p.year);
     const typeOk = typeFilter === "All" || p.type === typeFilter.toLowerCase();
     return yearOk && typeOk;
   });
@@ -102,19 +112,19 @@ export default function Publications({ compact = false }: { compact?: boolean })
             aria-label="Publication filters"
           >
             <div className="flex items-center gap-5 flex-wrap">
-              <span className="text-[10px] font-mono text-slate-500 tracking-wide">Year</span>
-              {YEARS.map((y) => (
+              <span className="text-[10px] font-mono text-slate-500 tracking-wide">Period</span>
+              {DECADES.map((d) => (
                 <button
-                  key={y}
-                  onClick={() => setYearFilter(y)}
-                  aria-pressed={yearFilter === y}
+                  key={d.label}
+                  onClick={() => setDecadeFilter(d.label)}
+                  aria-pressed={decadeFilter === d.label}
                   className={`text-sm pb-1 transition-all duration-150 focus:outline-none ${
-                    yearFilter === y
+                    decadeFilter === d.label
                       ? "text-slate-900 border-b-2 border-[#2A7FC1] font-semibold"
                       : "text-slate-500 border-b-2 border-transparent hover:text-slate-700"
                   }`}
                 >
-                  {y}
+                  {d.label}
                 </button>
               ))}
             </div>
