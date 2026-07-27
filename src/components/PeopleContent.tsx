@@ -6,7 +6,8 @@ import teamData from "@/data/team.json";
 
 const PI = teamData.pi;
 const STUDENTS = teamData.students;
-const ALUMNI = teamData.alumni;
+const MSC_ALUMNI = teamData.mscAlumni;
+const UNDERGRAD_ALUMNI = teamData.undergradAlumni;
 
 function InitialsAvatar({
   initials,
@@ -128,11 +129,11 @@ export default function PeopleContent() {
                   </span>
                 </div>
               )}
-              {ALUMNI.length > 0 && (
+              {(MSC_ALUMNI.length + UNDERGRAD_ALUMNI.length) > 0 && (
                 <div className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 bg-slate-400" />
                   <span className="text-slate-600 text-sm">
-                    {ALUMNI.length} Alumni
+                    {MSC_ALUMNI.length + UNDERGRAD_ALUMNI.length} Alumni
                   </span>
                 </div>
               )}
@@ -260,73 +261,102 @@ export default function PeopleContent() {
       </section>
 
       {/* Alumni */}
-      {ALUMNI.length > 0 && (
-        <section className="py-16 bg-white border-t border-slate-100">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.6 }}
-              className="mb-10"
-            >
-              <p className="text-[10px] font-mono tracking-wide text-slate-400 mb-2">
-                Alumni
-              </p>
-              <h2 className="text-3xl font-bold text-slate-900">Past Members</h2>
-              <p className="text-slate-500 text-sm mt-2">
-                Former members now making an impact in academia and industry.
-              </p>
-            </motion.div>
+      <section className="py-16 bg-white border-t border-slate-100">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.6 }}
+            className="mb-12"
+          >
+            <p className="text-[10px] font-mono tracking-wide text-slate-400 mb-2">
+              Alumni
+            </p>
+            <h2 className="text-3xl font-bold text-slate-900">Past Members</h2>
+          </motion.div>
+
+          {/* MSc Graduates */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="mb-12"
+          >
+            <p className="text-[11px] font-mono tracking-wide text-[#2A7FC1]/80 mb-5">
+              Completed M.Sc. Students
+            </p>
 
             {/* Column headers — desktop only */}
             <div className="hidden md:grid md:grid-cols-12 gap-4 px-4 py-2 mb-1">
-              <p className="col-span-3 text-[10px] font-mono tracking-wide text-slate-400">
-                Name
-              </p>
-              <p className="col-span-2 text-[10px] font-mono tracking-wide text-slate-400">
-                Degree
-              </p>
-              <p className="col-span-1 text-[10px] font-mono tracking-wide text-slate-400">
-                Year
-              </p>
-              <p className="col-span-3 text-[10px] font-mono tracking-wide text-slate-400">
-                Thesis
-              </p>
-              <p className="col-span-3 text-[10px] font-mono tracking-wide text-slate-400">
-                Now At
-              </p>
+              <p className="col-span-3 text-[10px] font-mono tracking-wide text-slate-400">Name</p>
+              <p className="col-span-1 text-[10px] font-mono tracking-wide text-slate-400">Year</p>
+              <p className="col-span-5 text-[10px] font-mono tracking-wide text-slate-400">Thesis / Topic</p>
+              <p className="col-span-3 text-[10px] font-mono tracking-wide text-slate-400">Note</p>
             </div>
 
             <div className="divide-y divide-slate-100">
-              {ALUMNI.map((a, i) => (
+              {MSC_ALUMNI.map((a, i) => (
                 <motion.div
-                  key={`${a.name}-${i}`}
+                  key={`msc-${a.name}-${i}`}
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.3, delay: i * 0.05 }}
-                  className="md:grid md:grid-cols-12 gap-4 px-4 py-4 hover:bg-slate-50 transition-colors duration-150 flex flex-col gap-y-1.5"
+                  transition={{ duration: 0.3, delay: i * 0.03 }}
+                  className="flex flex-col gap-y-1 md:grid md:grid-cols-12 md:gap-4 px-4 py-4 hover:bg-slate-50 transition-colors duration-150"
                 >
-                  <p className="md:col-span-3 text-slate-700 text-sm font-medium">
-                    {a.name}
-                  </p>
-                  <p className="md:col-span-2 text-[#4BBFCF] text-xs font-mono">
-                    {a.degree}
-                  </p>
+                  <p className="md:col-span-3 text-slate-700 text-sm font-medium">{a.name}</p>
                   <p className="md:col-span-1 text-slate-500 text-xs font-mono tabular-nums">
-                    {a.yearGraduated}
+                    {a.yearGraduated ?? "—"}
                   </p>
-                  <p className="md:col-span-3 text-slate-500 text-xs leading-relaxed">
-                    {a.thesis}
+                  <p className="md:col-span-5 text-slate-500 text-xs leading-relaxed">{a.thesis}</p>
+                  <p className="md:col-span-3 text-slate-400 text-xs italic leading-relaxed">
+                    {(a as typeof a & { note?: string }).note ?? ""}
                   </p>
-                  <p className="md:col-span-3 text-slate-700 text-xs">{a.nowAt}</p>
                 </motion.div>
               ))}
             </div>
-          </div>
-        </section>
-      )}
+          </motion.div>
+
+          {/* Undergraduate Thesis */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
+            <p className="text-[11px] font-mono tracking-wide text-[#3DAF88]/80 mb-5">
+              Undergraduate Research Thesis (4F90 / 3P99)
+            </p>
+
+            <div className="hidden md:grid md:grid-cols-12 gap-4 px-4 py-2 mb-1">
+              <p className="col-span-3 text-[10px] font-mono tracking-wide text-slate-400">Name</p>
+              <p className="col-span-2 text-[10px] font-mono tracking-wide text-slate-400">Program</p>
+              <p className="col-span-7 text-[10px] font-mono tracking-wide text-slate-400">Topic</p>
+            </div>
+
+            <div className="divide-y divide-slate-100">
+              {UNDERGRAD_ALUMNI.map((a, i) => (
+                <motion.div
+                  key={`ug-${a.name}-${i}`}
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: i * 0.02 }}
+                  className="flex flex-col gap-y-1 md:grid md:grid-cols-12 md:gap-4 px-4 py-3 hover:bg-slate-50 transition-colors duration-150"
+                >
+                  <p className="md:col-span-3 text-slate-700 text-sm font-medium">{a.name}</p>
+                  <p className="md:col-span-2 text-[#4BBFCF] text-xs font-mono">{a.program}</p>
+                  <p className="md:col-span-7 text-slate-500 text-xs leading-relaxed">
+                    {a.topic ?? <span className="text-slate-300 italic">—</span>}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
 
       {/* Open Positions */}
       <section className="py-16 bg-slate-50 border-t border-slate-100">

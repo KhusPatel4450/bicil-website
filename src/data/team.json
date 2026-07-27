@@ -311,41 +311,53 @@
       "year": "4"
     }
   ],
-  "alumni": [
-    {
-      "name": "Alumni Placeholder",
-      "degree": "Ph.D.",
-      "yearGraduated": 2023,
-      "thesis": "Adaptive PSO Variants for Real-World Combinatorial Optimization",
-      "nowAt": "Postdoctoral Researcher, University of Waterloo"
-    },
-    {
-      "name": "Alumni Placeholder",
-      "degree": "Ph.D.",
-      "yearGraduated": 2022,
-      "thesis": "Multi-Objective Evolutionary Algorithms for Network Design",
-      "nowAt": "Assistant Professor, Ryerson University"
-    },
-    {
-      "name": "Alumni Placeholder",
-      "degree": "M.Sc.",
-      "yearGraduated": 2023,
-      "thesis": "Feature Selection via Bio-Inspired Metaheuristics in Medical Imaging",
-      "nowAt": "ML Engineer, Toronto"
-    },
-    {
-      "name": "Alumni Placeholder",
-      "degree": "M.Sc.",
-      "yearGraduated": 2022,
-      "thesis": "Swarm Intelligence Approaches to Vehicle Routing",
-      "nowAt": "Software Engineer, Ottawa"
-    },
-    {
-      "name": "Alumni Placeholder",
-      "degree": "M.Sc.",
-      "yearGraduated": 2021,
-      "thesis": "Genetic Programming for Symbolic Regression",
-      "nowAt": "Data Scientist, Montreal"
-    }
+  "mscAlumni": [
+    { "name": "Liam McDevitt", "yearGraduated": 2023, "thesis": "Fitness Landscape Analysis and Machine Learning Based Framework for Meta-heuristic Parameter Performance Prediction", "note": "Co-supervision with Dr. Kyle Harrison" },
+    { "name": "Tyler Crane", "yearGraduated": 2022, "thesis": "Analysis of NichePSO for Multi-Modal Optimization Problems" },
+    { "name": "Jocko Pawel", "yearGraduated": 2021, "thesis": "Multi-guided Cooperative PSO for Dynamic Optimization Problems" },
+    { "name": "Amirali Madani", "yearGraduated": 2021, "thesis": "Multi-guided Cooperative PSO for Large-Scale Optimization Problems" },
+    { "name": "Cody Dennis", "yearGraduated": 2021, "thesis": "Landscape Aware Algorithm Configuration" },
+    { "name": "Mitchell Clark", "yearGraduated": null, "thesis": "Cooperative PSO for Large-Scale Optimization: A Survey" },
+    { "name": "Reginald McLean", "yearGraduated": 2019, "thesis": "Analysis of Swarm-based Algorithms for Neural Networks Training" },
+    { "name": "James Paterson", "yearGraduated": 2019, "thesis": "A Hybrid Approach to Network Robustness Optimization using Edge Rewiring and Edge Addition" },
+    { "name": "Ruslan Dzhumkaliev", "yearGraduated": 2019, "thesis": "PSO for Large-Scale Data Clustering" },
+    { "name": "Jay Douglas", "yearGraduated": 2018, "thesis": "Merging and Decomposition Cooperative Particle Swarm Optimization" },
+    { "name": "Sanjib Biswas", "yearGraduated": 2017, "thesis": "Multi-objective Genetic Algorithms for Multi-depot VRP with Time Windows" },
+    { "name": "Audrey Opoku-Amankwaah", "yearGraduated": 2016, "thesis": "Using Age Layered Population Structure Genetic Algorithm for Scheduling and Optimization" },
+    { "name": "Justin Maltese", "yearGraduated": 2016, "thesis": "A Scalability Study and New Algorithms for Large-scale Many-Objective Optimization" },
+    { "name": "Oleg Rybkin", "yearGraduated": 2015, "thesis": "GA Approach for Finding Rough Sets Decision Rules Based on Bireducts", "note": "with Prof. Ivo Duntsch" },
+    { "name": "Ron Bond", "yearGraduated": 2015, "thesis": "Characterizing Dynamic Optimization Benchmarks for the Comparison of Multi-Modal Tracking Algorithms" },
+    { "name": "Michael Medland", "yearGraduated": 2014, "thesis": "Object-Oriented Genetic Programming for the Automatic Inference of Graph Models for Complex Networks" },
+    { "name": "Kyle Harrison", "yearGraduated": 2014, "thesis": "Network Similarity Measures and Automatic Construction of Graph Models using Genetic Programming" },
+    { "name": "Stephen Y. Asobiela", "yearGraduated": 2013, "thesis": "Multi-Objective Genetic Algorithms for the Single Allocation Hub Location Problem" },
+    { "name": "Alex Bailey", "yearGraduated": 2013, "thesis": "Genetic Programming for the Automatic Generation of Graph Models for Undirected Complex Networks", "note": "Co-supervised with Dr. Ventresca" },
+    { "name": "Mahmood Edalatmanesh", "yearGraduated": 2013, "thesis": "Fast Heuristics for the Critical Node Detection Problem in Complex Networks", "note": "Co-supervised with Dr. Ventresca" },
+    { "name": "Arash Iranzad", "yearGraduated": 2013, "thesis": "Hyperspectral Image Classification Using Support Vector Machines", "note": "Co-supervised with Dr. Fueten" },
+    { "name": "Tanaby Zibamanzar Mofrad", "yearGraduated": 2010, "thesis": "Comparison of the Classification Ability of Hyperball Algorithms with Neural Networks", "note": "Co-supervised with Prof. Wojcik" },
+    { "name": "Andrew Runka", "yearGraduated": 2010, "thesis": "Genetic Programming for the RoboCup Rescue Simulation System" },
+    { "name": "Mohammad Naeem", "yearGraduated": 2009, "thesis": "Genetic Algorithms for Single Allocation Hub Location Problem" },
+    { "name": "Earl Foxwell", "yearGraduated": 2009, "thesis": "Particle Swarm Optimization for the Design of Two Connected Networks with Bounded Rings" },
+    { "name": "Mario Ventresca", "yearGraduated": 2005, "thesis": "The Evolution of Continuous-time and Spiking Recurrent Neural Networks on Mutation Landscapes" }
+  ],
+  "undergradAlumni": [
+    { "name": "Peter Wilson", "program": "4F90", "topic": null },
+    { "name": "Jay Douglas", "program": "4F90", "topic": null },
+    { "name": "Derek Nicholas Dibblee", "program": "4F90", "topic": null },
+    { "name": "Justin Maltese", "program": "4F90", "topic": null },
+    { "name": "Michael William Young", "program": "4F90", "topic": null },
+    { "name": "Nicholas Unger", "program": "4F90", "topic": "Cooperative Particle Swarm Optimization for Dynamic Environments" },
+    { "name": "Kyle Harrison", "program": "4F90", "topic": "Knowledge Transfer Strategies for Vector Evaluated PSO" },
+    { "name": "Adam Stirtan", "program": "4F90", "topic": "Using Particle Swarm Optimization to Evolve Game Strategies" },
+    { "name": "Alex Bailey", "program": "4F90", "topic": "PSO for the Capacitated Single Allocation Hub Location Problem" },
+    { "name": "Geoff Honsberger", "program": "4F90", "topic": "Real Time Traffic Path Finding and Routing" },
+    { "name": "Andrew Runka", "program": "4F90", "topic": "Ant-based Optimization in Dynamic Environments" },
+    { "name": "Franklin Hanshar", "program": "4F90", "topic": "Evolutionary Vehicle Routing Optimization in Dynamic Environments" },
+    { "name": "Jennifer Miele", "program": "3P99", "topic": "Genetic Algorithms and Ant-based Algorithms for Ad-hoc Networks: A Survey" },
+    { "name": "Andrew Livingstone", "program": "3P99", "topic": "Genetic Algorithms for Reliable Network Design", "note": "Co-supervised with D. Bockus" },
+    { "name": "Mario Ventresca", "program": "4F90", "topic": "Ant Colony Optimization for the Job-Shop Scheduling Problem" },
+    { "name": "Coy Wong", "program": "4F90", "topic": "Multiobjective Evolving Neural Networks" },
+    { "name": "Jessica Socha", "program": "3P99", "topic": "Genetic Algorithms, Simulated Annealing and Tabu Search for Data Compression" },
+    { "name": "Joseph Troop", "program": "4F90", "topic": "Ant Colony Optimization for Network Design" },
+    { "name": "Ed Sykes", "program": "Graduate Directed Study", "topic": "Intelligent Tutoring System" }
   ]
 }
