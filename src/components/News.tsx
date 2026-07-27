@@ -5,6 +5,7 @@ import newsData from "@/data/news.json";
 
 const CATEGORY_COLORS: Record<string, string> = {
   Award:         "#4BBFCF",
+  Funding:       "#3DAF88",
   Publication:   "#2A7FC1",
   Conference:    "#3DAF88",
   "New Members": "#5BBF8A",
@@ -37,7 +38,7 @@ export default function News() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 gap-6 max-w-3xl">
           {NEWS.map((item, i) => (
             <motion.article
               key={item.title}
@@ -45,31 +46,37 @@ export default function News() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
-              className="group bg-slate-50 border border-slate-200 p-6 hover:border-slate-300 hover:bg-white hover:-translate-y-1 transition-all duration-300 cursor-pointer"
             >
-              <div className="flex items-center justify-between mb-5">
-                <span
-                  className="text-[11px] font-mono font-semibold tracking-wide"
-                  style={{ color: CATEGORY_COLORS[item.category] ?? "#2A7FC1" }}
-                >
-                  {item.category}
-                </span>
-                <span className="text-slate-400 text-xs font-mono">{item.date}</span>
-              </div>
-              <h3 className="font-semibold text-slate-900 text-base leading-snug mb-3 group-hover:text-[#2A7FC1] transition-colors duration-200">
-                {item.title}
-              </h3>
-              <p className="text-slate-600 text-sm leading-relaxed line-clamp-3">
-                {item.excerpt}
-              </p>
-              <div className="mt-5 pt-4 border-t border-slate-200">
-                <span className="text-[#4BBFCF] text-sm inline-flex items-center gap-1.5 group-hover:gap-3 transition-all duration-200">
-                  Read more
-                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </span>
-              </div>
+              <a
+                href={item.link ?? "#"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block h-full bg-slate-50 border border-slate-200 p-6 hover:border-slate-300 hover:bg-white hover:-translate-y-1 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#4BBFCF]"
+              >
+                <div className="flex items-center justify-between mb-5">
+                  <span
+                    className="text-[11px] font-mono font-semibold tracking-wide"
+                    style={{ color: CATEGORY_COLORS[item.category] ?? "#2A7FC1" }}
+                  >
+                    {item.category}
+                  </span>
+                  <span className="text-slate-400 text-xs font-mono">{item.date}</span>
+                </div>
+                <h3 className="font-semibold text-slate-900 text-base leading-snug mb-3 group-hover:text-[#2A7FC1] transition-colors duration-200">
+                  {item.title}
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed line-clamp-3">
+                  {item.excerpt}
+                </p>
+                <div className="mt-5 pt-4 border-t border-slate-200">
+                  <span className="text-[#4BBFCF] text-sm inline-flex items-center gap-1.5 group-hover:gap-3 transition-all duration-200">
+                    Read more
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </span>
+                </div>
+              </a>
             </motion.article>
           ))}
         </div>
