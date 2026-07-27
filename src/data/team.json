@@ -472,6 +472,11 @@
   ],
   "undergradAlumni": [
     {
+      "name": "Khush Patel",
+      "program": "4F90",
+      "topic": "Multi-Objective Planning in Geometric Latent Space"
+    },
+    {
       "name": "Peter Wilson",
       "program": "4F90",
       "topic": null
